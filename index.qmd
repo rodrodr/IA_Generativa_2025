@@ -12,11 +12,10 @@ Las 12 horas están divididas en tres sesiones de cuatro horas cada una y separa
 
 **"¡Tranquilo, Sam Altman, 'todavía'😎 no vamos por ti!"** El objetivo no es entrar en los recobecos del entrenamiento 🏋 de los modelos de IA. Tampoco trastearemos con los códigos de los modelos. Nuestra misión es más sencilla: aprender algunos trucos que nos permitirán hacer nuestro trabajo de forma más eficiente y creativa utilizando esos nuevos instrumentos que la tecnología nos ofrece.
 
-Consiste, por tanto, de un **curso introductorio, pero para nada trivial**. Intenté sintetizar en estas 12 horas un conjunto de técnicas que resultan extremadamente útiles para cualquier profesor o investigador de ciencias sociales. 
+Corresponde, por tanto, a un **curso introductorio, pero para nada trivial**. Intenté sintetizar en estas 12 horas un conjunto de técnicas que resultan extremadamente útiles para cualquier profesor o investigador de ciencias sociales. 
 
-¡Vayamos al grano!
 
-## El contenido
+## ¡Vayamos al grano!
 
 Durante el curso se abordarán los siguientes temas:
 
@@ -35,10 +34,10 @@ En esta primera parte, veremos qué es la IA generativa, cómo funciona, qué ti
 
 <table>
 <tr>
-<td  valign="top" style="width:30%">![](strangelove.gif)
-</td>
 <td>
 -   [Geopolítica de la IA]{style="background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-2&color=pink);"}, la competencia entre las grandes potencias, modelos de negocio y estrategias de inserción de los distintos países en el mercado.
+</td>
+<td  valign="top" style="width:30%">![](strangelove.gif)
 </td>
 </tr>
 </table>
@@ -55,19 +54,19 @@ El segundo tema trata de las implicaciones geopolíticas de la IA. ¿Cómo los d
 </tr>
 </table>
 
-En esta etapa del curso, aprenderemos a "tunear" los modelos de IA para que actúen como asistentes virtuales expertos en tareas muy concretas. El objetivo consiste en aprender a desarrollar herramientas que nos permitan realizar tareas cotidianas de modo más fácil y rápido. Exploraremos tres ejemplos concretos: (a) cómo ayudar a los estudiantes en su aprendizaje por medio de un tutor virtual (y cómo supervisar el progreso de los estudiantes); (b) cómo estructurar TFGs y TFMs de forma más eficiente (y cómo supervisar el trabajo para que el chatGPT no sea el principal autor); y (c) cómo utilizar la IA para evaluar proyectos y propuestas de investigación antes de enviarlas a la evaluación humana. Aquí también discutiremos los aspectos éticos que debemos tener en cuenta al utilizar la IA en nuestras tareas cotidianas.
+En esta etapa del curso, aprenderemos a "tunear" los modelos de IA para que actúen como asistentes virtuales expertos en tareas muy concretas. El objetivo consiste en aprender a desarrollar herramientas que nos permitan realizar tareas cotidianas de modo más fácil y rápido. Exploraremos tres ejemplos concretos: (a) cómo ayudar a los estudiantes en su aprendizaje por medio de un tutor virtual (y cómo supervisar el progreso de los estudiantes); (b) cómo estructurar TFGs y TFMs de forma más eficiente (y cómo supervisar el trabajo para que el chatGPT no sea el primer autor); y (c) cómo utilizar la IA para evaluar proyectos y propuestas de investigación antes de enviarlas a la evaluación humana. Aquí también discutiremos los aspectos éticos que debemos tener en cuenta al utilizar la IA en nuestras tareas cotidianas.
 
 <table>
 <tr>
-<td  valign="top" style="width:30%">![](type-computer.gif)
-</td>
 <td>
 -   [Investigación con IA]{style="background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-4&color=skyblue);"} en las ciencias sociales: extracción de información, clasificación de textos, análisis de datos.
+</td>
+<td  valign="top" style="width:30%">![](type-computer.gif)
 </td>
 </tr>
 </table>
 
-Finalmente, la última sesión del curso se centrará en cómo utilizar la IA en nuestras investigaciones. Me concentraré en la lógica que está detrás de los procesos más que en los códigos en Python o R necesarios para aplicarlos a grandes volúmenes de datos o observaciones. Nos concentraremos en tres aplicaciones: (a) extracción de información de textos; (b) clasificación de textos (de acuerdo con categorías o sentimientos); y (c) el empleo de la IA para el análisis de datos. Lo que queremos aquí es entender las diferentes estrategias o diseños que podemos aplicar en los modelos para lograr resultados creativos y estimulantes. Por supuesto, también discutiremos temas como el uso de modelos locales para reducir costes y, sobre todo, garantizar la privacidad de los datos o aumentar la precisión de los análisis a partir de ejemplos, el procesamiento de lotes o el uso de cadenas de razonamiento.
+Finalmente, la última sesión del curso se centrará en cómo utilizar la IA en nuestras investigaciones. Me concentraré en la lógica que está detrás de los procesos más que en los códigos en Python o R necesarios para aplicarlos a grandes volúmenes de datos o observaciones. Nos concentraremos en tres aplicaciones: (a) extracción de información de textos; (b) clasificación de textos (de acuerdo con categorías o sentimientos); y (c) el empleo de la IA para el análisis de datos. Lo que queremos aquí es entender las diferentes estrategias o diseños que podemos aplicar por medio de los modelos para lograr resultados creativos y estimulantes. Por supuesto, también discutiremos temas como el uso de modelos locales para reducir costes y, sobre todo, garantizar la privacidad de los datos o aumentar la precisión de los análisis a partir de ejemplos, el procesamiento de lotes o el uso de cadenas de razonamiento.
 
 ## El profesor
 
@@ -105,7 +104,7 @@ Las inscripciones se pueden realizar hasta el día XX/05/2025 en la página del 
 
 >> **Hay que endurecerse sin perder la ternura jamás.**
 >>
->> El barbudo de la gorra en las camisetas
+>> Un barbudo con una estrella en la boina
 
 
 El curso se divide en dos primeras partes que no requieren conocimientos previos de programación. En la tercera parte, aplicada a la investigación, tampoco se requieren conocimientos previos. No obstante, algunos ejemplos avanzados utilizarán R para ilustrar cómo se pueden automatizar procesos de tratamiento de datos a partir de los modelos de IA generativa.
