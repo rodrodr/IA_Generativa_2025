@@ -1,5 +1,5 @@
 ---
-title: "<b>GenIA</b><br>IA generativa para investigadores de ciencias sociales"
+title: "<b>GenIA </b><br>IA generativa para investigadores de ciencias sociales"
 ---
 
 ## El curso

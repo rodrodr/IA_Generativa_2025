@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "",
     "text": "¿Te has dado cuenta que todos los modelos de IA tienen nombres “curiositos”: Gemma, RoBERTa, Claude, DeepSeek? Para no perder la “vibe”, hemos decidido llamar a este curso GenIA. ¿De qué se trata? A día de hoy, resulta difícil encontrar a alguien que NO utiliza chatGPT o alguna alternativa para tareas cotidianas. Algunas personas piden “deseos” como “escríbeme un mail”, “tradúceme al inglés”, o “corrígeme la ortografía de este texto”. Por lo tanto, no resulta nada nuevo. Basta imaginar y saber pedir.\nEste curso se centra justamente en la última parte: saber pedir. ¿En cuántas películas o dibujos animados viajeros incautos han pedido deseos a los genios y han acabado en problemas? Durante nuestras sesiones aprenderemos cómo dar instrucciones a los modelos de IA para que nos ayuden en nuestras tareas cotidianas y de investigación. De forma más concreta aprenderemos a programar sin saber programar, es decir, crearemos estructuras de diálogo semejantes a recetas de cocina, que convertirán a los modelos de IA en herramientas poderosas para nuestras clasesm investigaciones y proyectos.\nLas 12 horas están divididas en tres sesiones de cuatro horas cada una y separadas por una semana. Dicha estructura permitirá que tengáis tiempo para asimilar los contenidos, buscar información adicional, practicar los trucos aprendidos en clase y plantear dudas a partir de vuestras experiencias.\n“¡Tranquilo, Sam Altman, ‘todavía’😎 no vamos por ti!” El objetivo no es entrar en los recobecos del entrenamiento 🏋 de los modelos de IA. Tampoco trastearemos con los códigos de los modelos. Nuestra misión es más sencilla: aprender algunos trucos que nos permitirán hacer nuestro trabajo de forma más eficiente y creativa utilizando esos nuevos instrumentos que la tecnología nos ofrece.\nConsiste, por tanto, de un curso introductorio, pero para nada trivial. Intenté sintetizar en estas 12 horas un conjunto de técnicas que resultan extremadamente útiles para cualquier profesor o investigador de ciencias sociales.\n¡Vayamos al grano!",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#el-curso",
     "href": "index.html#el-curso",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "",
     "text": "¿Te has dado cuenta que todos los modelos de IA tienen nombres “curiositos”: Gemma, RoBERTa, Claude, DeepSeek? Para no perder la “vibe”, hemos decidido llamar a este curso GenIA. ¿De qué se trata? A día de hoy, resulta difícil encontrar a alguien que NO utiliza chatGPT o alguna alternativa para tareas cotidianas. Algunas personas piden “deseos” como “escríbeme un mail”, “tradúceme al inglés”, o “corrígeme la ortografía de este texto”. Por lo tanto, no resulta nada nuevo. Basta imaginar y saber pedir.\nEste curso se centra justamente en la última parte: saber pedir. ¿En cuántas películas o dibujos animados viajeros incautos han pedido deseos a los genios y han acabado en problemas? Durante nuestras sesiones aprenderemos cómo dar instrucciones a los modelos de IA para que nos ayuden en nuestras tareas cotidianas y de investigación. De forma más concreta aprenderemos a programar sin saber programar, es decir, crearemos estructuras de diálogo semejantes a recetas de cocina, que convertirán a los modelos de IA en herramientas poderosas para nuestras clasesm investigaciones y proyectos.\nLas 12 horas están divididas en tres sesiones de cuatro horas cada una y separadas por una semana. Dicha estructura permitirá que tengáis tiempo para asimilar los contenidos, buscar información adicional, practicar los trucos aprendidos en clase y plantear dudas a partir de vuestras experiencias.\n“¡Tranquilo, Sam Altman, ‘todavía’😎 no vamos por ti!” El objetivo no es entrar en los recobecos del entrenamiento 🏋 de los modelos de IA. Tampoco trastearemos con los códigos de los modelos. Nuestra misión es más sencilla: aprender algunos trucos que nos permitirán hacer nuestro trabajo de forma más eficiente y creativa utilizando esos nuevos instrumentos que la tecnología nos ofrece.\nConsiste, por tanto, de un curso introductorio, pero para nada trivial. Intenté sintetizar en estas 12 horas un conjunto de técnicas que resultan extremadamente útiles para cualquier profesor o investigador de ciencias sociales.\n¡Vayamos al grano!",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#el-contenido",
     "href": "index.html#el-contenido",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "El contenido",
     "text": "El contenido\nDurante el curso se abordarán los siguientes temas:\n\n\n\n\n\n\n\nIntroducción a la IA Generativa y los modelos de lenguaje (chatGPT y sus amigos).\n\n\n\n\nEn esta primera parte, veremos qué es la IA generativa, cómo funciona, qué tipos de modelo hay (razonadores, no razonadores, multimodales, etc.) y conoceremos algunos sucedáneos del chatGPT bastante interesantes. También aquí discutiremos cómo la IA nos puede ayudar en nuestras labores docentes y de investigación.\n\n\n\n\n\n\n\nGeopolítica de la IA, la competencia entre las grandes potencias, modelos de negocio y estrategias de inserción de los distintos países en el mercado.\n\n\n\n\nEl segundo tema trata de las implicaciones geopolíticas de la IA. ¿Cómo los diversos países se están posicionando frente a esa nueva tecnología y cuáles son las estrategias de inserción en el mercado? ¿Qué modelos de negocio están surgiendo (licencia propietaria o open-source) y cómo se están organizando las grandes potencias para competir en este nuevo escenario? Además, discutiremos las primeras iniciativas de la Unión Europea en este campo con vistas a reducir la distancia frente a Estados Unidos y a China. También exploraremos los modos con los que diferentes países o organizaciones están implementando variadas formas de censura en sus modelos.\n\n\n\n\n\n\n\nCreación de chatBots o asistentes virtuales expertos sin saber programar. Creación de tutores virtuales para ayudar en las clases; bots para ayudar a estructurar TFGs y TFMs; y BecaBots, asistentes para evaluar proyectos y propuestas de investigación.\n\n\n\n\nEn esta etapa del curso, aprenderemos a “tunear” los modelos de IA para que actúen como asistentes virtuales expertos en tareas muy concretas. El objetivo consiste en aprender a desarrollar herramientas que nos permitan realizar tareas cotidianas de modo más fácil y rápido. Exploraremos tres ejemplos concretos: (a) cómo ayudar a los estudiantes en su aprendizaje por medio de un tutor virtual (y cómo supervisar el progreso de los estudiantes); (b) cómo estructurar TFGs y TFMs de forma más eficiente (y cómo supervisar el trabajo para que el chatGPT no sea el principal autor); y (c) cómo utilizar la IA para evaluar proyectos y propuestas de investigación antes de enviarlas a la evaluación humana. Aquí también discutiremos los aspectos éticos que debemos tener en cuenta al utilizar la IA en nuestras tareas cotidianas.\n\n\n\n\n\n\n\nInvestigación con IA en las ciencias sociales: extracción de información, clasificación de textos, análisis de datos.\n\n\n\n\nFinalmente, la última sesión del curso se centrará en cómo utilizar la IA en nuestras investigaciones. Me concentraré en la lógica que está detrás de los procesos más que en los códigos en Python o R necesarios para aplicarlos a grandes volúmenes de datos o observaciones. Nos concentraremos en tres aplicaciones: (a) extracción de información de textos; (b) clasificación de textos (de acuerdo con categorías o sentimientos); y (c) el empleo de la IA para el análisis de datos. Lo que queremos aquí es entender las diferentes estrategias o diseños que podemos aplicar en los modelos para lograr resultados creativos y estimulantes. Por supuesto, también discutiremos temas como el uso de modelos locales para reducir costes y, sobre todo, garantizar la privacidad de los datos o aumentar la precisión de los análisis a partir de ejemplos, el procesamiento de lotes o el uso de cadenas de razonamiento.",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "index.html#el-profesor",
     "href": "index.html#el-profesor",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "El profesor",
     "text": "El profesor\n\n\n\n\n\n\nRodrigo Rodrigues-Silveira\nrodrodr@usal.es\nProfesor de ciencia política de la USAL. Director del proyecto “Comportamiento legislativo y erosión democrática en América Latina” (PELA Comportamiento). Miembro de los GIR “Política Comparada en América Latina” y “Tecnología y poder en el pensamiento y las letras”.",
     "crumbs": [
@@ -42,7 +42,7 @@
   {
     "objectID": "index.html#sesiones",
     "href": "index.html#sesiones",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "Sesiones",
     "text": "Sesiones\nLas sesiones tendrán lugar en el aula de informática 2 en la Facultad de Derecho.\nDÍA 1 - 09/05/2025 de 10 a 14h\nDÍA 2 - 16/05/2025 de 10 a 14h\nDÍA 3 - 23/05/2025 de 10 a 14h",
     "crumbs": [
@@ -52,7 +52,7 @@
   {
     "objectID": "index.html#inscripciones",
     "href": "index.html#inscripciones",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "Inscripciones",
     "text": "Inscripciones\nLas inscripciones se pueden realizar hasta el día XX/05/2025 en la página del curso en la web de Formación Permanente. El precio del curso será de 36 euros.\nCómo se trata de un curso aún en proceso de aprobación, puede que no se encuentre todavía en la web de Formación Permanente.",
     "crumbs": [
@@ -62,7 +62,7 @@
   {
     "objectID": "index.html#servicio-técnico",
     "href": "index.html#servicio-técnico",
-    "title": "GenIAIA generativa para investigadores de ciencias sociales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "🤖 Servicio técnico 🤖",
     "text": "🤖 Servicio técnico 🤖\n\n\nHay que endurecerse sin perder la ternura jamás.\nEl barbudo de la gorra en las camisetas\n\n\nEl curso se divide en dos primeras partes que no requieren conocimientos previos de programación. En la tercera parte, aplicada a la investigación, tampoco se requieren conocimientos previos. No obstante, algunos ejemplos avanzados utilizarán R para ilustrar cómo se pueden automatizar procesos de tratamiento de datos a partir de los modelos de IA generativa.\nSe recomienda la instalación de los siguientes programas informáticos:\nLM Studio - Para el uso de modelos de IA en tu ordenador (modelos locales).\nPara los intrépidos que desean emplear modelos locales con R, se recomienda la instalación de los siguientes programas:\nOllama - Servidor local de modelos de IA.\nR y el RStudio Desktop.\nTambién debéis ejecutar el siguiente código en R que instala los paquetes necesarios.\n\n\nCódigo\n# Crea un vector con los paquetes a instalar\npc &lt;- c(\"rollama\",\"ellmer\",\"stringi\",\"rvest\",\n        \"stringi\",\"readr\",\"ggplot2\",\"reactable\",\n        \"tidyverse\",\"devtools\",\"dplyr\")\n\n# Instala los paquetes\ninstall.packages(pc)",
     "crumbs": [
