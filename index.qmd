@@ -103,13 +103,20 @@ Las inscripciones se pueden realizar hasta el día XX/05/2025 en la página del 
 
 ## `r knitr::asis_output("\U1F916")` Servicio técnico `r knitr::asis_output("\U1F916")`
 
+>> **Hay que endurecerse sin perder la ternura jamás.**
+>>
+>> El barbudo de la gorra en las camisetas
+
+
 El curso se divide en dos primeras partes que no requieren conocimientos previos de programación. En la tercera parte, aplicada a la investigación, tampoco se requieren conocimientos previos. No obstante, algunos ejemplos avanzados utilizarán R para ilustrar cómo se pueden automatizar procesos de tratamiento de datos a partir de los modelos de IA generativa.
 
 Se recomienda la instalación de los siguientes programas informáticos:
 
-[LM Studio](https://lmstudio.ai/) - Para el uso de modelos locales de IA.
+[LM Studio](https://lmstudio.ai/) - Para el uso de modelos de IA en tu ordenador (modelos locales).
 
-[Ollama](https://ollama.com/) - Para poder emplear modelos locales con R.
+Para los intrépidos que desean emplear modelos locales con R, se recomienda la instalación de los siguientes programas:
+
+[Ollama](https://ollama.com/) - Servidor local de modelos de IA.
 
 [R](https://cran.r-project.org/) y el [RStudio Desktop](https://posit.co/downloads/).
 
