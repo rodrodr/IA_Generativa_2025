@@ -1,0 +1,131 @@
+---
+title: "<b>GenIA</b><br>IA generativa para investigadores de ciencias sociales"
+---
+
+## El curso
+
+¿Te has dado cuenta que todos los modelos de IA tienen nombres raros: Gemma, RoBERTa, Claude, DeepSeek? Para no perder la "vibe", hemos decidido llamar a este curso GenIA. ¿De qué se trata? A día de hoy, resulta difícil encontrar a alguien que NO utiliza chatGPT o alguna alternativa para tareas cotidianas. Algunas personas piden "deseos" como "escríbeme un mail", "tradúceme al inglés", o "corrígeme la ortografía de este texto". Por lo tanto, no resulta nada nuevo. Basta imaginar y saber pedir.
+
+Este curso se centra justamente en la última parte: saber pedir. ¿En cuántas películas o dibujos animados viajeros incautos han pedido deseos a los genios y han acabado en problemas? Durante nuestras sesiones aprenderemos cómo dar instrucciones a los modelos de IA para que nos ayuden en nuestras tareas cotidianas y de investigación. De forma más concreta aprenderemos a **programar sin saber programar**, es decir, crearemos estructuras de diálogo semejantes a recetas de cocina, que convertirán a los modelos de IA en herramientas poderosas para nuestras clasesm investigaciones y proyectos.
+
+Las 12 horas están divididas en tres sesiones de cuatro horas cada una y separadas por una semana. Dicha estructura permitirá que tengáis tiempo para asimilar los contenidos, buscar información adicional, practicar los trucos aprendidos en clase y plantear dudas a partir de vuestras experiencias.
+
+**"¡Tranquilo, Sam Altman, 'todavía'😎 no vamos por ti!"** El objetivo no es entrar en los recobecos del entrenamiento 🏋 de los modelos de IA. Tampoco trastearemos con los códigos de los modelos. Nuestra misión es más sencilla: aprender algunos trucos que nos permitirán hacer nuestro trabajo de forma más eficiente y creativa utilizando esos nuevos instrumentos que la tecnología nos ofrece.
+
+Consiste, por tanto, de un **curso introductorio, pero para nada trivial**. Intenté sintetizar en estas 12 horas un conjunto de técnicas que resultan extremadamente útiles para cualquier profesor o investigador de ciencias sociales. 
+
+¡Vayamos al grano!
+
+## El contenido
+
+Durante el curso se abordarán los siguientes temas:
+
+<table>
+<tr>
+<td  valign="top" style="width:30%">![](terminator.gif)
+</td>
+<td>
+-   [Introducción a la IA Generativa]{style="background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=orange);"} y los modelos de lenguaje (chatGPT y sus amigos).
+</td>
+</tr>
+</table>
+
+En esta primera parte, veremos qué es la IA generativa, cómo funciona, qué tipos de modelo hay (razonadores, no razonadores, multimodales, etc.) y conoceremos algunos sucedáneos del chatGPT bastante interesantes. También aquí discutiremos cómo la IA nos puede ayudar en nuestras labores docentes y de investigación. 
+
+
+<table>
+<tr>
+<td  valign="top" style="width:30%">![](strangelove.gif)
+</td>
+<td>
+-   [Geopolítica de la IA]{style="background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-2&color=pink);"}, la competencia entre las grandes potencias, modelos de negocio y estrategias de inserción de los distintos países en el mercado.
+</td>
+</tr>
+</table>
+
+El segundo tema trata de las implicaciones geopolíticas de la IA. ¿Cómo los diversos países se están posicionando frente a esa nueva tecnología y cuáles son las estrategias de inserción en el mercado? ¿Qué modelos de negocio están surgiendo (licencia propietaria o open-source) y cómo se están organizando las grandes potencias para competir en este nuevo escenario? Además, discutiremos las primeras iniciativas de la Unión Europea en este campo con vistas a reducir la distancia frente a Estados Unidos y a China. También exploraremos los modos con los que diferentes países o organizaciones están implementando variadas formas de censura en sus modelos.
+
+<table>
+<tr>
+<td  valign="top" style="width:30%">![](her.gif)
+</td>
+<td>
+-   Creación de [<b>chatBots o asistentes virtuales expertos</b>]{style="background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-3&color=purple);color:white"} sin saber programar. Creación de tutores virtuales para ayudar en las clases; bots para ayudar a estructurar TFGs y TFMs; y BecaBots, asistentes para evaluar proyectos y propuestas de investigación.
+</td>
+</tr>
+</table>
+
+En esta etapa del curso, aprenderemos a "tunear" los modelos de IA para que actúen como asistentes virtuales expertos en tareas muy concretas. El objetivo consiste en aprender a desarrollar herramientas que nos permitan realizar tareas cotidianas de modo más fácil y rápido. Exploraremos tres ejemplos concretos: (a) cómo ayudar a los estudiantes en su aprendizaje por medio de un tutor virtual (y cómo supervisar el progreso de los estudiantes); (b) cómo estructurar TFGs y TFMs de forma más eficiente (y cómo supervisar el trabajo para que el chatGPT no sea el principal autor); y (c) cómo utilizar la IA para evaluar proyectos y propuestas de investigación antes de enviarlas a la evaluación humana. Aquí también discutiremos los aspectos éticos que debemos tener en cuenta al utilizar la IA en nuestras tareas cotidianas.
+
+<table>
+<tr>
+<td  valign="top" style="width:30%">![](type-computer.gif)
+</td>
+<td>
+-   [Investigación con IA]{style="background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-4&color=skyblue);"} en las ciencias sociales: extracción de información, clasificación de textos, análisis de datos.
+</td>
+</tr>
+</table>
+
+Finalmente, la última sesión del curso se centrará en cómo utilizar la IA en nuestras investigaciones. Me concentraré en la lógica que está detrás de los procesos más que en los códigos en Python o R necesarios para aplicarlos a grandes volúmenes de datos o observaciones. Nos concentraremos en tres aplicaciones: (a) extracción de información de textos; (b) clasificación de textos (de acuerdo con categorías o sentimientos); y (c) el empleo de la IA para el análisis de datos. Lo que queremos aquí es entender las diferentes estrategias o diseños que podemos aplicar en los modelos para lograr resultados creativos y estimulantes. Por supuesto, también discutiremos temas como el uso de modelos locales para reducir costes y, sobre todo, garantizar la privacidad de los datos o aumentar la precisión de los análisis a partir de ejemplos, el procesamiento de lotes o el uso de cadenas de razonamiento.
+
+## El profesor
+
+<table cellpadding="4">
+  <tr>
+    <td valign="top">![](foto_rodrigo2.jpg)</td>
+    <td valign="top">[Rodrigo Rodrigues-Silveira ]{style="background-color:purple;color:white;padding:4px;"}
+
+[rodrodr\@usal.es](mailto:rodrodr@usal.es)
+
+Profesor de ciencia política de la USAL. Director del proyecto "Comportamiento legislativo y erosión democrática en América Latina" (PELA Comportamiento). Miembro de los GIR "Política Comparada en América Latina" y "Tecnología y poder en el pensamiento y las letras".
+</td>
+</tr>
+</table>
+
+
+## Sesiones
+
+Las sesiones tendrán lugar en el aula de informática 2 en la Facultad de Derecho.
+
+[DÍA 1 - 09/05/2025]{style="background-color:darkviolet;color:white;padding:4px;"} de 10 a 14h
+
+[DÍA 2 - 16/05/2025]{style="background-color:seagreen;color:white;padding:4px; "} de 10 a 14h
+
+[DÍA 3 - 23/05/2025]{style="background-color:orange;color:white;padding:4px; "} de 10 a 14h
+
+## Inscripciones
+
+Las inscripciones se pueden realizar hasta el día XX/05/2025 en la página del curso en la [web de Formación Permanente](https://vaporetto.usal.es/preactform/listaCursos?tipocur=cp). El precio del curso será de 36 euros. 
+
+**Cómo se trata de un curso aún en proceso de aprobación, puede que no se encuentre todavía en la web de Formación Permanente.**
+
+
+## `r knitr::asis_output("\U1F916")` Servicio técnico `r knitr::asis_output("\U1F916")`
+
+El curso se divide en dos primeras partes que no requieren conocimientos previos de programación. En la tercera parte, aplicada a la investigación, tampoco se requieren conocimientos previos. No obstante, algunos ejemplos avanzados utilizarán R para ilustrar cómo se pueden automatizar procesos de tratamiento de datos a partir de los modelos de IA generativa.
+
+Se recomienda la instalación de los siguientes programas informáticos:
+
+[LM Studio](https://lmstudio.ai/) - Para el uso de modelos locales de IA.
+
+[Ollama](https://ollama.com/) - Para poder emplear modelos locales con R.
+
+[R](https://cran.r-project.org/) y el [RStudio Desktop](https://posit.co/downloads/).
+
+También debéis ejecutar el siguiente código en R que instala los paquetes necesarios.
+
+```{r, eval=F}
+
+# Crea un vector con los paquetes a instalar
+pc <- c("rollama","ellmer","stringi","rvest",
+        "stringi","readr","ggplot2","reactable",
+        "tidyverse","devtools","dplyr")
+
+# Instala los paquetes
+install.packages(pc)
+
+```
+
+
+

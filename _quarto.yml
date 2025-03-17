@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    
+website:
+  title: "IA Generativa"
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Introducción al curso
+#       - href: ia_generativa.html
+#         text: IA Generativa
+#       - href: geopolitics.html
+#         text: Geopolítica de la IA
+#       - href: asistentes.html
+#         text: Asistentes virtuales
+#       - href: investigacion.html
+#         text: IA en investigación        
+  page-footer:
+    left: "&copy; Copyright 2025, Rodrigo Rodrigues-Silveira"
+        
+execute:
+  warning: false
+  message: false
+  error: false
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+    code-fold: show
+  
+
+editor: source
+lang: es
