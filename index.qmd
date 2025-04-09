@@ -137,11 +137,12 @@ install.packages(pc)
 
 ## Apoyos institucionales
 
-Este curso es una actividad promovida dentro del marco del proyecto "Comportamiento parlamentario y erosión democrática en América Latina" (PELA Comportamiento - Ref. PID2022-141706NB-C22) vinculado al Instituto de Iberoamérica y con el apoyo del Área de Ciencia Política de la Universidad de Salamanca.
 
 <div>
 <div class="side">
-[![](logo_pela.png)](https://oir.org.es/pela/)
+[![](logo_pela.png){fig-align="center"}](https://oir.org.es/pela/)
+
+Este curso es una actividad promovida dentro del marco del proyecto "Comportamiento parlamentario y erosión democrática en América Latina" (PELA Comportamiento - Ref. PID2022-141706NB-C22) vinculado al Instituto de Iberoamérica y con el apoyo del Área de Ciencia Política de la Universidad de Salamanca.
 </div>
 <div class="side">
 [![](logo-instituto.png)](https://iberoame.usal.es/)
