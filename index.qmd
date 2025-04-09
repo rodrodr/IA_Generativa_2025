@@ -1,5 +1,6 @@
 ---
 title: "<b>GenIA </b><br>IA generativa para investigadores de ciencias sociales"
+self-contained: false
 ---
 
 ## El curso
@@ -64,7 +65,7 @@ En esta etapa del curso, aprenderemos a "tunear" los modelos de IA para que act�
 </tr>
 </table>
 
-Finalmente, la última sesión del curso se centrará en cómo utilizar la IA en nuestras investigaciones. Me concentraré en la lógica que está detrás de los procesos más que en los códigos en Python o R necesarios para aplicarlos a grandes volúmenes de datos o observaciones. Nos concentraremos en tres aplicaciones: (a) **extracción de información** de textos; (b) **clasificación** de textos (de acuerdo con categorías o sentimientos); y (c) el empleo de la IA para el **análisis de datos**. Lo que queremos aquí es entender las diferentes estrategias o diseños que podemos aplicar por medio de los modelos para lograr resultados creativos y estimulantes. Por supuesto, también discutiremos temas como el uso de modelos locales para **reducir costes** y, sobre todo, **garantizar la privacidad** de los datos o aumentar la precisión de los análisis a partir de **ejemplos**, el **procesamiento de lotes** o el uso de **cadenas de razonamiento**.
+Finalmente, la última sesión del curso se centrará en cómo utilizar la IA en nuestras investigaciones. Me concentraré en la lógica que está detrás de los procesos más que en los códigos en Python o R necesarios para aplicarlos a grandes volúmenes de datos o observaciones. Nos concentraremos en tres aplicaciones: (a) **extracción de información** de textos; (b) **clasificación** de textos (de acuerdo con categorías o sentimientos); y (c) el empleo de la IA para el **análisis de datos**. Lo que queremos aquí es entender las diferentes estrategias o diseños que podemos aplicar por medio de los modelos para lograr resultados creativos y estimulantes. Por supuesto, también discutiremos temas como el uso de **modelos locales** para **reducir costes** y, sobre todo, **garantizar la privacidad** de los datos o aumentar la precisión de los análisis a partir de **ejemplos**, el **procesamiento de lotes** o el uso de **cadenas de razonamiento**.
 
 ## El profesor
 
@@ -93,9 +94,7 @@ Las sesiones tendrán lugar en el **aula de informática 2 (Planta Jardín)** en
 
 ## Inscripciones
 
-Las inscripciones se pueden realizar hasta el día XX/05/2025 en la página del curso en la [web de Formación Permanente](https://vaporetto.usal.es/preactform/listaCursos?tipocur=cp). El precio del curso será de 36 euros. 
-
-**Cómo se trata de un curso aún en proceso de aprobación, puede que no se encuentre todavía en la web de Formación Permanente.**
+Las inscripciones se pueden realizar **hasta el día 05/05/2025** en la página del curso en la [web de Formación Permanente](https://vaporetto.usal.es/preactform/detalleCurso?codigo_curso=6361&ano_academico=2025&convocatoria=1). El coste del curso será de **36 euros**. 
 
 
 ## `r knitr::asis_output("\U1F916")` Servicio técnico `r knitr::asis_output("\U1F916")`
@@ -129,5 +128,16 @@ install.packages(pc)
 
 ```
 
+## Apoyos institucionales
 
+Este curso es una actividad promovida dentro del marco del proyecto "Comportamiento parlamentario y erosión democrática en América Latina" (PELA Comportamiento - Ref. PID2022-141706NB-C22) y con el apoyo del Área de Ciencia Política de la Universidad de Salamanca.
 
+<table>
+<tr>
+<td>
+![](logo_pela.png)
+</td>
+<td>
+![](cpa.jpg)
+</td>
+<tr>

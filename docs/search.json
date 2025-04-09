@@ -54,7 +54,7 @@
     "href": "index.html#inscripciones",
     "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "Inscripciones",
-    "text": "Inscripciones\nLas inscripciones se pueden realizar hasta el día XX/05/2025 en la página del curso en la web de Formación Permanente. El precio del curso será de 36 euros.\nCómo se trata de un curso aún en proceso de aprobación, puede que no se encuentre todavía en la web de Formación Permanente.",
+    "text": "Inscripciones\nLas inscripciones se pueden realizar hasta el día 05/05/2025 en la página del curso en la web de Formación Permanente. El coste del curso será de 36 euros.",
     "crumbs": [
       "Introducción al curso"
     ]
@@ -65,6 +65,16 @@
     "title": "GenIA IA generativa para investigadores de ciencias sociales",
     "section": "🤖 Servicio técnico 🤖",
     "text": "🤖 Servicio técnico 🤖\n\n\nHay que endurecerse sin perder la ternura jamás.\nUn barbudo con una estrella en la boina\n\n\nEl curso se divide en dos primeras partes que no requieren conocimientos previos de programación. En la tercera parte, aplicada a la investigación, tampoco se requieren conocimientos previos. No obstante, algunos ejemplos avanzados utilizarán R para ilustrar cómo se pueden automatizar procesos de tratamiento de datos a partir de los modelos de IA generativa.\nPara los interesados en emplear modelos locales y acompañar las aplicaciones en R, se recomienda la instalación de los siguientes programas informáticos:\nLM Studio - Para el uso de modelos de IA en tu ordenador (modelos locales).\nOllama - Servidor local de modelos de IA.\nR y el RStudio Desktop.\nTambién se recomienda ejecutar el siguiente código en R que instala los paquetes necesarios para reproducir los ejemplos.\n\n\nCódigo\n# Crea un vector con los paquetes a instalar\npc &lt;- c(\"rollama\",\"ellmer\",\"stringi\",\"rvest\",\n        \"stringi\",\"readr\",\"ggplot2\",\"reactable\",\n        \"tidyverse\",\"devtools\",\"dplyr\")\n\n# Instala los paquetes\ninstall.packages(pc)",
+    "crumbs": [
+      "Introducción al curso"
+    ]
+  },
+  {
+    "objectID": "index.html#apoyos-institucionales",
+    "href": "index.html#apoyos-institucionales",
+    "title": "GenIA IA generativa para investigadores de ciencias sociales",
+    "section": "Apoyos institucionales",
+    "text": "Apoyos institucionales\nEste curso es una actividad promovida dentro del marco del proyecto “Comportamiento parlamentario y erosión democrática en América Latina” (PELA Comportamiento - Ref. PID2022-141706NB-C22) y con el apoyo del Área de Ciencia Política de la Universidad de Salamanca.\n\n  \n    \n© Copyright 2025, Rodrigo Rodrigues-Silveira",
     "crumbs": [
       "Introducción al curso"
     ]
