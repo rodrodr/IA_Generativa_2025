@@ -20,6 +20,9 @@ website:
 #         text: IA en investigación        
   page-footer:
     left: "&copy; Copyright 2025, Rodrigo Rodrigues-Silveira"
+    right: |
+      [![](logo_pela.png){fig-alt="Posit" width=150px}](https://oir.org.es/pela/)
+
         
 execute:
   warning: false

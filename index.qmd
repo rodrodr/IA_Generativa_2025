@@ -1,7 +1,14 @@
 ---
 title: "<b>GenIA </b><br>IA generativa para investigadores de ciencias sociales"
-self-contained: false
 ---
+
+<style>
+ .side{
+    display: inline-block; 
+    float: left;
+}
+</style>
+
 
 ## El curso
 
@@ -132,15 +139,14 @@ install.packages(pc)
 
 Este curso es una actividad promovida dentro del marco del proyecto "Comportamiento parlamentario y erosión democrática en América Latina" (PELA Comportamiento - Ref. PID2022-141706NB-C22) vinculado al Instituto de Iberoamérica y con el apoyo del Área de Ciencia Política de la Universidad de Salamanca.
 
-<table>
-<tr>
-<td>
-![](logo_pela.png)
-</td>
-<td>
-![](logo-instituto.png)
-</td>
-<td>
-![](cpa.jpg)
-</td>
-<tr>
+<div>
+<div class="side">
+[![](logo_pela.png)](https://oir.org.es/pela/)
+</div>
+<div class="side">
+[![](logo-instituto.png)](https://iberoame.usal.es/)
+</div>
+<div class="side">
+[![](cpa.jpg)](https://acpa-usal.com/)
+</div>
+<div>
