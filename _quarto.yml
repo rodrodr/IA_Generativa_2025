@@ -10,10 +10,10 @@ website:
     contents:
       - href: index.qmd
         text: Introducción al curso
-#       - href: ia_generativa.html
-#         text: IA Generativa
-#       - href: geopolitics.html
-#         text: Geopolítica de la IA
+      - href: ia_generativa.qmd
+        text: IA Generativa
+      - href: geopolitics.qmd
+        text: Geopolítica y la IA
 #       - href: asistentes.html
 #         text: Asistentes virtuales
 #       - href: investigacion.html

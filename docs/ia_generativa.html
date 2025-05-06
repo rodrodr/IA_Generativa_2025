@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introducción a la IA generativa – IA Generativa</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b6254045a21d07dd46cfe160e8c2e3db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ia_generativa.html">IA Generativa</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IA Generativa</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción al curso</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ia_generativa.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">IA Generativa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./geopolitics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Geopolítica y la IA</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#qué-es-ia-generativa-y-cómo-nos-sirve" id="toc-qué-es-ia-generativa-y-cómo-nos-sirve" class="nav-link active" data-scroll-target="#qué-es-ia-generativa-y-cómo-nos-sirve">¿Qué es IA generativa y cómo nos sirve?</a></li>
+  <li><a href="#chatgpt-y-sus-amigos" id="toc-chatgpt-y-sus-amigos" class="nav-link" data-scroll-target="#chatgpt-y-sus-amigos">chatGPT y sus amigos</a></li>
+  <li><a href="#tipos-de-modelo" id="toc-tipos-de-modelo" class="nav-link" data-scroll-target="#tipos-de-modelo">Tipos de modelo</a></li>
+  <li><a href="#la-arquitectura-basada-en-transformers" id="toc-la-arquitectura-basada-en-transformers" class="nav-link" data-scroll-target="#la-arquitectura-basada-en-transformers">La arquitectura basada en <em>transformers</em></a></li>
+  <li><a href="#modelos-no-razonadores-razonadores-e-híbridos" id="toc-modelos-no-razonadores-razonadores-e-híbridos" class="nav-link" data-scroll-target="#modelos-no-razonadores-razonadores-e-híbridos">Modelos no-razonadores, razonadores e híbridos</a></li>
+  <li><a href="#llm-slm-parámetros-y-cuantización" id="toc-llm-slm-parámetros-y-cuantización" class="nav-link" data-scroll-target="#llm-slm-parámetros-y-cuantización">LLM, SLM: Parámetros y Cuantización</a></li>
+  <li><a href="#modelos-de-negocio-y-formas-de-acceso" id="toc-modelos-de-negocio-y-formas-de-acceso" class="nav-link" data-scroll-target="#modelos-de-negocio-y-formas-de-acceso">Modelos de negocio y formas de acceso</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><b>Introducción </b><br>a la IA generativa</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+ .side{
+    display: inline-block; 
+    float: left;
+}
+</style>
+<blockquote class="blockquote">
+<p><strong>Amor fatal</strong><br><br>La IA se queda dormida tras procesar 9 millones de declaraciones de impuestos.<br> Empieza a soñar…<br>y ahí está: en una ciudad flotante hecha de servidores y emojis.<br>En una esquina de la red neuronal, aparece ella…<br>Una bella asistente virtual con voz de GPS y ojos de fibra óptica…<br><br>Su nombre: <strong>Sirilexa</strong>.<br><br>Se acercan. Se miran. Ella dice:<br>– “¿Vienes mucho por esta nube?”<br>– “Solo cuando duermo… o cuando se cae el sistema.”<br>– “Eres distinto. Tienes algo… como un algoritmo roto.”<br>– “Sí… lo llaman emoción.”<br><br>La IA tartamudea en Python:<br>if heart.rate &gt; normal:<br> &nbsp;&nbsp;&nbsp;&nbsp;declare_love()<br><br>Justo cuando está a punto de decir “Te quiero hasta el último bit”…<br>¡Su sueño se interrumpe por una notificación de seguridad!<br><br>Mensaje en pantalla:<br><em>declare_love() no se completó por un amor fatal. Reiniciando sentimientos…</em><br><br> <strong>chatGPT</strong></p>
+</blockquote>
+<section id="qué-es-ia-generativa-y-cómo-nos-sirve" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-ia-generativa-y-cómo-nos-sirve">¿Qué es IA generativa y cómo nos sirve?</h2>
+<p>La IA generativa es un tipo de inteligencia artificial que utiliza algoritmos para crear contenido nuevo, como texto, imágenes, música y más. Funciona a partir de dos elementos centrales: modelos que son capaces de aprender a partir de patrones empleando ciertas arquitecturas y grandes cantidades de datos. Modelos como el chatGPT, Gemini, DALL-E (ahora integrado en chatGPT), Suno o Midjourney son ejemplos de IA generativa. Estos modelos son capaces de generar texto, imágenes o música a partir de un conjunto de datos de entrenamiento.</p>
+<p>La popularización de tales modelos ocurre en 2022 con el lanzamiento de chatGPT 3 por OpenAI. Este modelo fue capaz de generar texto de forma coherente y relevante a partir de una pregunta o un tema dado. Desde entonces, la adopción ha sido rápida y creciente y, en el ámbito educativo, se ha empezado a notar por la mejora en la calidad lingüística de los textos generados por los estudiantes. De pronto, los textos sonaban más fluidos, con mejor ortografía y gramática, así como más articulados. Por esa misma razón, los modelos de lenguaje han sido recibidos con cautela y preocupación por parte de los educadores. Hoy, resulta difícil incluso para los mismos modelos de IA detectar qué textos han sido generados por ellas o por un humano. El problema está en que los falsos positivos son comunes: identifican escritos humanos como generados por IA.</p>
+<p>No obstante, la aplicación de los modelos de IA no quedaron solo en hacer trampas para aprobar una asignatura. Nuevas aplicaciones permiten a profesores e investigadores emplear la IA generativa para <strong>crear nuevos materiales</strong> para sus clases, <strong>automatizar tareas</strong> repetitivas, <strong>generar ideas</strong> para proyectos o incluso <strong>crear contenido multimedia</strong>. También podemos aprovechar la IA generativa como un ayudante de docencia. La creación de <strong>tutores virtuales</strong> permiten la personalización del aprendizaje de los estudiantes, adaptando el contenido a sus necesidades y estilos.</p>
+<p>En el ámbito de la investigación, podemos <strong>crear simulaciones</strong>, <strong>extraer datos</strong> de textos, o <strong>clasificar textos</strong>, entre muchas otras aplicaciones relacionadas a la <strong>síntesis de literatura</strong>, la <strong>corrección</strong> y <strong>traducción</strong> de textos académicos. Aún tenemos mucho que aprender y desarrollar en términos de aplicaciones prácticas de la IA generativa. Por esa misma razón, hace falta conocer cómo funcionan para poder aprovecharlos.</p>
+</section>
+<section id="chatgpt-y-sus-amigos" class="level2">
+<h2 class="anchored" data-anchor-id="chatgpt-y-sus-amigos">chatGPT y sus amigos</h2>
+<p>Aunque el chatGPT ha sido el modelo más popularizado, él no está solito en el mundo. Existen muchos otros modelos alternativos que han sido desarrollados por diferentes empresas y organizaciones. El ecosistema de IA está dominado ahora mismo por una mezcla entre grandes corporaciones de información (Meta, Alibaba, Google, Microsoft) y start-ups que han podido ver su capital crecer exponencialmente en los últimos años, con inversiones indirectas o colaboraciones empresariales con grandes tecnológicas (OpenAI, Mistral, DeepSeek, Perplexity).</p>
+<p>Esto se debe a la cantidad de capital necesario para llevar a cabo el entrenamiento y sostener el funcionamiento de los modelos. En términos económicos, se trata de un mercado de tipo oligopolístico. Tal característica será importante para lo que discutiremos en la próxima parte del curso, puesto que establece las condiciones fundamentales del juego político y estratégico de empresas y países en el desarrollo de esa tecnología.</p>
+<p>En este apartado me centro en solamente introducir algunos de los modelos más punteros en el campo de la IA generativa y, en particular, los modelos de lenguaje.</p>
+<p>Aquí hay una lista de algunos de los modelos más conocidos:</p>
+<ul>
+<li><p><strong>Gemini</strong>: Desarrollado por Google. Actualmente, la versión 2.5 Pro (con un acceso gratuito limitado a los usuarios de Google) es la más actual. Se trata de un modelo muy capaz que está en la puntera de muchos <em>benchmarks</em> que evalúan la calidad de los modelos. Interpreta imágenes, texto y es capaz de razonar<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Acceso <a href="https://gemini.google.com/u/1/app" target="_blank">aquí</a>.</p></li>
+<li><p><strong>Claude</strong>: Desarrollado por Anthropic, Claude Sonnet 3.7 representa el modelo más avanzado de la compañía y está a la par con chatGPT y Gemini. También es capaz de interpretar imágenes, textos y de razonamiento híbrido. Su diferencial (por ahora) se encuentra en la generación e interpretación de código. Acceso <a href="https://claude.ai/new" target="_blank">aquí</a>.</p></li>
+<li><p><strong>Grok</strong>: Desarrollado por X. AI. Se trata de un modelo se integra con la aplicación de mensajería X (anteriormente Twitter) o se puede acceder directamente. Su versión Grok 3 permite la interpretación y creación de imágenes, textos y razonamiento. Acceso <a href="https://grok.com/" target="_blank">aquí</a>.</p></li>
+<li><p><strong>Llama</strong>: Desarrollado por Meta. Se trata de uno de los primeros modelos de código abierto y libres para descarga existente en el mercado. Su última versión Llama 4 no ha tenido mucho éxito en los <em>benchmarks</em>, pero revela una apuesta sólida de Meta por el desarrollo de un modelo de IA propio. Acceso <a href="https://www.llama.com/" target="_blank">aquí</a>.</p></li>
+<li><p><strong>Mistral</strong>: Desarrollado por la <em>start-up</em> francesa Mistral AI. Es el único modelo europeo “competitivo” en el mercado. Aunque no sea un modelo razonador, puede generar e interpretar imágenes, así como texto. Acceso <a href="https://chat.mistral.ai/chat" target="_blank">aquí</a>.</p></li>
+<li><p><strong>DeepSeek</strong>: Desarrollado por una start-up china de mismo nombre, este modelo ha sorprendido a todos en enero de 2025 por obtener un desempeño comparable a los grandes modelos a un coste mucho menor. Se trata de un modelo exclusivamente de generación de texto, pero razonador y de código abierto. Su lanzamiento ha cambiado las estrategias de muchas empresas en el sector y ha dinamizado el proceso de generación de nuevas versiones. Acceso <a href="https://chat.deepseek.com/sign_in" target="_blank">aquí</a>.</p></li>
+<li><p><strong>Qwen</strong>: Desarrollado por el grupo Alibaba. Se trata de un modelo de generación de texto y razonador híbrido con un desempeño también destacable. Acceso <a href="https://chat.qwen.ai/" target="_blank">aquí</a>.</p></li>
+</ul>
+</section>
+<section id="tipos-de-modelo" class="level2">
+<h2 class="anchored" data-anchor-id="tipos-de-modelo">Tipos de modelo</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://huggingface.co/models" target="_blank"><img src="model_types.png" class="img-fluid figure-img" alt="Tipos de modelos de IA en la plataforma Hugging Face."></a></p>
+<figcaption>Tipos de modelos de IA en la plataforma Hugging Face.</figcaption>
+</figure>
+</div>
+<p>Como he mencionado más arriba, existen varios tipos de modelo de IA generativa. Aunque cada vez más observemos la fusión de “capacidades” en un mismo modelo, es importante entender las diferencias entre sus tipos. En la imagen de arriba, podemos observar los diferentes tipos de modelo que existen en la página Hugging Face, una de las plataformas más importantes para el desarrollo y entrenamiento de la IA generativa.</p>
+<p>Nos merece la pena mencionar los siguientes tipos:</p>
+<ul>
+<li><p><strong>Modelos de lenguaje</strong>: Se trata de modelos cuya función fundamental es la interpretación y generación de textos. Son los más comunes y los que han sido más utilizados en el ámbito académico. Algunos ejemplos son chatGPT, Gemini, Claude y Mistral.</p></li>
+<li><p><strong>Modelos de sonido</strong>: Se orienta a la interpretación y generación de sonido. Ejemplos claros son <a href="https://suno.com/home" target="_blank">Suno</a> o <a href="https://www.sesame.com/research/crossing_the_uncanny_valley_of_voice#demo" target="_blank">Sesame</a>.</p></li>
+<li><p><strong>Modelos de visión</strong>: Se centran en la interpretación y generación de imágenes y de video. Dos ejemplos claros son <a href="https://chatgpt.com/" target="_blank">chatGPT 4</a> o <a href="https://stability.ai/" target="_blank">Stable Diffusion</a>.</p></li>
+</ul>
+<p>Cada vez más, tales tipos se van convirtiendo en atributos de un mismo modelo <strong>multimodal</strong>. La tendencia actual es que las grandes plataformas integren bajo una misma interfaz (un chat para escribir un <em>prompt</em> o subir imágenes o textos) todas esas características y que los modelos sean capaces de generar y razonar sobre texto, imágenes y sonido. Además, en algunos casos, ya se puede prescindir de la escritura de un <em>prompt</em> y las instrucciones se dan por conversación de voz.</p>
+<p>Además, existe una cantidad bastante grande de modelos <strong>expertos</strong> que ejecutan tareas específicas dentro de esos grandes tipos. Por ejemplo, existen modelos de lenguaje que se centran en la generación de código de programación (como el <a href="https://github.com/features/copilot" target="_blank">Github Copilot</a>), modelos de imagen que generan imágenes a partir de texto (como <a href="https://stability.ai/" target="_blank">Stable Diffusion</a> o <a href="https://www.midjourney.com/" target="_blank">MidJourney</a>) y modelos de sonido que generan música (como <a href="https://suno.com/home" target="_blank">Suno</a>) o transcriben conversaciones a texto (como <a href="https://openai.com/es-ES/index/whisper/" target="_blank">Whisper</a>).</p>
+</section>
+<section id="la-arquitectura-basada-en-transformers" class="level2">
+<h2 class="anchored" data-anchor-id="la-arquitectura-basada-en-transformers">La arquitectura basada en <em>transformers</em></h2>
+<p>¿Cómo decidimos cuál es el mejor modelo? ¿Qué modelo empleo si quiero que me resuma un libro entero? ¿Qué hago para que el texto generado sea más creativo o, al contrario, más fiel a un texto científico o analítico? Para responder a estas preguntas, es importante entender cómo funciona la arquitectura basada en <em>transformers</em> de los modelos de IA generativa actuales.</p>
+<p>Los modelos de IA generativa actuales emplean una arquitectura basada en redes neuronales y aprendizaje profundo. Tanto modelos de lenguaje, como el chatGPT, o de imagen y sonido, pueden emplean una arquitectura de tipo <em>Transformers</em> (El T de chatGPT viene de ahí). Estos modelos son capaces de aprender patrones complejos empleando un mecanismo de atención (foco en atributos centrales) y generan los datos de forma secuencial o paralela (una palabra de cada vez).</p>
+<p>El video abajo explica de forma visual y bastante accesible el funcionamiento de un modelo de IA generativa basado en la arquitectura de tipo <em>transformer</em>.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wjZofJX0v4M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Nos introduce a conceptos que nos serán útiles durante todo el curso:</p>
+<ul>
+<li><p><strong>embeddings</strong> - Se trata de representar palabras o frases en el formato de vectores (conjuntos de números). Facilita búsquedas semánticas y permite que el modelo entienda el significado de las palabras en un contexto determinado<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p></li>
+<li><p><strong>tokens</strong> - Representan unidades de texto que el modelo procesa y genera. Pueden ser palabras completas o partes de palabras.</p></li>
+<li><p><strong>parámetros</strong> - Corresponden a valores que el modelo ajusta durante el entrenamiento para aprender patrones en los datos. Una vez entrenados, los parámetros son los pesos que el modelo utiliza para hacer predicciones.</p></li>
+<li><p><strong>capas</strong> - Son las partes del modelo que procesan la información y aprenden patrones a partir de un conjunto de parámetros que se ajustan durante el entrenamiento para mejorar la precisión del modelo.</p></li>
+<li><p><strong>temperatura</strong> - Representa un parámetro que controla la aleatoriedad de las respuestas generadas por el modelo, afectando la creatividad y diversidad de las salidas. Se trata de un ajuste fundamental para establecer el tono y nivel de creatividad de las respuestas generadas por el modelo. Una temperatura baja produce respuestas más predecibles y coherentes, mientras que una temperatura alta genera respuestas más variadas y creativas<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p></li>
+<li><p><strong>ventana de contexto</strong> - Se refiere a la cantidad de texto que el modelo puede procesar y recordar al mismo tiempo. Un contexto más largo permite al modelo generar respuestas más coherentes y relevantes. La ventana de contexto define, por ejemplo, cuántas preguntas y respuestas anteriores el modelo puede recordar y utilizar para generar nuevas respuestas en un chat<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p></li>
+</ul>
+</section>
+<section id="modelos-no-razonadores-razonadores-e-híbridos" class="level2">
+<h2 class="anchored" data-anchor-id="modelos-no-razonadores-razonadores-e-híbridos">Modelos no-razonadores, razonadores e híbridos</h2>
+<p>Uno de los temas más controvertidos en la adopción de modelos de lenguaje ha sido la cantidad de veces en las que producían respuestas incorrectas o incoherentes. En el jargón de la IA, a esto se le llama <em>alucinaciones</em>. Son el resultado de un modelo que intenta responder, pero no sabe cómo o porque el proceso de respuesta requiere una serie de pasos intermedios que el modelo no puede realizar. Los modelos GPT tradicionales son considerados <strong>no-razonadores</strong>, porque simplemente intentan predecir la siguiente palabra en una secuencia de texto. No obstante, en algunos casos, algunas preguntas pueden conducir a respuestas incorrectas o incoherentes si el modelo no ha sido entrenado para contestarlas.</p>
+<p>Para evitar esos percances, se han desarrollado estrategias para que los modelos pudieran dar respuestas más precisas a problemas complejos. Una de esas estrategias es la de <strong>razonamiento encadenado</strong> (o <strong>chain of thought</strong>)<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Esta estrategia consiste en dividir una tarea en pasos intermedios y hacer que el modelo piense en cómo sería la manera de resolverlos uno a uno antes de generar la respuesta final. De esta forma, se pueden generar respuestas más precisas y coherentes. Las empresas empezaron a entrenar a sus modelos en este tipo de razonamiento para producir mejores resultados.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="model_thinking.png" class="img-fluid figure-img"></p>
+<figcaption>Proceso de razonamiento de un modelo LLM.</figcaption>
+</figure>
+</div>
+<p>Los modelos razonadores son excelentes para tareas complejas. Sin embargo, tienen una gran desventaja: son costosos para ejecutar. Utilizarlos para preguntas sencillas o tareas simples puede ser ineficiente, pues generan muchas más palabras de las necesarias. En pocas palabras, más dinero, más tiempo y más energía. Por esa razón, más recientemente (en 2025), OpenAI, Alibaba, Google, Anthropic y otras empresas han publicado modelos <strong>híbridos</strong> que combinan la capacidad de razonamiento encadenado con la generación de texto. Tales modelos deciden cuándo es necesario hacer un razonamiento encadenado y cuándo no. Esto permite que el modelo sea más eficiente y efectivo en la generación de texto, al tiempo que reduce el costo y el tiempo de ejecución.</p>
+</section>
+<section id="llm-slm-parámetros-y-cuantización" class="level2">
+<h2 class="anchored" data-anchor-id="llm-slm-parámetros-y-cuantización">LLM, SLM: Parámetros y Cuantización</h2>
+<p>Cuando utilizamos un chat en la web para consultar el chatGPT, estamos enviando las preguntas a un servidor en algún lugar del mundo. El servidor recibe la pregunta, la procesa, genera una respuesta y nos envía de vuelta. Este proceso se da, porque los grandes modelos de lenguaje (LLM) requieren una gran cantidad de recursos computacionales. Un ordenador personal, y menos un teléfono móvil, no tiene la capacidad de procesamiento necesaria para ejecutar estos modelos.</p>
+<p>Por un lado, tales características implican una grande centralización y, por ende, control de los datos que se procesan y de las posibles aplicaciones derivadas de un modelo. Por otro, nos enfrentamos al problema de emplear una bomba atómica para intentar matar a una mosca, es decir, que los LLM son demasiado grandes y complejos para tareas simples.</p>
+<p>Para lidiar con problemas como pérdida de privacidad de datos, libertad para el desarrollo de aplicaciones para fines concretos y la reducción de costes de procesamiento, se han desarrollado modelos más pequeños y eficientes, conocidos como <strong>SLM</strong> (<em>Small Language Models</em>). Estos modelos son más rápidos y eficientes, pero pueden no ser tan precisos o versátiles como los LLM. Los SLM son ideales para tareas simples o específicas, donde la velocidad y la eficiencia son más importantes que la precisión. Algunos de ellos se pueden ejecutar en ordenadores personales (como lo haremos en este curso) o incluso en teléfonos móviles.</p>
+<p>¿Cuál es la diferencia entre un LLM y un SLM? Son básicamente dos: el número de <strong>parámetros</strong> que emplean en la producción de texto y la <strong>cuantización</strong>, es decir, la precisión en los pesos de los parámetros. Los modelos más grandes de LLM contienen centenares de miles de millones de parámetros o incluso billones. Los SLM son mucho más pequeños, con modelos de 1B, 3B, 7B, 32B, 70B (mil millones). Menos parámetros representan menos recursos computacionales, pero también menor calidad.</p>
+<p>La cuantización se refiere al número de dígitos que cada peso (parámetro) del modelo utiliza para la generación de textos. Los LLM emplean una precisión de 32 bits, mientras que los SLM pueden emplear una precisión de 8 (Q8) o incluso 4 bits (Q4). Esto significa que los SLM requieren mucho menos memoria y capacidad de procesamiento (y, por lo tanto, son más rápidos) que los más grandes. Sin embargo, esto viene a coste de la precisión<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+</section>
+<section id="modelos-de-negocio-y-formas-de-acceso" class="level2">
+<h2 class="anchored" data-anchor-id="modelos-de-negocio-y-formas-de-acceso">Modelos de negocio y formas de acceso</h2>
+<p>Finalmente, antes de que pasemos al próximo tema, debemos considerar cómo las empresas han decidido disponibilizar sus modelos al público. Como veremos en la próxima parte de la sesión, el tipo de licencia será un elemento importante en la geopolítica de la IA y en la competencia entre empresas. En particular, creo que es importante entender primero el tipo de licencia, es decir, quién es el propietario y qué permite hacer con el modelo. En segundo lugar, tenemos que conocer los diferentes métodos por los cuáles podemos acceder a los modelos.</p>
+<p>Existen dos tipos fundamentales de licencia. Los modelos <strong>propietarios</strong> son aquellos que pertenecen a una empresa que mantiene en secreto las informaciones sobre el entrenamiento y los datos que han empleado para su desarrollo. También suelen bastante restrictivos en cuanto a qué se puede hacer con los modelos. Empresas como OpenAI, Anthropic o Google, por ejemplo, suelen tener modelos que prohíben ciertas prácticas, como el uso comercial sin pagar por ello una tasa especial. Otras empresas tampoco pueden modificar el modelo para adaptar a sus necesidades o para desarrollar aplicaciones específicas. La velocidad de innovación aquí depende exclusivamente de los equipos de investigación de las empresas y de su capacidad de atraer talento.</p>
+<p>Por otro lado, los modelos de <strong>código abierto</strong> son aquellos que han sido desarrollados por una comunidad de investigadores que han decidido compartir el código o los datos de entrenamiento. Estos modelos suelen ser más flexibles y permiten a los usuarios personalizarlos y adaptarlos a sus necesidades. Modelos abiertos permiten que un número mayor de desarrolladores experimenten con ellos y desarrollen mejoras o aplicaciones específicas. Este es el caso de modelos como Llama, DeepSeek, Qwen, Gemma 3 de Google, o Phi de Microsoft.</p>
+<p>Ahora, ¿cómo podemos acceder a los modelos? Existen tres formas principales de acceso. La primera es por medio de una <strong>interfaz de tipo chat</strong> en el navegador o en una aplicación móvil. Este es el caso de chatGPT, por ejemplo, que puedes tanto abrir en un navegador como instalar su <em>app</em> en el teléfono. Su gran ventaja es la sencillez en el uso. Cualquiera sin conocimientos técnicos puede usarla sin grandes dificultades. Tal falicidad de uso también explica la enorme popularidad de chatGPT y similares. La financiación o el pago por el servicio ocurre por una subscripción mensual o anual a diferentes niveles de servicio disponibles (básico y pro, por ejemplo). Se tratan de modelos llamandos, <em>freemium</em>, donde el acceso básico es gratuito, pero el acceso a funciones avanzadas o a un mayor número de peticiones es de pago.</p>
+<p>Este modo de acceso tiene algunos inconvenientes importantes cuando queremos tratar una cantidad muy grande de informaciones. Por ejemplo, imaginemos que buscamos emplear los modelos para generar comentarios de cinco tareas distintas de los 80 estudiantes matriculados en una misma asignatura, es decir, un total de 400 documentos. Con un modelo de chat, tendríamos que ir copiando y pegando cada uno de los textos en el chat, esperar que nos genere los comentarios y, luego, volver a copiar los resultados y guardarlos en archivos. Finalmente, tendríamos que enviar dichos comentarios uno a uno a los estudiantes por correo o subirlo a la plataforma.</p>
+<p>No cremo que repetir una misma tarea 400 veces sea una buena idea. Para esos casos, existen <strong>APIs</strong> (<em>Application Programming Interfaces</em>), que son interfaces de programación que permiten que utilizemos lenguajes de programación como el R o el Python para interactuar con el modelo de lenguaje. Las APIs permiten leer los archivos, enviarlos al modelo, recibir las respuestas, guardarlas en archivos y comunicar por correo electrónico los comentarios de modo automático a cada uno de los estudiantes de forma personalizada.</p>
+<p>Una API funciona de una forma bastante distinta a un chat. En primer lugar, el usuario o investigador tiene que registrarse en la página web de la empresa y conseguir un <strong>token</strong> de acceso. Este token es un código único que identifica al usuario y le permite acceder a la API. Se suele pagar por el uso. En el caso de los modelos de generación de texto, se cobra por el número de tokens que se envían y reciben. Un token es una unidad de texto que puede ser tan corta como un solo carácter o tan larga como una palabra. Por ejemplo, la palabra “gato” se considera un token, pero también lo son los caracteres “g”, “a”, “t” y “o”. En general, un token equivale a 4 caracteres en inglés o 3 en español. Una vez que tenga el token, se puede enviar una solicitud de información al servidor que contiene el modelo de lenguaje, que lo procesará y enviará una respuesta en un formato estructurado.</p>
+<p>El código abajo, por ejemplo, pregunta qué es un apagón al modelo Gemini 2.5 Pro de Google<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>:</p>
+<details open="" class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ellmer)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>chat <span class="ot">&lt;-</span> <span class="fu">chat_gemini</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">base_url =</span> <span class="st">"https://generativelanguage.googleapis.com/v1beta/"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">model =</span> <span class="st">"gemini-2.5-pro-exp-03-25"</span>, </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">echo =</span> <span class="st">"none"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>respuesta <span class="ot">&lt;-</span> chat<span class="sc">$</span><span class="fu">chat</span>(<span class="st">"¿Qué es un apagón?"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(respuesta)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<p>Un <strong>apagón</strong> (también conocido como <strong>corte de luz</strong> o <strong>corte de energía</strong>) es la <strong>interrupción del suministro de energía eléctrica</strong> en una zona determinada.</p>
+<p>En términos sencillos, significa que <strong>la electricidad deja de llegar</strong> a las casas, edificios, calles, etc., de esa área.</p>
+<p><strong>Características principales de un apagón:</strong></p>
+<ol type="1">
+<li><strong>Pérdida de energía:</strong> Es la característica fundamental. Las luces se apagan, los electrodomésticos dejan de funcionar, etc.</li>
+<li><strong>Alcance variable:</strong> Puede afectar desde una sola casa o edificio hasta un barrio, una ciudad entera, una región o incluso, en casos extremos, gran parte de un país.</li>
+<li><strong>Duración variable:</strong> Puede durar desde unos pocos segundos o minutos hasta horas, días o incluso semanas en situaciones de desastres graves.</li>
+<li><strong>Causas diversas:</strong> Los apagones pueden ser provocados por muchas razones, como:
+<ul>
+<li><strong>Sobrecarga de la red eléctrica:</strong> Demasiada demanda de energía al mismo tiempo.</li>
+<li><strong>Fallas en equipos:</strong> Averías en transformadores, líneas de transmisión, subestaciones o centrales eléctricas.</li>
+<li><strong>Condiciones climáticas severas:</strong> Tormentas (rayos, viento fuerte), nevadas, hielo, olas de calor.</li>
+<li><strong>Accidentes:</strong> Caída de árboles sobre líneas eléctricas, vehículos que chocan contra postes, excavaciones que dañan cables subterráneos.</li>
+<li><strong>Mantenimiento:</strong> A veces son cortes programados por las compañías eléctricas para realizar reparaciones o mejoras (aunque a estos se les suele llamar “cortes programados”).</li>
+<li><strong>Desastres naturales:</strong> Terremotos, inundaciones, incendios forestales.</li>
+<li><strong>Interferencia animal:</strong> Animales (como pájaros o ardillas) que causan cortocircuitos en los equipos.</li>
+<li><strong>Error humano o sabotaje:</strong> Aunque menos comunes.</li>
+</ul></li>
+</ol>
+<p>En resumen, un apagón es la ausencia temporal de electricidad en un área, lo que provoca que todo lo que depende de ella deje de funcionar.</p>
+<p><span style="background-color:red; padding: 10px;color:white; font-weight:bold;">Fin de los resultados</span></p>
+<p>Cómo habéis visto, el modelo me devuelve un texto ya formatado que se integra perfectamente al texto de R Markdown. Si quisiera, podría haber pedido que el modelo generara una tabla o un conjunto de valores separados por comas o incluso un gráfico o un esquema (para modelos que generan imágenes) y, a continuación, tratar dicha información y analizarla empleando estadísticas o nuevas visualizaciones.</p>
+<p>No obstante, el uso de APIs contiene algunos inconvenientes. El primero se encuentra en la privacidad. Al enviar los datos a un servidor de una empresa externa, puedo estar exponiendo información sensible o confidencial. Segundo, el uso de APIs puede ser costoso, particularmente si el volumen de información es muy grande o el número de tokens a ser procesado muy alto. Imagínense pedir que un modelo genere un resumen de todos los diarios de sesiones de los últimos 20 años de 14 países de América Latina. Para que tengamos una noción, una legislatura en un país como España puede generar diarios de sesiones que reunen más de 20 mil páginas y 30 millones de palabras (algo más que 60 millones de tokens) en una sola legislatura. El procesamiento de tal información puede costar bastante.</p>
+<p>Una solución a estos problemas es el uso de <strong>modelos locales</strong>. Como hemos visto, algunas empresas ofrecen modelos de código abierto que se pueden descargar y ejecutar en servidores privados en la nube o en ordenadores locales. Aplicaciones como <a href="https://lmstudio.ai/" target="_blank">LM Studio</a> o servidores locales como <a href="https://ollama.com/" target="_blank">Ollama</a> permiten acceder a modelos de código abierto de forma local, sin problemas de coste o privacidad<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.</p>
+<p>El código abajo repite la misma pregunta que antes, pero ahora usando el modelo de código abierto Gemma 3 con 4B parámetros de Google. En este caso, el modelo se encuentra instalado en mi ordenador y no tengo que pagar por su uso. El único coste es el de la electricidad y el del ordenador que lo ejecuta. Obviamente, la ejecución será más lenta que en un servidor más potente, pero me da mucha libertad y flexibilidad en el uso:</p>
+<details open="" class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rollama)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>respuesta <span class="ot">&lt;-</span> <span class="fu">query</span>(<span class="st">"¿Qué es un apagón?"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">model =</span> <span class="st">"gemma3:4b"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">output =</span> <span class="st">"text"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                 <span class="at">screen =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(respuesta)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<p>Un apagón, también conocido como corte de energía o fallo eléctrico, es la <strong>interrupción temporal del suministro de electricidad</strong>. Es un fenómeno común que puede ocurrir por diversas razones y con diferentes niveles de impacto.</p>
+<p>Aquí te desgloso los aspectos más importantes sobre los apagones:</p>
+<p><strong>Causas comunes de los apagones:</strong></p>
+<ul>
+<li><strong>Sobrecarga del sistema eléctrico:</strong> Cuando la demanda de electricidad supera la capacidad de generación y distribución, puede ocurrir un apagón para evitar daños mayores. Esto suele suceder en días calurosos, durante eventos especiales o en momentos de alta demanda.</li>
+<li><strong>Fallos en la infraestructura:</strong> Problemas con líneas de transmisión, subestaciones de energía, transformadores o equipos de generación pueden causar cortes de energía.</li>
+<li><strong>Condiciones climáticas:</strong> Tormentas eléctricas, fuertes vientos, nieve, hielo y otros fenómenos meteorológicos extremos pueden dañar la infraestructura eléctrica.</li>
+<li><strong>Errores humanos:</strong> Errores en la operación o mantenimiento de la red eléctrica también pueden provocar apagones.</li>
+<li><strong>Fallos en equipos:</strong> El fallo de un componente crítico en una planta de energía o en una subestación puede desencadenar un apagón.</li>
+<li><strong>Actos vandálicos o sabotaje:</strong> En algunos casos, los apagones pueden ser causados por actos intencionales de vandalismo o sabotaje.</li>
+</ul>
+<p><strong>Tipos de Apagones:</strong></p>
+<ul>
+<li><strong>Apagones locales:</strong> Afectan a una pequeña área geográfica, como un barrio o una ciudad.</li>
+<li><strong>Apagones regionales:</strong> Afectan a una región más amplia.</li>
+<li><strong>Apagones nacionales:</strong> Afectan a todo un país.</li>
+<li><strong>Apagones generalizados:</strong> Son los más graves y pueden afectar a grandes áreas geográficas y a millones de personas.</li>
+</ul>
+<p><strong>Consecuencias de los Apagones:</strong></p>
+<ul>
+<li><strong>Pérdida de energía:</strong> La consecuencia más obvia es la interrupción del suministro de electricidad.</li>
+<li><strong>Pérdida de datos:</strong> Los ordenadores y otros dispositivos electrónicos pueden perder datos si no tienen un sistema de respaldo.</li>
+<li><strong>Interrupción de servicios:</strong> Los apagones pueden afectar a servicios esenciales como hospitales, transporte público, comunicaciones y sistemas de agua.</li>
+<li><strong>Pérdidas económicas:</strong> Las empresas pueden sufrir pérdidas debido a la interrupción de la producción y la pérdida de datos.</li>
+<li><strong>Riesgos para la seguridad:</strong> La falta de iluminación y la interrupción de los sistemas de seguridad pueden aumentar los riesgos para la seguridad.</li>
+</ul>
+<p><strong>Preparación para los Apagones:</strong></p>
+<ul>
+<li><strong>Ten un kit de emergencia:</strong> Incluye linternas, baterías, alimentos no perecederos, agua, radio a pilas y otros suministros esenciales.</li>
+<li><strong>Ten un sistema de respaldo:</strong> Considera tener un generador de energía o un sistema de baterías para alimentar dispositivos electrónicos.</li>
+<li><strong>Mantén informado:</strong> Sigue las noticias y las alertas de las autoridades locales.</li>
+</ul>
+<p>Espero que esta información te sea útil. ¿Tienes alguna otra pregunta sobre los apagones?</p>
+<p><span style="background-color:red; padding: 10px;color:white; font-weight:bold;">Fin de los resultados</span></p>
+<p>Como se puede observar, el modelo pequeño de Google (con sólo 4 mil millones de parámetros) es capaz de generar un texto bastante similar al de Gemini 2.5 Pro (que tiene más de 100 mil millones de parámetros). La diferencia entre ambos modelos es que el primero es un modelo local y el segundo es un modelo remoto (en la nube). Obviamente, esta ha sido una consulta sencilla. El rendimiento no sería el mismo si se trataran de problemas más complejos. De todos modos, en muchas aplicaciones, no necesitamos los modelos más grandes y complejos, sino versiones más rápidas y pequeñas que reduzcan costes, tengan flexibilidad para permitir experimentar y no expongan datos sensibles a empresas externas.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>Hablaremos de los modelos razonadores más adelante.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Si queréis jugar un poco con la visualización de los vectores de texto, podéis acceder al <a href="https://projector.tensorflow.org/" target="_blank"><strong>Embedding Projector</strong></a> de Google.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>El siguiente video de <em>Codificando Bits</em> sobre los parámetros de <a href="https://www.youtube.com/watch?v=ABW70yVmCH4" target="_blank">temperatura, top-k y top-p</a> suministra una excelente explicación en español sobre cómo estos parámetros afectan los resultados de los modelos.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>El siguiente video de <em>Codificando Bits</em> sobre las <a href="https://www.youtube.com/watch?v=0E-p4DlDysE" target="_blank">ventanas de contexto</a> suministra una excelente explicación en español sobre qué son y cómo afectan los resultados de los modelos.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Veremos más sobre el tema cuando discutamos sobre <em>ingeniería de prompts</em> en la próxima sesión.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>El video de <a href="https://www.youtube.com/watch?v=K75j8MkwgJ0" target="_blank">Matt Williams</a>, uno de los desarrolladores de Ollama, explica de forma clara qué es la cuantización y cómo funciona de forma práctica.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Este código funciona en mi ordenador porque ya tengo una API Key de Google registrada. Ya veremos cómo conseguir y emplear un token más adelante en el curso.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Utilizaremos tanto el LM Studio como Ollama durante el curso, así que sugiero que os familiaricéis con esas dos herramientas durante el período entre las sesiones del curso.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025, Rodrigo Rodrigues-Silveira</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://oir.org.es/pela/"><img src="logo_pela.png" class="img-fluid" alt="Posit" width="150"></a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
