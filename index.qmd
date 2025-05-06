@@ -2,6 +2,12 @@
 title: "<b>GenIA </b><br>IA generativa para investigadores de ciencias sociales"
 ---
 
+<!-- Para que actualize el repositorio despues de tiempo -->
+<!-- git config http.postBuffer 524288000 -->
+<!-- git pull -->
+<!-- git push -->
+
+
 <style>
  .side{
     display: inline-block; 

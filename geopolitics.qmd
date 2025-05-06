@@ -43,7 +43,7 @@ title: "<b>Geopolítica </b><br>y la IA generativa"
 > Uno se despierta del sueño americano solo para darse cuenta de que tiene tres trabajos y no llega a fin de mes.<br>
 > **DeepSeek**
 >
-> Unión Europea: donde la burocracia es tan compleja que hasta las normas vienen con manual de instrucción.<br>
+> Unión Europea: donde la burocracia es tan compleja que hasta las normas vienen con manual de instrucciones.<br>
 > **Mistral**
 
 
