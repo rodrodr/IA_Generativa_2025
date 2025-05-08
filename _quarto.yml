@@ -11,17 +11,17 @@ website:
       - href: index.qmd
         text: Introducción al curso
       - href: ia_generativa.qmd
-        text: IA Generativa
+        text: 1.1 - IA Generativa
       - href: geopolitics.qmd
-        text: Geopolítica y la IA
-#       - href: asistentes.html
-#         text: Asistentes virtuales
+        text: 1.2 - Geopolítica y la IA
+      - href: asistentes.qmd
+        text: 2 - Asistentes virtuales
 #       - href: investigacion.html
 #         text: IA en investigación        
   page-footer:
     left: "&copy; Copyright 2025, Rodrigo Rodrigues-Silveira"
     right: |
-      [![](logo_pela.png){fig-alt="Posit" width=150px}](https://oir.org.es/pela/)
+      [![](logo_pela.png){fig-alt="Posit" width=500px}](https://oir.org.es/pela/)
 
         
 execute:
@@ -35,6 +35,7 @@ format:
     css: styles.css
     toc: true
     code-fold: show
+    code-overflow: wrap
   
 
 editor: source

@@ -13,6 +13,8 @@ title: "<b>GenIA </b><br>IA generativa para investigadores de ciencias sociales"
     display: inline-block; 
     float: left;
 }
+
+
 </style>
 
 
@@ -125,6 +127,8 @@ Para los interesados en emplear modelos locales y acompañar las aplicaciones en
 
 [Ollama](https://ollama.com/) - Servidor local de modelos de IA.
 
+[Obsidian](https://obsidian.md/) - Aplicación para tomar notas. Y dentro de la aplicación, instalar el complemento de la comunidad (*community plugin*) llamado "Companion".
+
 [R](https://cran.r-project.org/) y el [RStudio Desktop](https://posit.co/downloads/).
 
 También se recomienda ejecutar el siguiente código en R que instala los paquetes necesarios para reproducir los ejemplos.
@@ -133,7 +137,7 @@ También se recomienda ejecutar el siguiente código en R que instala los paquet
 
 # Crea un vector con los paquetes a instalar
 pc <- c("rollama","ellmer","stringi","rvest",
-        "stringi","readr","ggplot2","reactable",
+        "readr","ggplot2","reactable",
         "tidyverse","devtools","dplyr")
 
 # Instala los paquetes

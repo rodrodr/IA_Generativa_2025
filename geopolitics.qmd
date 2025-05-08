@@ -47,6 +47,21 @@ title: "<b>Geopolítica </b><br>y la IA generativa"
 > **Mistral**
 
 
+:::: {layout="[0.5, 0.5]"}
+
+:::{#first}
+
+![Ajedrez](chess.jpg){width=100%}
+
+:::
+
+:::{#second}
+
+![Go](go.png){width=100%}
+
+:::
+
+::::
 
 ## El estado de la IA
 
@@ -97,13 +112,15 @@ Su política se basa en el control estricto de los modelos desarrollados en el p
 {{< video https://www.youtube.com/watch?v=CAk7-1vi2qg >}}
 
 
-### Unión Europea: Soberanía digital y transparencia
+### Unión Europea: Crisis de competitividad, soberanía digital y transparencia
 
 <br>
 
-La Unión Europea habla en inglés, pero sueña en alemán. 
+La Unión Europea habla en inglés, pero sueña en alemán. Quizás esta haya sido la línea subyacente del [**informe Draghi**](https://commission.europa.eu/document/download/97e481fd-2dc3-412d-be4c-f152a8232961_en?filename=The%20future%20of%20European%20competitiveness%20_%20A%20competitiveness%20strategy%20for%20Europe.pdf){target="_blank"} sobre la competitividad de la UE. El informe tiene un diagnóstico claro: la brecha de competitividad entre la UE y Estados Unidos y China se ha ampliado y se explica por un sector económico muy claro: la economía digital. La apuesta por servicios y la indústria en la región y la falta de un ecosistema digital europeo han llevado a la UE a una crisis de competitividad.
 
-La política de IA de la UE se basa en la creación de un marco regulatorio que busca garantizar la transparencia y la responsabilidad en el uso de la IA. La estrategia de la UE se centra en la creación de un ecosistema de IA que sea seguro y confiable, con un enfoque en la protección de los derechos fundamentales y la privacidad de los ciudadanos.
+{{< video https://www.youtube.com/watch?v=dVNna0erkFM >}}
+
+La IA no escapa a este marco económico más amplio. La política de IA de la UE se basa en la creación de un marco regulatorio que busca garantizar la transparencia y la responsabilidad en el uso de la IA. La estrategia de la UE se centra en la creación de un ecosistema de IA que sea seguro y confiable, con un enfoque en la protección de los derechos fundamentales y la privacidad de los ciudadanos. La percepción, manifiesta por Úrsula von der Leyen en su discurso en la cumbre de la IA en Paris de febrero de 2025, es que la IA todavía es un sector en ciernes y que la UE tiene todavía una oportunidad para liderar el desarrollo de la IA en el mundo.
 
 
 {{< video https://www.youtube.com/watch?v=i_es9g1VLFk >}}
