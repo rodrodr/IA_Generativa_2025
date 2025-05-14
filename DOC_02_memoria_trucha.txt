@@ -1,0 +1,275 @@
+Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)
+
+1. DATOS DEL PROYECTO
+
+Investigador/a principal 1 (IP1): Dra. Alejandra Soto Martín (Universidad Nacional de la Capital).
+
+Investigador/a principal 2 (IP2): Dr. Jaime Alberto Rojas Fernández (Universidad Autónoma de Porto).
+
+Título del Proyecto: Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA).
+
+Título del Proyecto (inglés): Legislative-Initiated Institutional Ruptures in Latin America (RUPLEGLA).
+
+
+
+
+2. JUSTIFICACIÓN Y NOVEDAD DE LA PROPUESTA
+
+
+2.1 Adecuación de la propuesta a las características y finalidad de la modalidad seleccionada
+
+La convocatoria enfatiza la investigación orientada a problemas de relevancia pública y necesidades sociales concretas. Esta propuesta se alinea con esa modalidad al estudiar un fenómeno crítico para la democracia latinoamericana: la capacidad del poder legislativo de generar crisis institucionales. Se abordará el tema con un enfoque aplicado, integrando formulación de recomendaciones para actores políticos y sociedad civil. Además, se incluye la colaboración con organizaciones gubernamentales y no gubernamentales (p.ej. observatorios legislativos) para validar hallazgos y maximizar la aplicabilidad. En suma, el proyecto reúne características de la modalidad orientada: plantea objetivos claros de mejora institucional, contempla la transferencia de resultados y está diseñado para producir productos útiles para tomadores de decisiones y la ciudadanía.
+
+
+2.2 Justificación y contribución esperada del proyecto a la generación de conocimiento en la temática de la propuesta. Hipótesis de partida
+
+La noción de ruptura institucional ha sido tradicionalmente asociada a golpes militares o acciones ejecutivas. Sin embargo, los análisis más recientes sugieren que la erosión democrática contemporánea se da a través de “rupturas institucionales sutiles y progresivas” más que por golpes abruptos. En este contexto, el poder legislativo puede desempeñar un rol central (por ejemplo, alterando contrapesos o reinterpretando el marco constitucional). A pesar de ello, existe un vacío en la literatura comparativa sobre cómo los parlamentos contribuyen a estas fracturas institucionales. Nuestra investigación llenará ese vacío desarrollando un marco analítico propio. La hipótesis central es que, en contextos de alta polarización política y debilidad de contrapesos institucionales, un legislativo fuerte o aliado puede iniciar procesos de quiebre democrático. Ejemplos recientes respaldan esta idea: se han documentado casos de “captura del poder legislativo” en regímenes autoritarios, así como el uso de mayorías parlamentarias para subyugar al poder judicial y aprobar leyes que debilitan la democracia. Estos fenómenos justifican estudiar cómo y cuándo el legislativo actúa como catalizador de cambios institucionales radicales. El proyecto aportará un análisis riguroso de estos mecanismos, sus causas estructurales y patrones subyacentes, generando así nuevo conocimiento sobre la dinámica de las instituciones democráticas en América Latina.
+
+
+2.3 Justificación y contribución esperada del proyecto a solucionar problemas concretos vinculados a la prioridad temática seleccionada
+
+El proyecto pretende incidir en la mejora institucional de la región mediante el diagnóstico y la prevención de rupturas constitucionales. Se espera que sus resultados prácticos incluyan:
+
+Recomendaciones de política institucional: Se generarán propuestas concretas para la reforma de leyes y procedimientos parlamentarios (p.ej. definición de límites a la destitución presidencial o mecanismos de fiscalización legislativa) que eviten abusos de poder.
+
+Fortalecimiento del debate público: Mediante informes y talleres para decisores políticos se promoverá la transparencia en la acción legislativa, contribuyendo a reducir la desconfianza ciudadana en las instituciones.
+
+Instrumentos de monitoreo: Se diseñará un prototipo de observatorio legislativo comparado y herramientas de análisis de datos que organizaciones civiles y multilaterales (OEA, CEPAL, etc.) pueden usar para detectar alertas tempranas de crisis.
+
+Estos aportes abordan directamente la prioridad de fortalecer la democracia en la convocatoria, al ofrecer soluciones basadas en evidencia para problemas institucionales concretos. De este modo, además de enriquecer el estado del conocimiento, el proyecto facilita la toma de decisiones informada y la aplicación de medidas preventivas ante rupturas institucionales.
+
+
+
+
+3. OBJETIVOS, METODOLOGÍA Y PLAN DE TRABAJO
+
+
+3.1. Objetivos generales y específicos
+
+Objetivo general: Analizar los mecanismos y condiciones bajo los cuales el poder legislativo en América Latina inicia rupturas institucionales, para generar conocimiento que permita anticipar y prevenir dichas crisis. Objetivos específicos:
+
+Caracterizar y clasificar los mecanismos legislativos (por ejemplo, mociones de censura, reformas constitucionales exprés, figuras de “vacancia”) que han conducido a crisis de gobernabilidad o constitucionales en distintos países de la región.
+
+Realizar un análisis comparado de casos ejemplares (como los enfrentamientos legislativos en Perú, Venezuela, El Salvador, entre otros), identificando factores contextuales (nivel de polarización, fragmentación partidaria, rol de las instituciones judiciales, etc.) que favorecen estas rupturas.
+
+Evaluar el impacto de dichas acciones legislativas en indicadores de calidad democrática y estabilidad (por ejemplo, índices de V-Dem de liberal-democracia y control de poderes), estableciendo correlaciones con los eventos estudiados.
+
+Elaborar un marco teórico explicativo y desarrollar una base de datos propia de eventos legislativos críticos en la región, que puedan servir de referencia para análisis futuros y para observatorios democráticos.
+
+Formular recomendaciones de políticas públicas y reformas institucionales para fortalecer los contrapesos legales y evitar la propagación de rupturas iniciadas por parlamentos.
+
+
+3.2. Descripción de la metodología
+
+La metodología será mixta y comparativa, combinando herramientas cualitativas y cuantitativas para garantizar la viabilidad científica. Se plantea:
+
+Análisis documental y legislativo: Se recolectarán leyes, decretos, actas de sesiones parlamentarias, discursos oficiales y artículos periodísticos relevantes. A través de análisis de contenido se identificarán patrones de conducta legislativa que preceden o implementan rupturas.
+
+Estudios de caso comparados: Se seleccionarán entre 4 y 6 países representativos (p.ej., Perú, Venezuela, El Salvador, Guatemala, Brasil, México) con experiencias recientes de crisis institucionales. En cada caso se realizará investigación de campo (visita a archivos parlamentarios, revisión de expedientes judiciales) y entrevistas semiestructuradas con actores clave (exlegisladores, jueces, expertos) para entender el proceso político y legal completo.
+
+Análisis cuantitativo: Se construirá una base de datos de eventos legislativos significativos, codificando variables como tipo de acción (impeachment, enmienda extraordinaria, veto), fuerzas políticas dominantes, reacciones sociales, etc. Asimismo, se utilizarán indicadores de calidad institucional de fuentes reconocidas (V-Dem, Índice de Estado de Derecho del World Justice Project) para correlacionar la intensidad de eventos legislativos con indicadores de erosión democrática.
+
+Triangulación de datos: Los hallazgos cualitativos de los casos serán contrastados con el análisis estadístico, buscando coherencia en los patrones identificados. Esto aumentará la validez del estudio.
+
+Asesoría experta: Durante todo el proyecto se consultará a un consejo asesor internacional de politólogos y juristas latinoamericanos, quienes validarán el enfoque metodológico y la interpretación de resultados.
+
+Esta combinación de métodos asegura rigor científico y factibilidad: los análisis cualitativos dan profundidad interpretativa, mientras que los datos cuantitativos permiten generalizar hallazgos. El equipo aplicará estándares reconocidos (registro de datos sistemático, codificación independiente por varios investigadores, análisis de sesgo) para garantizar la robustez metodológica.
+
+
+3.3. Plan de trabajo y cronograma
+
+Meses 1-6 (Año 1): Revisión bibliográfica y documental exhaustiva; definición de indicadores y criterios de codificación para la base de datos; selección y delimitación de los casos de estudio; diseño de instrumentos (guías de entrevista, formatos de codificación).
+
+Meses 7-12 (Año 1): Recolección de datos iniciales: obtención de documentos legislativos y legales; análisis exploratorio de indicadores democráticos y políticos; presentación de resultados preliminares en un simposio nacional de ciencias políticas.
+
+Meses 13-24 (Año 2): Trabajo de campo intensivo en América Latina: entrevistas con actores clave, visitas a parlamentos y tribunales; consolidación de la base de datos con eventos legislativos; análisis detallado de cada caso de estudio; redacción de primer artículo académico basado en uno de los casos comparados.
+
+Meses 25-36 (Año 3): Análisis comparativo definitivo y construcción del marco teórico general; elaboración de recomendaciones de política pública. Preparación de informe final y diseminación de resultados: organización de taller internacional de validación con expertos latinoamericanos, entrega de informes ejecutivo a organismos relevantes, y publicación de resultados en revistas científicas y medios de divulgación.
+
+
+3.4. Identificación de puntos críticos y plan de contingencia
+
+Disponibilidad de datos: Si ciertos documentos oficiales o actas parlamentarias no estuvieran accesibles, se recurrirá a fuentes alternativas (bases de datos periodísticas, reportes de ONG) y se ampliará el conjunto de casos para garantizar resultados confiables.
+
+Acceso a informantes: Ante posible reticencia de políticos o funcionarios para entrevistas, se garantizará confidencialidad y se ofrecerá el anonimato. En caso de baja participación, se compensará con entrevistas a académicos y periodistas especializados.
+
+Cambios políticos súbitos: El proyecto podría enfrentarse a alteraciones drásticas en los gobiernos (por ejemplo, crisis imprevista). Para esto, el cronograma incluye margen para incorporar nuevos eventos y se mantendrá flexibilidad metodológica (actualizando los casos o el análisis).
+
+Recursos humanos: Si ocurrieran renuncias de personal clave, se entrenarán varios miembros del equipo en tareas críticas para asegurar continuidad. La institución garante apoya con perfiles suplentes en caso de urgencia, minimizando el impacto en el proyecto.
+
+Factores logísticos: Para contrarrestar posibles retrasos burocráticos o epidemias, se contemplan mecanismos de trabajo remoto y alternativas virtuales para reuniones, así como planificación anticipada de permisos de viaje.
+
+
+3.5. Resultados previos del equipo en la temática de la propuesta
+
+Soto, A., et al. (2021). “Conflictos de poderes en América Latina” (Informe final de investigación, CONACYT). En este estudio (liderado por IP1) se analizó la interacción ejecutivo-legislativo en Perú, Colombia y Chile, identificando patrones de crisis constitucional y proponiendo indicadores de alerta legislativa.
+
+Rojas, J. (2022). “Parlamentos y democracia débil: casos comparados”, Revista Iberoamericana de Derecho Público, Vol. 8, No. 2. Artículo con análisis comparado de episodios de remoción presidencial en Guatemala y Paraguay.
+
+Proyecto “Legislaturas fuertes, democracias frágiles” (Ministerio de Ciencia, 2019-2020): El equipo (ambos IPs) colaboró en este proyecto que investigó decisiones parlamentarias controvertidas en Brasil y Argentina. Fruto de ello fueron informes técnicos presentados ante el Poder Judicial de la Nación y exposiciones en congresos académicos.
+
+Seminarios organizados: En 2022 el equipo organizó el Taller Internacional “Riesgos institucionales en la democracia” (Universidad Nacional de la Capital), con la participación de parlamentarios y académicos de cinco países. En 2023 presentaron ponencias en el congreso LASA y el encuentro de CLAD con resultados preliminares sobre crisis legislativas.
+
+Estos antecedentes demuestran la experiencia y solvencia del equipo en el tema, así como su capacidad de producir informes de alta calidad y establecer vínculos con actores clave.
+
+
+3.6. Recursos humanos, materiales y de equipamiento disponibles para la ejecución del proyecto
+
+Equipo investigador: Además de los IPs dedicados al 100%, participarán 2 investigadores posdoctorales (50% de dedicación cada uno) con experiencia en análisis político comparado, y 2 becarios de doctorado (media jornada) encargados de la recolección y codificación de datos.
+
+Personal de apoyo: Se asignarán un/a técnico/a de investigación (100%) para el manejo de bases de datos y logística de campo, y un/a auxiliar administrativa (50%) para gestión de recursos y eventos.
+
+Infraestructura: El proyecto se enmarca en la Facultad de Ciencias Sociales de la Universidad Nacional de la Capital, que brinda biblioteca jurídica especializada, acceso a bases de datos electrónicas regionales, y laboratorios de cómputo. Los investigadores cuentan con computadoras de alta gama y software estadístico (Stata, R) y de análisis cualitativo (NVivo).
+
+Equipamiento adicional: El presupuesto incluye la compra de una computadora portátil de alta capacidad para campo y un servidor de respaldo de datos. La infraestructura tecnológica existente cubre el resto de las necesidades, asegurando espacio de trabajo compartido y conectividad segura para colaboraciones internacionales.
+
+El conjunto de estos recursos garantiza la viabilidad metodológica y operativa del proyecto desde su inicio.
+
+
+
+4. IMPACTO ESPERADO DE LOS RESULTADOS
+
+
+4.1. Impacto esperado en la generación de conocimiento científico-técnico
+
+El proyecto ampliará la teoría política comparada incorporando el estudio del parlamento como agente de transformación institucional. Se generarán publicaciones de alto impacto que teorizan la “ruptura institucional legislativa”, conectando conceptos de estudios recientes que destacan el surgimiento de «rupturas institucionales sutiles» en la región. Además, al resaltar el papel del poder legislativo en la crisis democrática –un aspecto subrayado en la literatura contemporánea sobre la salud de la democracia latinoamericana– se empujará la frontera del conocimiento. Los nuevos datos recopilados permitirán estimar tendencias cuantitativas (por ejemplo, frecuencia de acciones legislativas extremas por país) que, combinados con los hallazgos cualitativos, ofrecerán un panorama integral inéditamente riguroso. En síntesis, los resultados contribuirán a formular modelos explicativos de la estabilidad institucional y servirán de referencia para futuros estudios sobre gobernabilidad, fortaleciendo la comunidad académica en este campo.
+
+
+4.2. Impacto social y económico
+
+Socialmente, fortalecer las instituciones democráticas genera mayor confianza ciudadana y participación política. Este proyecto visibilizará mecanismos de poder parlamentario que, de otro modo, operan a menudo al margen de la atención pública, facilitando que organismos civiles y medios de comunicación ejerzan mayor vigilancia. Con información basada en evidencia, se espera mejorar la transparencia y responsabilidad del Legislativo ante la ciudadanía, contribuyendo así a reducir la polarización y el desencanto político. En el ámbito económico, la estabilidad institucional es clave para la inversión y el desarrollo. Instituciones sólidas reducen la incertidumbre jurídica, lo que protege las inversiones nacionales y extranjeras. En efecto, se ha sugerido explícitamente “invertir en instituciones democráticas” como estrategia para evitar la erosión del orden constitucional. Al ofrecer guías para robustecer los contrapesos y prevenir rupturas, este proyecto favorecerá indirectamente un clima de mayor seguridad jurídica y predictibilidad económica. En resumen, al contribuir a un marco institucional más predecible, el trabajo tendrá efectos positivos tanto en la cohesión social como en la estabilidad del entorno económico regional.
+
+
+4.3. Plan de comunicación científica e internacionalización (incluyendo publicaciones en acceso abierto)
+
+Publicación de artículos en revistas internacionales indexadas de ciencias políticas y derecho (p.ej. Latin American Research Review, Revista de Ciencia Política, Journal of Democracy), optando preferentemente por acceso abierto para maximizar la difusión.
+
+Presentaciones de los resultados en congresos académicos (LASA, IPSA, CLAD) y seminarios internacionales en universidades de Latinoamérica, Europa y Norteamérica, reforzando la colaboración con especialistas externos.
+
+Intercambio académico con colegas latinoamericanos: estancias breves conjuntas en universidades socias (por ejemplo, Universidad de Buenos Aires, Universidad de los Andes Colombia) para co-tutorías de trabajo, fortaleciendo la red internacional del equipo.
+
+Depósito público de la base de datos construida y otros materiales de investigación en repositorios digitales (p.ej. Zenodo, RECOLECTA), garantizando el acceso abierto (FAIR) a los datos y códigos empleados.
+
+Este plan asegura que los resultados circulen ampliamente en el ámbito científico global, aumentando la visibilidad del proyecto y su integración en debates internacionales.
+
+
+4.4. Plan de divulgación a colectivos relevantes y la sociedad
+
+Talleres y seminarios con actores políticos: Organización de eventos participativos con legisladores, funcionarios públicos y organizaciones de la sociedad civil (think tanks, ONG dedicadas a la democracia) para presentar hallazgos y debatir recomendaciones de política institucional.
+
+Informes de política pública: Elaboración de resúmenes ejecutivos y policy briefs dirigidos a parlamentos nacionales y organismos internacionales (OEA, CEPAL, ParlAmericas), traducidos al español y distribuibles entre decisores públicos.
+
+Participación en medios de comunicación: Redacción de artículos de opinión y colaboraciones en prensa generalista (diarios regionales, revistas digitales) con los resultados clave, para sensibilizar a la opinión pública sobre la importancia de la integridad parlamentaria.
+
+Recursos divulgativos: Desarrollo de infografías, vídeos breves y publicación en redes sociales del proyecto (Twitter académico, LinkedIn), ilustrando de manera accesible ejemplos de rupturas institucionales y consejos básicos de prevención.
+
+Estas acciones difundirán el conocimiento generado más allá del ámbito académico, reforzando el impacto social y fomentando una ciudadanía informada sobre la gobernanza parlamentaria.
+
+
+4.5. Plan de transferencia y valorización de los resultados
+
+Asesoramiento directo: Se ofrecerá apoyo técnico y talleres a cuerpos legislativos y oficinas de reforma (por ejemplo, asesorías al Congreso o ministerios de Justicia) en base a los hallazgos, facilitando la adopción de buenas prácticas legislativas.
+
+Herramientas prácticas: Creación de un manual de buenas prácticas parlamentarias y un prototipo de sistema de alerta legislativa basado en los criterios identificados, los cuales pueden ser replicados por organizaciones o instituciones democráticas.
+
+Interacción con el sector privado y ONGs: Vinculación con fundaciones dedicadas a gobernabilidad y empresas consultoras de políticas públicas para explorar aplicaciones comerciales de los resultados, como desarrollo de cursos de capacitación para legisladores.
+
+Generación de valor agregado: Al desarrollar conocimiento único en un campo escasamente explorado, se abre la posibilidad de proyectos futuros (europeos, BID, etc.) y alianzas con redes de monitoreo democrático, aumentando la visibilidad y sostenibilidad del conocimiento creado.
+
+Gracias a estas iniciativas, los resultados del proyecto no solo se quedarán en publicaciones, sino que se traducirán en aportes concretos para la mejora institucional en la región.
+
+
+4.6. Resumen del plan de gestión de datos
+
+Tipos de datos: Se generarán datos cuantitativos (base de datos de eventos legislativos con variables codificadas) y cualitativos (transcripciones de entrevistas, textos legislativos, análisis documentales).
+
+Metadatos y anonimato: Todos los datos llevarán metadatos detallados (fuente, fecha, país, tipo de evento), y las entrevistas se anonimizarán para proteger la confidencialidad.
+
+Almacenamiento y acceso: Los datos se almacenarán en servidores seguros de la universidad y, al término del proyecto, se depositarán en repositorios institucionales o públicos (Zenodo, Recolecta) con licencias abiertas.
+
+Normativas FAIR: Se adoptarán los principios FAIR: los conjuntos de datos serán Findable (catalogados con DOI), Accessible (descargables con licencia CC-BY), Interoperable (en formatos estándar como CSV, TXT) y Reutilizables (documentados con manual de datos y variables).
+
+Preservación: Los documentos textuales se guardarán en formatos permanentes (p.ej. PDF/A), y se asegurará su copia de respaldo en dos localizaciones distintas para evitar pérdidas.
+
+Este plan cumplirá con las políticas de datos de la convocatoria y garantizará la calidad, seguridad y accesibilidad de la información generada.
+
+
+4.7. Efectos de la inclusión de género
+
+Equipo equilibrado: Se promueve la igualdad de género en el equipo de trabajo (aprox. 50% de investigadores son mujeres) y en los roles de liderazgo. Además, se realizará sensibilización en temas de género para todo el equipo.
+
+Análisis con perspectiva de género: En el estudio se considerarán variables de género cuando sean pertinentes (por ejemplo, si la presencia de parlamento ampliamente masculinizada influye en ciertas decisiones) y se examinará cómo proyectos legislativos específicos afectan de manera diferenciada a mujeres y otros grupos subrepresentados.
+
+Actividades formativas inclusivas: En los talleres y eventos de divulgación se garantizará la participación activa de investigadoras, funcionarias y estudiantes femeninas, así como de otros colectivos vulnerables, siguiendo lineamientos de inclusión y no discriminación.
+
+Contenido y lenguaje: Las publicaciones y materiales públicos del proyecto usarán lenguaje inclusivo y presentarán datos desagregados por género cuando esté disponible, visibilizando así el impacto diferencial de las políticas legislativas.
+
+De este modo, el proyecto no solo cumple con políticas de igualdad sino que mejora la calidad científica al integrar esta dimensión en el análisis de las instituciones.
+
+
+
+
+5. JUSTIFICACIÓN DEL PRESUPUESTO SOLICITADO
+
+El presupuesto total previsto es de 120.000 €, distribuido de forma que garantice la ejecución del proyecto según su alcance:
+
+Recursos Humanos: 75.000 € para contratación de personal investigador. Esto incluye el salario de un/a investigador/a postdoctoral a tiempo completo durante 2 años (aprox. 50.000 €) y el aporte parcial (50%) para dos auxiliares de investigación (25.000 € en total). El personal humano es clave para el análisis de datos y la gestión del proyecto.
+
+Viajes y dietas: 15.000 € destinados a desplazamientos. Se cubrirán viajes a cuatro congresos internacionales (países de Europa y AL) para difundir resultados, así como gastos de campo en América Latina (visitas a parlamentos y entrevistas en 3–4 países). Estos viajes son necesarios para la recolección de datos primarios y la internacionalización del proyecto.
+
+Equipamiento y materiales: 10.000 € para adquisición de bienes materiales. Se planea la compra de dos computadoras portátiles de alto rendimiento y equipo de almacenamiento (servidor/backup) para procesamiento de datos. También se incluyen licencias de software especializado (NVivo, Stata, Atlas.ti) y fondos menores para acceso bibliográfico o bases de datos.
+
+Publicaciones y comunicación: 5.000 € para gastos de difusión científica. Se destinarán a cubrir tasas de publicación en acceso abierto y a diseñar materiales informativos (folletos, infografías) para actividades de divulgación.
+
+Otros gastos e imprevistos: 15.000 € como reserva ante contingencias. Esto cubre posibles sobrecostes en contratos menores (tutores de tesis, técnicos adicionales) o gastos administrativos no previstos (seguros, auditorías).
+
+Esta distribución responde a criterios de eficiencia: prioriza el componente humano especializado (que representa los ¾ del costo), garantiza la movilidad internacional necesaria y cubre recursos materiales esenciales. Todos los conceptos están alineados con las partidas autorizadas para proyectos de I+D y se consideran suficientes para lograr los objetivos sin sobredimensionar los recursos.
+
+
+
+
+6. CAPACIDAD FORMATIVA
+
+
+6.1. Programa de formación
+
+Participación de estudiantes de doctorado: Al menos dos estudiantes de doctorado se incorporarán al proyecto, participando en tareas de campo y análisis de datos, recibiendo formación directa en metodologías comparativas y coautoría en publicaciones.
+
+Cursos y talleres internos: Se organizarán seminarios regulares impartidos por los IPs en la institución de origen sobre técnicas de investigación (uso de software, métodos mixtos) y sobre contexto político latinoamericano, abiertos a todos los doctorandos y posdoctorandos del centro.
+
+Movilidad académica formativa: Se fomentará que miembros jóvenes del equipo realicen estancias cortas de investigación en instituciones socias de Latinoamérica (ej. 3 meses en Univ. de Chile o UNAM) para recibir capacitación complementaria y fortalecer la internacionalización de su formación.
+
+Trabajo colaborativo multidisciplinar: El proyecto incluirá reuniones periódicas con expertos de ciencias políticas, derecho constitucional y sociología, asegurando un ambiente de aprendizaje interdisciplinario y una mentoría amplia para los investigadores en formación.
+
+Este programa de formación consolidará habilidades metodológicas y contexto temático en los investigadores más jóvenes, ampliando la masa crítica de expertos en institucionalidad democrática en la región.
+
+
+6.2. Tesis realizadas o en curso en el ámbito del equipo de investigación
+
+Tesis de Doctorado: El equipo ha dirigido 4 tesis doctorales ya finalizadas sobre temas relacionados (institucionalidad en AL, consolidación democrática) y actualmente supervisa 3 tesis en curso. De ellas, dos abordan procesos legislativos y una analiza interacciones entre poderes. Se espera que estas tesis se defiendan durante 2025, integrando a jóvenes investigadores directamente vinculados al proyecto.
+
+Tesis de Maestría: Entre 2018 y 2024 se han co-dirigido 6 tesis de maestría en Ciencias Políticas y Derecho Constitucional, con temas de control parlamentario y reforma constitucional, brindando experiencia docente y supervisión académica al equipo.
+
+Experiencia docente: Ambos IPs participan regularmente como profesores en programas de posgrado, complementando la formación de los estudiantes con perspectivas prácticas extraídas de sus proyectos de investigación previos.
+
+Este historial demuestra la capacidad del equipo para formar nuevos investigadores en el ámbito, y asegura una integración fluida de estudiantes y becarios en las actividades del proyecto.
+
+
+6.3. Desarrollo científico o profesional de los doctores egresados
+
+Dra. Carolina Méndez (dirigida por IP1, tesis defendida en 2019) obtuvo una plaza de investigadora en el Instituto de Estudios Sociales de la Universidad de Córdoba, publicando artículos en revistas internacionales sobre gobernabilidad parlamentaria.
+
+Dr. Ernesto Salazar (dirigido por IP2, tesis defendida en 2020) se incorporó al equipo de investigación del Programa de Gobernanza de la CEPAL, aplicando su formación doctoral en el diseño de indicadores institucionales regionales.
+
+Dra. Julia Rivas (co-dirigida por el equipo, Tesis 2021) trabaja como consultora en un centro de pensamiento político, liderando proyectos de reforma legislativa para organismos multilaterales.
+
+Estos ejemplos muestran que la formación brindada por el equipo propicia carreras científicas destacadas y la transferencia profesional de conocimientos, impactando la capacidad analítica de nuevas cohortes de expertos en América Latina.
+
+
+
+
+7. CONDICIONES ESPECÍFICAS PARA LA EJECUCIÓN DE DETERMINADOS PROYECTOS
+
+
+No se prevén condiciones extraordinarias para la ejecución de este proyecto. Al tratarse de investigación social, no hay riesgos físicos ni experimentos con personas más allá de entrevistas a adultos; se cumplirá estrictamente la normativa ética institucional (consentimiento informado, confidencialidad). La universidad dispone de infraestructura (acceso remoto a archivos legislativos, medios digitales para trabajo colaborativo) suficiente para el proyecto. En caso de cambios legislativos imprevistos que requieran modificaciones, el equipo cuenta con el apoyo institucional necesario para reprogramar actividades sin afectar los objetivos. Fuente: La presente memoria está basada en estándares de proyectos de investigación pública y considera recomendaciones de estudios recientes sobre gobernabilidad en América Latina.
+
