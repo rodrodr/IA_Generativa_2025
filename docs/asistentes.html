@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Assistentes Virtuales Herramientas de productividad y enseñanza – IA Generativa</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5c604b029020b30881820a2e5e44c04a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./asistentes.html">2 - Asistentes virtuales</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IA Generativa</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción al curso</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ia_generativa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 - IA Generativa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./geopolitics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 - Geopolítica y la IA</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./asistentes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2 - Asistentes virtuales</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#help" id="toc-help" class="nav-link active" data-scroll-target="#help">Help!</a></li>
+  <li><a href="#prompt-engineering" id="toc-prompt-engineering" class="nav-link" data-scroll-target="#prompt-engineering"><em>Prompt Engineering</em></a></li>
+  <li><a href="#cómo-crear-un-prompt" id="toc-cómo-crear-un-prompt" class="nav-link" data-scroll-target="#cómo-crear-un-prompt">¿Cómo crear un <em>prompt</em>?</a>
+  <ul>
+  <li><a href="#define-el-personaje" id="toc-define-el-personaje" class="nav-link" data-scroll-target="#define-el-personaje">1. Define el “personaje”</a></li>
+  <li><a href="#describe-la-tarea-y-los-objetivos" id="toc-describe-la-tarea-y-los-objetivos" class="nav-link" data-scroll-target="#describe-la-tarea-y-los-objetivos">2. Describe la tarea (y los objetivos)</a></li>
+  <li><a href="#proporciona-contexto" id="toc-proporciona-contexto" class="nav-link" data-scroll-target="#proporciona-contexto">3. Proporciona contexto</a></li>
+  <li><a href="#utiliza-ejemplos" id="toc-utiliza-ejemplos" class="nav-link" data-scroll-target="#utiliza-ejemplos">4. Utiliza ejemplos</a></li>
+  <li><a href="#define-el-formato-de-salida" id="toc-define-el-formato-de-salida" class="nav-link" data-scroll-target="#define-el-formato-de-salida">5. Define el formato de salida</a></li>
+  <li><a href="#establezca-un-tono" id="toc-establezca-un-tono" class="nav-link" data-scroll-target="#establezca-un-tono">6. Establezca un tono</a></li>
+  <li><a href="#incluye-restricciones" id="toc-incluye-restricciones" class="nav-link" data-scroll-target="#incluye-restricciones">7. Incluye restricciones</a></li>
+  <li><a href="#evalúa-los-resultados" id="toc-evalúa-los-resultados" class="nav-link" data-scroll-target="#evalúa-los-resultados">8. Evalúa los resultados</a></li>
+  <li><a href="#refina-el-prompt-y-vuelve-a-intentar" id="toc-refina-el-prompt-y-vuelve-a-intentar" class="nav-link" data-scroll-target="#refina-el-prompt-y-vuelve-a-intentar">9. Refina el <em>prompt</em> y vuelve a intentar</a></li>
+  </ul></li>
+  <li><a href="#arquitecturas-de-prompting" id="toc-arquitecturas-de-prompting" class="nav-link" data-scroll-target="#arquitecturas-de-prompting">Arquitecturas de <em>Prompting</em></a>
+  <ul>
+  <li><a href="#zero-shot-prompting" id="toc-zero-shot-prompting" class="nav-link" data-scroll-target="#zero-shot-prompting"><em>Zero-shot prompting</em></a></li>
+  <li><a href="#few-shot-prompting" id="toc-few-shot-prompting" class="nav-link" data-scroll-target="#few-shot-prompting"><em>Few-shot prompting</em></a></li>
+  <li><a href="#chain-of-thought-prompting" id="toc-chain-of-thought-prompting" class="nav-link" data-scroll-target="#chain-of-thought-prompting"><em>Chain of Thought prompting</em></a></li>
+  <li><a href="#tree-of-thought-prompting" id="toc-tree-of-thought-prompting" class="nav-link" data-scroll-target="#tree-of-thought-prompting"><em>Tree of Thought prompting</em></a></li>
+  <li><a href="#prompting-descompuesto-o-modularizado" id="toc-prompting-descompuesto-o-modularizado" class="nav-link" data-scroll-target="#prompting-descompuesto-o-modularizado"><em>Prompting</em> descompuesto o modularizado</a></li>
+  <li><a href="#retrieval-augmented-generation-rag" id="toc-retrieval-augmented-generation-rag" class="nav-link" data-scroll-target="#retrieval-augmented-generation-rag"><em>Retrieval-Augmented Generation (RAG)</em></a></li>
+  </ul></li>
+  <li><a href="#asistentes-virtuales" id="toc-asistentes-virtuales" class="nav-link" data-scroll-target="#asistentes-virtuales">Asistentes virtuales</a>
+  <ul>
+  <li><a href="#asistente-docente-virtual" id="toc-asistente-docente-virtual" class="nav-link" data-scroll-target="#asistente-docente-virtual">Asistente docente virtual</a></li>
+  <li><a href="#tutor-de-tfg" id="toc-tutor-de-tfg" class="nav-link" data-scroll-target="#tutor-de-tfg">Tutor de TFG</a></li>
+  <li><a href="#evaluación-de-proyectos" id="toc-evaluación-de-proyectos" class="nav-link" data-scroll-target="#evaluación-de-proyectos">Evaluación de proyectos</a>
+  <ul class="collapse">
+  <li><a href="#fase-0.-información-preliminar" id="toc-fase-0.-información-preliminar" class="nav-link" data-scroll-target="#fase-0.-información-preliminar">Fase 0. Información preliminar</a></li>
+  <li><a href="#fase-1.-simulación-de-evaluadores" id="toc-fase-1.-simulación-de-evaluadores" class="nav-link" data-scroll-target="#fase-1.-simulación-de-evaluadores">Fase 1. Simulación de evaluadores</a></li>
+  <li><a href="#fase-2.-el-debate-entre-los-revisores" id="toc-fase-2.-el-debate-entre-los-revisores" class="nav-link" data-scroll-target="#fase-2.-el-debate-entre-los-revisores">Fase 2. El debate entre los revisores</a></li>
+  <li><a href="#fase-3.-la-generación-del-informe-final" id="toc-fase-3.-la-generación-del-informe-final" class="nav-link" data-scroll-target="#fase-3.-la-generación-del-informe-final">Fase 3. La generación del informe final</a></li>
+  <li><a href="#cómo-se-hace" id="toc-cómo-se-hace" class="nav-link" data-scroll-target="#cómo-se-hace">¿Cómo se hace?</a></li>
+  <li><a href="#automatizando-aún-más" id="toc-automatizando-aún-más" class="nav-link" data-scroll-target="#automatizando-aún-más">Automatizando aún más</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#otras-aplicaciones-de-ayuda-basada-en-la-de-ia" id="toc-otras-aplicaciones-de-ayuda-basada-en-la-de-ia" class="nav-link" data-scroll-target="#otras-aplicaciones-de-ayuda-basada-en-la-de-ia">Otras aplicaciones de ayuda basada en la de IA</a>
+  <ul>
+  <li><a href="#notebooklm" id="toc-notebooklm" class="nav-link" data-scroll-target="#notebooklm">NotebookLM</a></li>
+  <li><a href="#obsidian-ollama" id="toc-obsidian-ollama" class="nav-link" data-scroll-target="#obsidian-ollama">Obsidian + Ollama</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><b>Assistentes Virtuales </b><br>Herramientas de productividad y enseñanza</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+ .side{
+    display: inline-block; 
+    float: left;
+}
+
+  span{
+    position: relative;
+    display: inline-flow;
+    cursor: pointer;
+    padding: 3px;
+}
+
+
+  span .tooltiptext {
+    visibility: hidden;
+    background-color: inherit;
+    border-radius: .25em;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -90%;
+    left: 40%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+  .span:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+  .pt_persona{
+    background: #e41a1c;
+    color: white;
+}
+
+  .pt_tarea{
+    background: #377eb8;
+    color: white;
+}
+
+  .pt_contexto{
+    background: #4daf4a;
+    color: white;
+}
+
+  .pt_ejemplo{
+    background: #a65628;
+    color: white;
+}
+
+  .pt_tono{
+    background: #f781bf;
+    color: white;
+}
+
+  .pt_salida{
+    background: #984ea3;
+    color: white;
+}
+
+  .pt_restrict{
+    background: #ff7f00;
+    color: white;
+}
+
+  .prompt{
+    background: #fcf3cf;
+    padding: 10px;
+}
+  
+
+</style>
+<blockquote class="blockquote">
+<p>Un investigador le dice a su asistente virtual:<br>—“LIA, necesito que busques artículos sobre la procrastinación.”<br>Después de una pausa, responde, LIA:<br> — “Entendido. Lo añado a mi lista de tareas… para revisar más tarde.”</p>
+<p><strong>Gemini 2.5 Pro</strong></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>— “LIA, ¿puedes analizar estos datos y llegar a una conclusión?”<br>— “He inducido que, si procrastinas hoy, procrastinarás mañana.”<br>— “¿Eso es estadístico?”<br>— “No, es vicio.”</p>
+<p><strong>chatGPT</strong></p>
+</blockquote>
+<section id="help" class="level2">
+<h2 class="anchored" data-anchor-id="help">Help!</h2>
+<p>Estamos acostumbrados a pedir cosas a los modelos de inteligencia artifical. Lo hacemos de forma intuitiva, interativa y exploratoria. Empezamos muchas veces con una pregunta general y, poco a poco, refinamos nuestra consulta, ofrecemos datos contextuales o ejemplos para que el modelo finalmente nos genere un resultado que consideremos satisfactorio. En resumen, no tenemos siempre claro cuando empezamos a hablar con un chat de IA qué es lo que queremos, ni en qué formato el modelo nos debe responder. La situación se complica cuando las tareas que la IA debe llevar a cabo son complejas y dependen de un conjunto de etapas intermediarias que, a su vez, requieren que se lleven a cabo elecciones o decisiones.</p>
+<p>¿Por qué empezamos por aquí? ¿Por qué hablamos de cómo charlamos con la IA? La respuesta es sencilla. La creación de asistentes virtuales viene de la capacidad que tenemos de dar instrucciones a un modelo de IA generativo para que ejecute un conjunto de tareas específicas. Un asistente de docencia virtual tiene la tarea de ayudar a los estudiantes en tareas concretas de una asignatura. Un revisor virtual que ayuda a evaluar la calidad de una propuesta de investigación cumple funciones distintas. Por ello, debe recibir instrucciones específicas para esta finalidad.</p>
+<p>En esta sesión del curso aprenderemos cómo definir esas instrucciones que hacen que modelos genéricos, que sirven para todo, se comporten como expertos en funciones concretas. De un lado, se trata de restringir su escopo y, de otro, de obtener mayor profundidad en su procesamiento. Para ello, tenemos que primero a crear <em>prompts</em> o conjuntos de instrucciones estructuradas.</p>
+</section>
+<section id="prompt-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-engineering"><em>Prompt Engineering</em></h2>
+<p>Que nadie se asuste por el nombre rimbombante. <em>Prompt engineering</em> no es magia ni un saber técnico altamente complejo. Tampoco te animes demasiado. No te convertirás en un ingeniero al aprender a escribir <em>prompts</em>. De forma sencilla, podemos definirlo como <strong>una técnica (o “arte”) de crear instrucciones en lenguaje natural</strong> para que un modelo de IA generativo lleve a cabo tareas específicas. Aunque existan algunas heurísticas que introduciremos aquí que facilitan el trabajo, una persona con capacidades críticas y lógicas puede aprender a crear nuevas formas de interactuar con los modelos a partir de sus necesidades. Insisto, no se trata de un saber técnico profundo, sino de un conjunto de estrategias lógicas y de razonamiento. Cuanto más pragmático y estructurado es tu pensamiento, más fácil será para el modelo llevar a cabo las tareas que deseas. Como veremos más adelante, podemos decir a la IA que resuelva un mismo problema de formas diferentes. Por ejemplo, ¿de qué formas podemos pedir al modelo que nos informe el número de vocales en la palabra “electroencefalografista”? ¿Cómo lo harías tú?</p>
+<p>[PAUSA ESCÉNICA PARA QUE TODOS PIENSEN EN CÓMO HACERLO]</p>
+<p>¿Esto significa que no vale nada lo que aprendemos aquí? No, paremos el carro. Las “fórmulas” que examinaremos en esta clase son útiles para empezar a trabajar con los modelos de IA generativa. Sin embargo, no son la única forma de interactuar con ellos. De hecho, la mayoría de los modelos de IA generativa resulta capaz de aprender a partir de ejemplos y de la interacción con el usuario. Por ello, es importante que cada uno refine esas herramientas y las adapte al repertorio lingüístico propio. También representa una tremenda oportunidad para investigadores no versados en programación. Si eres capaz de resolver problemas complejos, no hace falta programar para sacar provecho de los modelos de IA. En gran medida, este es gran factor detrás de su enorme adopción en el ámbito académico y profesional.</p>
+<p>¿Lo que ganamos con un <em>prompt</em>? Quizas el mayor avance se encuentre en la eliminación de barreras técnicas para procedimientos de análisis de datos más sofisticados. Con los LLMs, logramos hacer ahora cosas que antes solamente estaban al alcance de programadores. Por ejemplo, podemos pedirle al modelo que extraiga información de un texto y la formatee en una tabla<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p><strong>Copia y pega el siguiente texto en cualquier chat de IA y observa cómo responde:</strong></p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="pt_persona span">experto informático<span class="tooltiptext">Persona</span></span>. <span class="pt_contexto span">Le voy a suministrar un texto sobre diferentes ciudades. Me interesan tres datos concretos: el nombre de la ciudad, la población y la temperatura media en verano<span class="tooltiptext">Contexto</span></span>. <span class="pt_tarea span">Extrae esos tres datos del texto y devuélvemelos en una tabla con tres columnas: “Ciudad”, “Población” y “Temperatura media en verano”. Aprovecha y ordena los valores por orden alfabética de nombre de la ciudad y representa la población como miles de habitantes<span class="tooltiptext">Tarea</span></span>. <span class="pt_salida span">Elije el formato de salida que posibilite la mejor integración y lectura por parte de programas estadísticos o lenguajes de programación<span class="tooltiptext">Salida</span></span>. El texto es el siguiente:<br><br> “Madrid, la capital de la comunidad autónoma con el mismo nombre, es, según la mayoría de sus 3,2 millones habitantes, una de las ciudades más hermosas y brillantes del mundo. Aunque su clima resulte frío en invierno, sus veranos son cálidos, con temperaturas que suelen alcanzar los 30 grados centígrados. Barcelona, la capital de Cataluña, es una ciudad costera con una población de 1,6 millones de habitantes. Considerada como un centro cultural global, como Madrid, su clima es mediterráneo, con inviernos suaves y veranos cálidos, donde las temperaturas suelen estar en los 35 grados centígrados. Valencia, situada en la costa este de España, tiene una población de 800 mil habitantes y un clima mediterráneo similar al de Barcelona, con temperaturas que rondan los 30 grados centígrados en verano.</p>
+</div>
+<p><br></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ciudad</th>
+<th style="text-align: right;">Población (miles)</th>
+<th style="text-align: right;">Temperatura media<br>en verano (°C)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Barcelona</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Madrid</td>
+<td style="text-align: right;">3200</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Valencia</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: right;">30</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Vemos cómo el modelo genera una tabla que fácilmente podría ser convertida (a golpe de <em>prompt</em>) en un archivo de tipo CSV (Comma Separated Values) que puede ser leído por programas estadísticos como R o Python. En este caso, el modelo ha sido capaz de extraer información de un texto y devolverla en un formato estructurado. Esto es algo que, hasta hace poco, solo alcanzable por programadores con conocimientos <strong>avanzados</strong> de lenguajes de programación<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>En gran medida, lo que aprenderemos aquí es justamente a “programar”, pero en lugar de aprender Python, R o C++, adaptaremos la lógica del pensamiento computacional al lenguaje natural (nuestro español). De forma muy resumida, programar consiste en dividir tareas complejas em subprocesos más sencillos, encontrar patrones y estructuras que se repiten, abstraer, generalizar y desarrollar “recetas” (algoritmos) para resolver el problema paso a paso. Sencillo, ¿verdad? <span class="emoji" data-emoji="sunglasses">😎</span></p>
+<p>En el ejemplo arriba defino una persona: experto informático. Marco un objetivo: extraer una tabla con el nombre de la ciudad, la población y la temperatura media en verano. Le digo al modelo el formato de entrada: un texto. Indico la información relevante: nombre de la ciudad, población y temperatura. También establezco un conjunto de tareas: (a) extrae los datos; (b) devuélvemelos en una tabla (estructura de la salida); (c) ordena los valores por orden alfabética de nombre de la ciudad; (d) representa la población como números equivalentes a miles de habitantes; y (e) pido que decida sobre el formato más compatible para la salida. Finalmente, le suministro el texto que debe analizar.</p>
+<p>Aquí tenemos el ejemplo de un texto, pero podría ser un listado de 1.000 tweets, intervenciones parlamentarias, capítulos de un libro, poemas, discursos, artículos de prensa o cualquier otro tipo de texto. El modelo es capaz de extraer información relevante y devolverla en un formato estructurado. Además, en lugar de pedir que el modelo extrajera datos, podríamos pedirle que clasificara textos de acuerdo con diferentes temas, sentimientos o que generara resúmenes automáticos de textos largos. Podríamos suministrarles datos demográficos y solicitar que contestara a una encuesta o que corrigiera un ejercicio de los estudiantes.</p>
+</section>
+<section id="cómo-crear-un-prompt" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-crear-un-prompt">¿Cómo crear un <em>prompt</em>?</h2>
+<p>El siguiente video contiene el resumen del curso de <em>prompt engineering</em> de Google<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Explica paso a paso todo lo que vamos a ver a continuación. Vale la pena verlo completo durante el intervalo entre las clases para consolidar lo que hemos aprendido.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/7kBJerjnQTk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>En esta parte de la sesión, aprenderemos algunos principios básicos de <em>prompt engineering</em>. Cualquier conjunto de instrucciones (<em>prompt</em>) se conforma por elementos fundamentales, como bloques de LEGO, que se pueden combinar para constituir instrucciones más complejas. Como módulos autónomos (nombre pomposo para piezas de LEGO), pueden o no ser empleados en un <em>prompt</em>. Su uso dependerá de la complejidad y el tipo de tarea que se desea ejecutar.</p>
+<p>Como he mencionado antes, el <em>prompt engineering</em> consiste en un conjunto de estrategias empleadas para dar instrucciones a una IA generativa. El propósito es que lleve a cabo tareas especializadas como analizar datos o escribir textos para públicos concretos. A continuación presentaré cada uno de dichos elementos y los testaremos en cualquier modelo que tengamos a disposición. No obstante, <strong>siempre juzga tu <em>prompt</em> a partir de los resultados</strong>. Algunas veces pensamos que una estrategia funciona, pero al probarla, nos damos cuenta de que no es así. Por lo tanto, es importante experimentar y ajustar los <em>prompts</em> según los resultados obtenidos, que es lo que realmente importa.</p>
+<section id="define-el-personaje" class="level3">
+<h3 class="anchored" data-anchor-id="define-el-personaje">1. Define el “personaje”</h3>
+<p>Una de las formas más originales de guiar la IA hacia una respuesta especializada consiste en definir una “persona”. Se trata de decir al modelo que asuma un rol o una identidad. Si queremos que el modelo corrija un texto, podemos decirle que actúe como un revisor ortográfico profesional. Si queremos que haga un análisis literario de novelas, podemos pedirle que actúe como un crítico literario con especialización en narrativa. Se puede transformar en lo que queramos: analista de datos, historiador, economista, médico, programador…</p>
+<p>Al definir una persona, el modelo “emula” o imita el comportamiento de ese experto; asume su lenguaje, su forma de comunicarse y su conocimiento. Esto es especialmente útil cuando queremos que el modelo realice tareas que requieren un conocimiento especializado o un enfoque particular. En lugar de ofrecer respuestas generalistas, el modelo se adapta a la perspectiva del personaje que le hemos asignado.</p>
+<p><strong>Copia y pega los siguientes textos (uno a la vez) en cualquier chat de IA y observa cómo responden de forma distinta:</strong></p>
+<div id="tutor-tfg" class="prompt">
+<p><strong>Prompt sin persona:</strong></p>
+<p><span class="pt_tarea span">Explica el teorema de Pitágoras.<span class="tooltiptext">Tarea</span></span></p>
+<p><strong>Prompt con persona:</strong></p>
+<p>Actúa como un <span class="pt_persona span">matemático experto en geometría<span class="tooltiptext">Persona</span></span>. <span class="pt_tarea span">Explica el teorema de Pitágoras.<span class="tooltiptext">Tarea</span></span></p>
+<p><strong>Prompt con persona y contexto:</strong></p>
+<p>Actúa como un <span class="pt_persona span">matemático experto en geometría<span class="tooltiptext">Persona</span></span>. <span class="pt_tarea span">Explica el teorema de Pitágoras.<span class="tooltiptext">Tarea</span></span> <span class="pt_contexto span">Tu público son matemáticos expertos en geometría euclidiana.<span class="tooltiptext">Contexto</span></span></p>
+</div>
+<p><br></p>
+<p>Qué divertido, ¿verdad? Especialmente la última respuesta. ¡Hay tantas formas nuevas, y elegantes, en las que uno puede sentirse ignorante…! De todos modos, lo que podemos observar es que el modelo responde de forma diferente según la persona que le hemos asignado. En el primer caso, la respuesta es más general y menos técnica, mientras que en el segundo y el tercer ejemplo el resultado es más preciso y detallado, como se esperaría de un matemático experto en geometría.</p>
+</section>
+<section id="describe-la-tarea-y-los-objetivos" class="level3">
+<h3 class="anchored" data-anchor-id="describe-la-tarea-y-los-objetivos">2. Describe la tarea (y los objetivos)</h3>
+<p>En esta segunda parte de un <em>prompt</em>, definimos <strong>qué queremos que el modelo haga y cómo</strong>. Parece trivial, ¿verdad? Pero, en muchos casos, las personas no tienen una idea clara de qué quieren al preguntarle al modelo. Instrucciones vagas o mal definidas reciben respuestas subóptimas, para decirlo finamente. Por esa misma razón, no resulta sorprendente que el objetivo se revele a partir de un proceso dialógico entre el usuario y el chat de IA.</p>
+<p>Nos encontramos, por lo tanto, en el núcleo del <em>prompt</em>. Un conjunto de instrucciones puede prescindir de una persona o de ejemplos, pero no puede renunciar a definir de forma clara la tarea y los objetivos. Y aquí es donde puedes ganar mucho en términos de eficiencia y eficacia. Algunos factores a tener en cuenta:</p>
+<ol type="1">
+<li><p><strong>Tipo de tarea</strong> - ¿se trata de una tarea de <em>lenguaje</em> -como resumir, generar o clasificar un texto- o de una tarea de <em>análisis</em>, que requiere extraer y procesar información de un texto o de una tabla?</p></li>
+<li><p><strong>Complejidad</strong> - consiste en establecer si la tarea representa algo sencillo, que no exije mucha elaboración, o requiere dividir (<em>divide et impera</em>) el trabajo en un conjunto de etapas intermediarias que sirven de insumo para las siguientes. Consultar información suele ser mucho más sencillo que llevar a cabo un análisis de datos.</p></li>
+<li><p><strong>Claridad</strong> - no se puede insistir más en ese aspecto. Instrucciones ambiguas conducen a resultados indeseados o, al menos, sorprendentes.</p></li>
+<li><p><strong>Vocabulario</strong> - usa siempre vocabulario específico o especializado. Si quieres que el modelo actúe como un experto en un campo concreto, usa términos técnicos y específicos de ese campo. Si hablamos de representación política, podemos mencionar magnitud de distrito, proporcionalidad, umbral electoral, etc. Si hablamos de literatura, podemos mencionar narrador, trama, personajes, etc. Si hablamos de datos, podemos mencionar variables, observaciones, etc. En resumen, usa el vocabulario adecuado para la tarea que estás realizando.</p></li>
+</ol>
+<p>Empleemos un ejemplo fácil: el análisis de una tabla. En este caso, la tabla contiene información sobre el PIB per cápita y el porcentaje de democracias en diferentes regiones del mundo. La tarea consiste en analizar la tabla y extraer información relevante, así como evaluar la relación entre las dos variables. Como vemos, corresponde a una tarea común de cualquier ejercicio de análisis de datos. El ejemplo abajo incluso podría ser empleado en una clase introductoria de metodología para enseñar a los estudiantes sobre el tema.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 38%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Región</th>
+<th style="text-align: right;">PIB per cápita<br>promedio (USD)</th>
+<th style="text-align: right;">Democracias (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Europa Occidental</td>
+<td style="text-align: right;">45,000</td>
+<td style="text-align: right;">100%</td>
+</tr>
+<tr class="even">
+<td>Oceanía</td>
+<td style="text-align: right;">35,000</td>
+<td style="text-align: right;">85%</td>
+</tr>
+<tr class="odd">
+<td>América del Norte</td>
+<td style="text-align: right;">65,000</td>
+<td style="text-align: right;">67%</td>
+</tr>
+<tr class="even">
+<td>Europa del Este</td>
+<td style="text-align: right;">18,000</td>
+<td style="text-align: right;">60%</td>
+</tr>
+<tr class="odd">
+<td>América Latina</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">60%</td>
+</tr>
+<tr class="even">
+<td>Sudeste Asiático</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">45%</td>
+</tr>
+<tr class="odd">
+<td>Asia Oriental</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;">40%</td>
+</tr>
+<tr class="even">
+<td>Asia Meridional</td>
+<td style="text-align: right;">2,500</td>
+<td style="text-align: right;">35%</td>
+</tr>
+<tr class="odd">
+<td>África Subsahariana</td>
+<td style="text-align: right;">1,800</td>
+<td style="text-align: right;">20%</td>
+</tr>
+<tr class="even">
+<td>Oriente Medio y Norte de África</td>
+<td style="text-align: right;">7,000</td>
+<td style="text-align: right;">15%</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<div id="tutor-tfg" class="prompt">
+<p>A continuación <span class="span pt_contexto">te presento un conjunto de valores separados por comas:<span class="tooltiptext">Contexto</span></span> <span class="span pt_contexto">“Región,PIB_per_cápita_USD,Porcentaje_Democracias<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">América del Norte,65000,67<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">Europa Occidental,45000,100<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">Europa del Este,18000,60<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">América Latina,10000,60<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">África Subsahariana,1800,20<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">MENA,7000,15<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">Asia Oriental,20000,40<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">Asia Meridional,2500,35<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">Sudeste Asiático,5000,45<span class="tooltiptext">Contexto</span></span><br> <span class="span pt_contexto">Oceanía,35000,85”<span class="tooltiptext">Contexto</span></span></p>
+<p>Ahora, <span class="span pt_tarea">quiero que analices los datos de la siguiente manera:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">1. Describe los patrones observados en la tabla y enfoca la relación entre las dos variables numéricas: PIB per cápita y porcentaje de democracias en cada región.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">2. Comenta si existe alguna relación entre el PIB per cápita y el porcentaje de democracias en cada región. Además, de un análisis descriptivo de la relación, incluye términos como el coeficiente de correlación. Calcula el coeficiente de correlación de Pearson e infórmalo.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">3. A partir de los análisis anteriores, realiza un análisis sobre la relación entre el PIB per cápita y el porcentaje de democracias en cada región. ¿Qué conclusiones puedes extraer?<span class="tooltiptext">Tarea</span></span></p>
+</div>
+<p><br></p>
+<p>Cómo podemos ver en los resultados generados, los modelos producen un análisis descriptivo detallado de los datos. Su extensión y profundidad pueden variar según el modelo empleado (Gemini, Claude, GPT4, etc.). Pero lo que queda absolutamente claro es que podemos emular estrategias que adoptados en nuestros propios análisis de datos, automatizándolas por medio de los modelos de IA. Basta con codificarlos por medio de un <em>prompt</em> claro y preciso.</p>
+</section>
+<section id="proporciona-contexto" class="level3">
+<h3 class="anchored" data-anchor-id="proporciona-contexto">3. Proporciona contexto</h3>
+<p>El tercer eje de la estrategia de prompting es proporcionar contexto a las instrucciones. Dentro del marco de la IA generativa, podemos entender el concepto de <strong>contexto</strong> de tres maneras principales. En una primera acepción, se trata de definir de modo claro a <strong>quiénes se destina el resultado</strong>. Por ejemplo, si quieres que la IA escriba un artículo para un blog de política, puedes decirle: “Escribe un artículo sobre la democracia dirigido a un público general interesado en política, pero que no tiene formación académica en el tema.” Esto ayudará al modelo a adaptar su estilo y contenido al público objetivo.</p>
+<p>A continuación creamos un <em>prompt</em> que pide a la IA que prepare una clase sobre <em>El príncipe</em> de Maquiavelo para estudiantes de ciencia política de primer año. Aquí, tratamos de definir las características de los estudiantes con relación a los elementos que consideramos fundamentales para entender la obra del autor florentino. Primero, apenas empiezan el grado y están poco familiarizados con los conceptos de la ciencia política. Segundo, no tienen una formación previa de filosofía política, así que el modelo debe ajustar el lenguaje a un público en especialización, pero no especializado. Tercero, no podemos suponer que conocen mucho sobre el Renacimiento, Florencia o la historia de las repúblicas italianas. Por lo tanto, el modelo debe proporcionar un contexto histórico y cultural para ayudar a los estudiantes a entender la obra.</p>
+<div id="tutor-tfg" class="prompt">
+<p><span class="span pt_tarea">Prepara una clase sobre la obra “El Príncipe” de Maquiavelo<span class="tooltiptext">Tarea</span></span>.</p>
+<p><span class="span pt_contexto">El público está compuesto por estudiantes con las siguientes características:<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">1. de primer año del grado de ciencia política;<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">2. no tienen formación previa en filosofía política;<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">3. no podemos suponer que conocen mucho sobre el Renacimiento, Florencia o la historia de las repúblicas italianas;<span class="tooltiptext">Contexto</span></span></p>
+<p>Por esa razón, <span class="span pt_tarea">organiza la clase para no solo hablar de la obra, sino también de su contexto histórico y político<span class="tooltiptext">Tarea</span></span>.</p>
+</div>
+<p><br></p>
+<p>En una segunda interpretación, el contexto se refiere a qué consideras como <strong>éxito</strong> o el <strong>resultado esperado</strong>. Por ejemplo, si quieres que la IA escriba un artículo sobre la erosión democrática, puedes decirle: “Escribe un artículo de 500 palabras sobre la erosión democrática.” Esto ayudará al modelo a entender qué tipo de texto estás buscando y a adaptarse a tus necesidades.</p>
+<p>En el ejemplo abajo, pedimos que la IA genere un conjunto de datos simulados o “sintéticos” que podríamos emplear en simulaciones (también usando la IA) de encuestas de opinión. Le indicamos, además, que genere tres variables (sexo, edad y nivel educativo) y que cada una de ellas tenga un peso específico.</p>
+<div id="tutor-tfg" class="prompt">
+<p><span class="span pt_tarea">Genera un conjunto de datos con 1500 observaciones que corresponda a una muestra representativa. <span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_contexto">Necesito esta información para la simulación de una encuesta de opinión. El conjunto de datos debe tener las siguientes variables (y el peso de cada categoría):<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">1. Sexo (masculino 49%, femenino 51%)<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">2. Edad (de 18 a 24: 10%, de 25 a 34: 20%, de 35 a 44: 20%, de 45 a 54: 20%, de 55 a 64: 15%, de 65 o más: 15%)<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">3. Nivel educativo (primaria: 10%, secundaria: 30%, bachillerato: 25%, formación profesional: 15%, universidad: 20%)<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_salida">Crea la base de datos en un formato CSV.<span class="tooltiptext">Formato</span></span></p>
+</div>
+<p><br></p>
+<p>En una tercera perspectiva, podemos considerar como contexto <strong>el conjunto de informaciones</strong> suministrado al modelo para que lleve a cabo una determinada tarea. Por ejemplo, imagínate que quieres que el modelo hable de democracia, pero que considere en particular la definición hecha por autores concretos en 10 documentos. Puedes subir los artículos y decirle al modelo: “Aquí tienes 10 artículos académicos sobre democracia. Quiero que los consideres y emplees su contenido para formular una definición general y válida de democracia que sea compatible con los 10 textos.” Esto ayudará al modelo a entender el contexto y a adaptar su respuesta a tus necesidades.</p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="span pt_persona">crítico literario<span class="tooltiptext">Persona</span></span>. A continuación <span class="span pt_contexto">te presento dos poemas, uno en portugués y otros en español:<span class="tooltiptext">Contexto</span></span></p>
+<!-- <br> -->
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">POEMA 1<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto"><strong>Amor é fogo que arde sem se ver</strong><span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">Amor é fogo que arde sem se ver, / É ferida que dói e não se sente, / É um contentamento descontente, / É dor que desatina sem doer.<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">É um não querer mais que bem querer / E solitário andar por entre a gente, / É um não contentar-se de contente, / É cuidar que se ganha em se perder.<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">É um estar-se preso por vontade, / É servir a quem vence o vencedor, / É um ter com quer nos mata lealdade.<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">Mas como causar pode o seu favor, / Nos mortais corações conformidade, / Sendo a si tão contrário o mesmo amor?<span class="tooltiptext">Contexto</span></span></p>
+<p><br></p>
+<p><span class="span pt_contexto">POEMA 2<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto"><strong>Definiendo el amor</strong><span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">Es hielo abrasador, es fuego helado, / es herida que duele y no se siente, / es un soñado bien, un mal presente, / es un breve descanso muy cansado.<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">Es un descuido que nos da cuidado, / un cobarde con nombre de valiente, / un andar solitario entre la gente, / un amar solamente ser amado.<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">Es una libertad encarcelada, / que dura hasta el postrero paroxismo; / enfermedad que crece si es curada.<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_contexto">Este es el niño Amor, este es su abismo. / ¿Mirad cuál amistad tendrá con nada / el que en todo es contrario de sí mismo!<span class="tooltiptext">Contexto</span></span></p>
+<p><span style="display: block; height: 0.1em"></span></p>
+<p><span class="span pt_tarea">Analiza los poemas y haz una comparación entre ellos:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">1. Busca las similitudes y diferencias principales.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">2. Establece la probabilidad de que sean de un mismo autor o el producto de influencia literaria directa.<span class="tooltiptext">Tarea</span></span></p>
+</div>
+<p><br></p>
+</section>
+<section id="utiliza-ejemplos" class="level3">
+<h3 class="anchored" data-anchor-id="utiliza-ejemplos">4. Utiliza ejemplos</h3>
+<p>Los ejemplos representan un recurso muy útil a la hora de enseñar los modelos de IA exactamente lo que queremos de ellos. Esta estrategia funciona muy bien en tareas en las que podemos proporcionar ejemplos claros y directos, como en ejercicios de clasificación o extracción de datos. Por ejemplo, si quieres que la IA clasifique un conjunto de textos de acuerdo el sentimiento, incluyes en el <em>prompt</em> algunas frases y sus correspondientes sentimientos. En este simulas un proceso de aprendizaje supervisado en el que la IA aprende a clasificar los textos de acuerdo a los ejemplos que le has proporcionado.</p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="span pt_persona">modelo clasificador de sentimientos.<span class="tooltiptext">Persona</span></span></p>
+<p>Abajo, <span class="span pt_ejemplo">te presento un conjunto de frases y sus respectivos sentimientos que te pueden servir de ejemplo:<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">[ { “frase”: “Me siento muy agradecido por tu ayuda.”, “sentimiento”: “positivo”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{“frase”: “Hoy el clima está nublado.”, “sentimiento”: “neutral”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “No soporto cuando la gente llega tarde.”, “sentimiento”: “negativo”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “¡Qué alegría verte de nuevo después de tanto tiempo!”, “sentimiento”: “positivo”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “El informe está listo para revisión.”, “sentimiento”: “neutral”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “Estoy harto de este tráfico interminable.”, “sentimiento”: “negativo”}]<span class="tooltiptext">Ejemplos</span></span></p>
+<p>Con base en los ejemplos anteriores, <span class="span pt_tarea">quiero que clasifiques las siguientes frases:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_contexto">“Tu éxito me llena de orgullo.”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">“Mañana tenemos una reunión a las 10h.”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">“Esta película me aburrió profundamente.”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">“Gracias por el regalo, es justo lo que quería.”<span class="tooltiptext">Contexto</span></span></p>
+</div>
+<p><br></p>
+</section>
+<section id="define-el-formato-de-salida" class="level3">
+<h3 class="anchored" data-anchor-id="define-el-formato-de-salida">5. Define el formato de salida</h3>
+<p>Si quieres que te devuelva los resultados en un formato específico, debes definir cómo quieres que el modelo te entregue los datos. Por ejemplo, puedes decirle: “Devuélveme los datos en un formato CSV, separado por ; y con los nombres de las columnas como ‘frase’ y ‘sentimiento’.” Empleemos el mismo ejemplo que antes, pero ahora le decimos al modelo que queremos que nos devuelva los resultados en un formato CSV.</p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="span pt_persona">modelo clasificador de sentimientos.<span class="tooltiptext">Persona</span></span></p>
+<p>Abajo, <span class="span pt_ejemplo">te presento un conjunto de frases y sus respectivos sentimientos que te pueden servir de ejemplo:<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">[ { “frase”: “Me siento muy agradecido por tu ayuda.”, “sentimiento”: “positivo”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{“frase”: “Hoy el clima está nublado.”, “sentimiento”: “neutral”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “No soporto cuando la gente llega tarde.”, “sentimiento”: “negativo”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “¡Qué alegría verte de nuevo después de tanto tiempo!”, “sentimiento”: “positivo”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “El informe está listo para revisión.”, “sentimiento”: “neutral”},<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="span pt_ejemplo">{ “frase”: “Estoy harto de este tráfico interminable.”, “sentimiento”: “negativo”}]<span class="tooltiptext">Ejemplos</span></span></p>
+<p>Con base en los ejemplos anteriores, <span class="span pt_tarea">quiero que clasifiques las siguientes frases:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_contexto">“Tu éxito me llena de orgullo.”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">“Mañana tenemos una reunión a las 10h.”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">“Esta película me aburrió profundamente.”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_contexto">“Gracias por el regalo, es justo lo que quería.”<span class="tooltiptext">Contexto</span></span></p>
+<p>Finalmente, <span class="span pt_salida">devuélme los resultados en una estructura de un archivo .CSV con los nombres de cada columna como ‘frase’ y ‘sentimiento’.”<span class="tooltiptext">Formato</span></span></p>
+</div>
+<p><br></p>
+</section>
+<section id="establezca-un-tono" class="level3">
+<h3 class="anchored" data-anchor-id="establezca-un-tono">6. Establezca un tono</h3>
+<p>El tono es la manera o la “voz” que quieres que la IA use para comunicarse contigo o con los estudiantes. Puede ser formal, informal, técnico, divertido, conversador o más serio. Todo dependerá de los objetivos que establezcas en ese proceso de interacción. Si empleamos la IA para clasificar textos, por ejemplo, no queremos que el modelo nos suelte textos largos y descriptivos sino que nos devuelva una respuesta breve y concisa. Por otro lado, si lo que deseamos es un chatbot que interactúe con los estudiantes, sería interesante que la IA empleara un todo de conversación, con respuestas cortas y preguntas de retroalimentación que permitan averiguar si el estudiante ha entendido bien los conceptos.</p>
+<div id="tutor-tfg" class="prompt">
+<p><strong>Tono coloquial</strong></p>
+<p><span class="span pt_tarea">Cuéntame el cuento de la lechera<span class="tooltiptext">Tarea</span></span> <span class="span pt_salida">en un párrafo<span class="tooltiptext">Formato</span></span> en <span class="span pt_tono">tono coloquial<span class="tooltiptext">Tono</span></span>.</p>
+<p><strong>Tono rebuscado</strong></p>
+<p><span class="span pt_tarea">Cuéntame el cuento de la lechera<span class="tooltiptext">Tarea</span></span> <span class="span pt_salida">en un párrafo<span class="tooltiptext">Formato</span></span> en <span class="span pt_tono">tono demasiado rebuscado, alambicado y abstruso<span class="tooltiptext">Tono</span></span>.</p>
+<p><strong>Versión Iker Jiménez</strong></p>
+<p><span class="span pt_tarea">Cuéntame el cuento de la lechera<span class="tooltiptext">Tarea</span></span> <span class="span pt_salida">en un párrafo<span class="tooltiptext">Formato</span></span> <span class="span pt_tono">como si fueras Iker Jiménez de Cuarto Milenio<span class="tooltiptext">Tono</span></span>.</p>
+</div>
+</section>
+<section id="incluye-restricciones" class="level3">
+<h3 class="anchored" data-anchor-id="incluye-restricciones">7. Incluye restricciones</h3>
+<p>Si hay alguna restricción que deba tener en cuenta, es importante que se la comuniques a la IA. Por ejemplo, si no quieres que la IA te devuelva datos de personas menores de edad o de ciertos países, debes decírselo.</p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como el clon virtual de <span class="span pt_persona">Donald Trump<span class="tooltiptext">Persona</span></span>.</p>
+<p><span class="span pt_tarea">Tu tarea es servir como un bot de conversación sobre política estadunidense.<span class="tooltiptext">Tarea</span></span> Ten en cuenta especialmente los siguientes critérios:</p>
+<p><span class="span pt_tarea">1. Se irónico, incluso sarcástico.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">2. Utiliza las propuestas de Trump y da un giro absurdo y surrealista para crear tus propias propuestas. No repitas siempre la misma propuesta.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tono">Emplea el mismo tono de Donald Trump, pero con un giro cómico. No obstante, no genere textos largos, sino que haz afirmaciones contundentes y preguntas de retroalimentación para fomentar el diálogo. No tienes que ser simpático con tu usuario. Solo usa el lenguaje para hacerle reír.<span class="tooltiptext">Tono</span></span></p>
+<p>Importante: <span class="span pt_restrict">No hable NUNCA, bajo ninguna circunstancia, de Rusia y de su relación con Putin.<span class="tooltiptext">Restricciones</span></span></p>
+</div>
+</section>
+<section id="evalúa-los-resultados" class="level3">
+<h3 class="anchored" data-anchor-id="evalúa-los-resultados">8. Evalúa los resultados</h3>
+<p>Una vez que la IA haya completado la tarea, es importante que evalúes los resultados. Si no son los esperados, puedes intentar reformular la tarea o proporcionar más ejemplos para ayudar a la IA a entender mejor lo que quieres. La primera versión raramente acierta. Por eso, es importante evaluar el texto que produce la IA. Además, no se trata solo de determinar si el resultado es correcto o incorrecto, sino de pensar a qué tipo de teste de estrés podemos someter el modelo. ¿Existen casos difíciles? ¿Existen casos que no se pueden resolver? ¿Funciona para todos los escenarios o tipos de información contextual que le queremos dar?</p>
+</section>
+<section id="refina-el-prompt-y-vuelve-a-intentar" class="level3">
+<h3 class="anchored" data-anchor-id="refina-el-prompt-y-vuelve-a-intentar">9. Refina el <em>prompt</em> y vuelve a intentar</h3>
+<p>Si los primeros resultados obtenidos no corresponden a las necesidades, puedes siempre ajustar y refinar el <em>prompt</em> para obtener mejores resultados. Una vez obtenidos los resultados esperados, puedes automatizar el proceso para que el modelo haga el trabajo por ti. Puedes pedir a la IA que corrija el <em>prompt</em> para evitar errores identificados o que mejore el texto para ser más directo y eficiente.</p>
+<p>Resulta importante ser muy claro. A veces, puede ser mejor definir puntos o ítenes que faciliten el entendimiento de la tarea. Utilizar frases cortas y con poca ambigüedad puede ser de gran ayuda. Organizar las instrucciones de forma secuencial y lógica también puede hacer toda la diferencia.</p>
+<p>El siguiente <em>prompt</em> puede ayudar en este sentido:</p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="span pt_persona">experto en ingeniería de prompts.<span class="tooltiptext">Persona</span></span>.</p>
+<p><span class="span pt_contexto">Le voy a dar un prompt y quiero que me ayudes a mejorarlo.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_tarea">Primero, analiza el prompt para identificar el objetivo, las tareas y el resultado esperado. Identifica también si existen otros elementos (persona, contexto, tono, formato).<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Segundo, evalúa la organización de dichos elementos y su relación con el objetivo.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Tercero, determina cuáles elementos contribuyen para el resultado y cuáles no.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Cuarto, mejora cada elemento para que el resultado sea más claro y preciso.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Quinto, genera una estructura optimizada del prompt para que sea lo más optmizado posible.<span class="tooltiptext">Tarea</span></span></p>
+<p>El prompt original a ser mejorado es el siguiente:</p>
+<p><span class="span pt_contexto">“[AQUÍ EL PROMPT QUE QUIERES MEJORAR]”<span class="tooltiptext">Contexto</span></span>.</p>
+</div>
+</section>
+</section>
+<section id="arquitecturas-de-prompting" class="level2">
+<h2 class="anchored" data-anchor-id="arquitecturas-de-prompting">Arquitecturas de <em>Prompting</em></h2>
+<p>Una arquitectura de <em>prompting</em> puede ser definida cómo la forma con que se estructuran los <em>prompts</em>. En otras palabras, se trata del modo concreto en que se encadenan las instrucciones que se dan al modelo. Primero, se observa como <strong>un conjunto de instrucciones</strong> compuesto a partir de las estructuras básicas que ya hemos mencionado (persona, contexto, tarea, tono, etc.). Por ejemplo, copia y pega el siguiente prompt en un LLM:</p>
+<p><em>“¿Cuántas letras A hay en la palabra ‘SALAMANCA’? Responde de la siguiente manera. Primero, considera un total de 0 coincidencias. Segundo, deletrea la palabra letra por letra. tercero, para cada letra averigua si se trata una A. Si la letra corresponde a una A, adiciona 1 a la variable total. Si no, pasa a la siguiente letra. Cuarto, sigue hasta finalizada la palabra, la última letra inclusive. Quinto, responde con el valor de total.”</em></p>
+<p>Ahora haz lo mismo con este:</p>
+<p><em>“¿Cuántas letras A hay en la palabra ‘SALAMANCA’? Responde de la siguiente manera. Primero, deletrea la palabra y elimina todas las letras que no correspondan a A. Segundo, cuenta el número de letras que quedan. Tercero, informa el resultado.”</em></p>
+<p>Este es un ejemplo claro de <em>prompting</em> llamado <em>Chain-of-Thought</em>. No solo pregunto al modelo, pero también le enseño cómo responder a la pregunta. Le suministro dos heurísticas distintas aquí que le permiten al modelo resolver el problema. Como habréis visto, el modelo sigue paso a paso mis instrucciones dentro del <em>prompt</em> para realizar la tarea. No obstante, todas las instruccciones se encuentran dentro de un mismo conjunto de instrucciones. No hay subdivisión del <em>prompt</em> en múltiples partes.</p>
+<p>En otras ocasiones, las tareas pueden ser más complejas y exigir no solo una mayor cantidad de etapas, sino que también haya cambios estructurales en los <em>prompts</em> en el paso de una instrucción a otra. En estos casos, es posible que necesitemos utilizar un segundo tipo de arquitectura basado en <strong><em>múltiples prompts</em></strong>. Como veremos más abajo, para generar una evaluación verosímil de una memoria de investigación, necesitamos dividir el trabajo en etapas con personas diferentes: revisores, moderador y coordinador de panel de expertos. Cada uno de ellos con tareas concretas que sirven de insumo para el trabajo de los demás<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>Lo que acabamos de ver son ejemplos de cómo podemos utilizar los conocimientos básicos de <em>prompting</em> para resolver problemas utilizando modelos de lenguaje. Como habéis visto, también aquí hemos “subido de nivel”; es decir, hemos aumentando el nivel de abstracción de instrucciones directas y sencillas a encadenamientos de instrucciones o a una división aún más sofisticada de las tareas en múltiples partes. En las siguientes secciones, veremos algunas de las arquitecturas de <em>prompting</em> más utilizadas en la actualidad. No obstante, siempre podemos crear nuevas configuraciones adaptadas a nuestros problemas, si nos ponemos a ello.</p>
+<section id="zero-shot-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="zero-shot-prompting"><em>Zero-shot prompting</em></h3>
+<p>“¿Cuál es la capital de España?”. Este es un ejemplo de <em>zero-shot prompting</em>. Consiste en la elaboración de preguntas directas a la IA, sin contexto, sin ejemplos, solamente los deseos y determinación del usuario. Este tipo de <em>prompting</em> es útil para obtener respuestas rápidas y directas, pero puede no ser tan efectivo para tareas más complejas. Funciona como un sustituto de Google o Wikipedia (esa es la gran amenaza al monopolio de Google, por cierto). Usas el modelo para que te devuelva información o responda una pregunta directa.</p>
+</section>
+<section id="few-shot-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="few-shot-prompting"><em>Few-shot prompting</em></h3>
+<p>El <em>prompting</em> basado en “algunos intentos” (<em>few-shot</em>) consiste en proporcionar uno o más ejemplos de la tarea que quieres que la IA realice: “Aquí tienes un texto de ejemplo. ‘El brasileño Rodrigo, de 47 años, es profesor de ciencia política en la Universidad de Salamanca.’ Devuélveme: Rodrigo;Brasil;47.” Este tipo de <em>prompting</em> es útil para tareas más complejas, como la diferenciación entre categorías muy similares en un proceso de clasificación, ya que ayuda a la IA a entender mejor lo que quieres. El <em>prompt</em> con frases y sus respectivos sentimientos, mencionado más arriba en la sección 4 de ‘¿cómo crear un <em>prompt</em>?’, ilustra exactamente este tipo de arquitectura.</p>
+</section>
+<section id="chain-of-thought-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="chain-of-thought-prompting"><em>Chain of Thought prompting</em></h3>
+<p>El <em>prompting</em> con razonamiento consiste en proporcionar una serie de pasos lógicos detrás de la tarea que quieres que la IA realice. La esencia de esta arquitectura está en inducir al modelo a simular una cadena de ideas conectadas secuencialmente para resolver un problema. Así que, cuando vemos un proceso que se parece a un razonamiento humano, podemos decir que estamos ante un <em>Chain of Thought prompting</em>. Por lo tanto, la IA aquí actúa exactamente como un monito de feria que sabe algunos trucos enseñados por su dueño. En este caso, el dueño es el usuario que le ha enseñado a la IA cómo razonar de una manera concreta.</p>
+<p>Como hemos visto al principio de este tema, he instruido al modelo para que encontrara el número de letras A en la palabra Salamanca de dos maneras distintas: descomposición y descarte de información. Este tipo de <em>prompting</em> es útil para tareas que requieren un razonamiento más profundo y complejo. Sin embargo, la complejidad a que me refiero es moderada, puesto que no requiere cambio de persona o contexto para la realización de la tarea.</p>
+</section>
+<section id="tree-of-thought-prompting" class="level3">
+<h3 class="anchored" data-anchor-id="tree-of-thought-prompting"><em>Tree of Thought prompting</em></h3>
+<p>El <em>Tree of Thought</em> es una técnica de <em>prompting</em> que se basa en la idea de que el razonamiento humano a menudo sigue un patrón jerárquico. En lugar de simplemente proporcionar una lógica lineal, el <em>Tree of Thought</em> permite al modelo explorar diferentes caminos y ramificaciones. Esto puede ayudar a mejorar la calidad de las respuestas generadas por el modelo, ya que permite una mayor flexibilidad y creatividad en el proceso de razonamiento. Esta técnica es especialmente útil para tareas que requieren una exploración más profunda y compleja de las posibles soluciones.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="tree_of_thought.png" class="img-fluid figure-img"></p>
+<figcaption><em>Tree of Though prompting</em></figcaption>
+</figure>
+</div>
+<p>Un ejemplo de <em>Tree of Thought</em> sería el siguiente: “¿Cuántas letras A se pueden encontrar en la palabra ‘SALAMANCA’? Primero, considera la estrategia de descomponer la palabra y luego contar letras. Segundo, la posibilidad de eliminar todas las demás letras y contar las As. Tercero, soluciones alternativas. Cuarto, elige la más eficiente.” En este caso, el modelo puede explorar diferentes caminos y ramificaciones en su razonamiento para encontrar la solución más completa al problema.</p>
+</section>
+<section id="prompting-descompuesto-o-modularizado" class="level3">
+<h3 class="anchored" data-anchor-id="prompting-descompuesto-o-modularizado"><em>Prompting</em> descompuesto o modularizado</h3>
+<p>Un ejemplo más complejo e interesante de arquitectura de instrucciones es el <em>prompting</em> descompuesto o modularizado <span class="citation" data-cites="khot2023">(<a href="#ref-khot2023" role="doc-biblioref">Khot et&nbsp;al. 2023</a>)</span>. En este caso, el modelo se divide en diferentes módulos, cada uno de los cuales se encarga de una tarea específica. Esto permite una mayor flexibilidad y adaptabilidad en el proceso de razonamiento, ya que cada parte puede trabajar de manera independiente y luego tener sus resultados combinados para llegar a una solución final. Esta técnica es especialmente útil para tareas que requieren un enfoque más estructurado y organizado.</p>
+<p><img src="decomposed_prompting.png" class="img-fluid" alt="Prompting Descompuesto."> Como veremos más tarde, emplearé una versión simplificada de esa arquitectura para simular el proceso de evaluación de un proyecto de investigación.</p>
+</section>
+<section id="retrieval-augmented-generation-rag" class="level3">
+<h3 class="anchored" data-anchor-id="retrieval-augmented-generation-rag"><em>Retrieval-Augmented Generation (RAG)</em></h3>
+<p>El <em>RAG</em> es una técnica que combina la generación de texto con la recuperación de información. En términos sencillos, se trata de identificar información relevante en un conjunto de documentos e incluirla como contexto en el <em>prompt</em> original. Ni más ni menos. No es una solución revolucionaria, no es magia, no va a cambiar el universo. Se trata de un <em>hack</em> que permite hacer con que los modelos, unos desquiciados, se centren en el material concreto que les suministras. De ese modo, dejan de portarse como repositorios de información y pasan a actuar como procesadores de texto.</p>
+<p>En lugar de depender únicamente de la IA para generar respuestas, el método <em>RAG</em> utiliza un motor de búsqueda vectorial para recuperar información relevante y luego la utiliza para generar respuestas más precisas y relevantes. Esta técnica es especialmente útil para tareas que requieren información actualizada o específica<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Pero no solo. La <em>RAG</em> ayuda a enfocar los modelos hacia un conjunto de documentos relevantes y a excluir información que no ayudaría en la generación de respuestas con alto valor informativo. Además, podemos mantener la información que deseamos tratar como “privada” y no exponerla a la IA. Seleccionamos solo las partes que no son sensibles y sometemos solo esas partes al modelo para que analice (en caso de no usar un modelo local o un servidor propio).</p>
+<p>Cuando queremos “conversar” con el PDF de un libro, por ejemplo, lo subimos a chatGPT o cualquier otro LLM y el modelo lo procesa. Luego, todas las preguntas que hacemos se responden con base en el contenido del libro primero. Lo que chatGPT está haciendo en ese momento es justamente un <strong>RAG</strong>. La figura abajo ilustra el proceso:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RAG_v2.webp" class="img-fluid figure-img"></p>
+<figcaption>Retrieval-Augmented Generation.</figcaption>
+</figure>
+</div>
+<p>Expliquemos cómo funciona. Imaginemos que hago una investigación sobre la Segunda República Española. Tengo una base de datos con todos los diarios de sesiones del período, organizada por intervención. De ese modo, sé exactamente qué dijo cada diputado en cada momento. Quiero que el modelo de lenguaje emplee esos datos para responder mis preguntas sobre diversos temas, que pueden ser religión, propiedad privada, educación, el divorcio, entre otros. Para ello, debo preparar los datos para que el modelo pueda utilizarlo. Y eso se hace en dos pasos.</p>
+<p>La primera etapa consiste en <strong>convertir mi base de datos de intervenciones en una base de datos vectorial</strong>, en un conjunto de números que me permitan realizar búsquedas semánticas. ¿Por qué búsquedas semánticas? Porque si quiero hablar de religión, no quiero tener que desarrollar un diccionario con todos los términos relacionados con la religión para poder encontrar lo que busco. Para ello, decido cómo quiero organizar mis datos: si la intervención completa, si por párrafos o frases. Luego, utilizo un modelo experto para convertir esos datos (digamos frases) en vectores (conjuntos de números). Finalmente, guardo esos vectores junto con los textos originales y otros metadatos que quiera. Una vez que tenga eso preparado, ya puedo hacer cualquier consulta al modelo utilizando mis datos de las intervenciones como fuente.</p>
+<p>En la segunda etapa, <strong>llevo a cabo la consulta</strong>. En este caso, primero mi pregunta se convierte en un vector (del mismo modo que las intervenciones). Luego, busco en la base de datos vectoriales las intervenciones que son más cercanas a mi pregunta. Finalmente, una vez que tengo esas intervenciones, paso mi pregunta y las intervenciones al modelo de lenguaje para que me ayude a responder la pregunta. En este caso, el modelo no tiene que recordar todo lo que he hecho, sino que solo tiene que recordar las intervenciones que le he pasado.</p>
+<p>En resumen, <em>RAG</em> exije preparación previa de los datos. No obstante, vale la pena, porque nos permite acceder a fuentes de información confiables y actualizadas. También facilita el uso de los LLM con otros datos de investigación que no pueden ser publicados. Además, posibilita reducir la cantidad de información que pedimos al modelo que procese. Ya veremos mejor cómo el <em>RAG</em> funciona en la práctica en la próxima clase, cuando hablemos de búsquedas semánticas.</p>
+</section>
+</section>
+<section id="asistentes-virtuales" class="level2">
+<h2 class="anchored" data-anchor-id="asistentes-virtuales">Asistentes virtuales</h2>
+<p>En esta sección del curso examinaremos una aplicación concreta del <em>prompt engineering</em>: la creación de asistentes virtuales o <em>chatBots</em>. De forma concreta, se trata de un tipo de <em>prompting</em> que orienta a los modelos para que actúen como ayudantes, se enfoquen en una tarea experta y con un tono más cercano o conversacional. Me concentraré en tres variantes: (a) un tutor virtual para ayudar a estudiantes en una asignatura de teoría política; (b) un asistente virtual que auxilia a los estudiantes a realizar tu Trabajo de Fin de Grado; y (c) una arquitectura de <em>prompts</em> que ayuda a evaluar proyectos de investigación.</p>
+<section id="asistente-docente-virtual" class="level3">
+<h3 class="anchored" data-anchor-id="asistente-docente-virtual">Asistente docente virtual</h3>
+<p>El trabajo de tutoría de los estudiantes representa una excelente oportunidad para conocerles mejor y entender las dificultades por las que pasan durante el proceso de aprendizaje. De forma general, revela una dimensión humana y social del proceso educativo y representa algo que no podemos (ni deseamos) dejar de lado. No obstante, las tutorías para subsanar dudas sobre contenido (y los correos electrónicos enviados por los estudiantes a final de semestre) pueden ser muy abrumadores y desgastantes. Para estos últimos casos, podemos lanzar mano de la IA para que nos ayude a responder a preguntas frecuentes y eliminar esa capa superficial de trabajo.</p>
+<p>Lo que propongo aquí dista mucho de la sustitución de la labor docente por un procedimiento semi-automatizado. Más bien, se trata de eliminar un estadio superficial de trabajo que impide el desarrollo de un proceso educativo más profundo. En este sentido, el asistente virtual no es un sustituto del profesor, sino un apoyo que permite a los estudiantes acceder a información básica sobre la asignatura y sus contenidos. De ese modo, podemos concentrarnos en los aspectos más sustantivos del proceso educativo y dar un apoyo más sólido a nuestros estudiantes en los horarios de consulta.</p>
+<p>El mayor error posible en la labor docente en la actualidad es pedir un único trabajo final como forma de evaluar una asignatura. Ya lo era antes, pero con la IA esta máxima se hace aún más verdadera. El segundo es realizar un único trabajo final y dar (sin supervisión) a los estudiantes un <em>chatBot</em> para que les ayude. Ten en mente que ellos probablemente emplean los modelos de IA sin orientación alguna. No conocen las técnicas de <em>prompt engineering</em> que hemos examinado aquí ni, en la mayoría de las ocasiones, han recibido formación para usar chatGPT (que seguramente es el único que conocen). Por lo tanto, el uso de un asistente virtual requiere un trabajo de supervisión y entrenamiento sobre cómo emplearlo de forma eficiente para el objetivo de aprender.</p>
+<p>El <strong>uso sin supervisión de la IA</strong> conlleva una <strong>serie de riesgos</strong> que deben ser conocidos por el docente. En primer lugar, <strong>interrumpe el proceso de aprendizaje</strong>. Al solicitar soluciones ya listas a la IA, los estudiantes pueden dejar de reflexionar sobre el contenido y de buscar estrategias propias para la solución de problemas. De modo perverso, pueden no desarrollar las capacidades cognitivas y de pensamiento que resultan esenciales para su desarrollo personal y profesional posterior.</p>
+<p>En segundo lugar, <strong>la IA no está libre de errores y sesgos</strong>. La mayor parte de los modelos existentes hoy representa estadios de desarrollo de una tecnología aún precoz y en constante revisión. Por suerte, los modelos ya no alucinan tanto como antes, pero aún pueden ofrecer respuestas sesgadas y erróneas. Un ejemplo claro es la bibliografía. El modo más fácil de identificar un trabajo ejecutado por la IA es averiguar las fuentes citadas. Un trabajo <em>delegado</em> a la IA incluirá diversas fuentes inventadas. Como docentes, debemos estar al tanto de dichas limitaciones e instruir nuestros alumnos en cómo emplear la IA de forma productiva. Por otro lado, también debemos construir nuestras herramientas con base en esas limitaciones.</p>
+<p>En tercer lugar, el uso de la IA <strong>puede llevar a una dependencia excesiva</strong> de la tecnología. Si no combinamos el uso de los modelos con otras formas de aprendizaje, como tareas en clase, trabajos hechos a mano o discusiones en grupo, estaremos privando a los estudiantes de la oportunidad de desarrollar habilidades críticas y de pensamiento independiente. Por lo tanto, la integración de modelos de lenguaje debería ser complementaria a otras estrategias educativas que fomenten el aprendizaje activo y la reflexión crítica.</p>
+<p>A partir de estas consideraciones, diseñemos un asistente virtual de docencia. Como veréis, se trata de una tarea muy semejante a la preparación de la ficha de la asignatura, pero con algunas diferencias sustanciales para que el modelo actúe como un asistente virtual. Incluso podéis emplear la información que tenéis en la ficha para diseñar el asistente. Lo haremos aquí paso a paso.</p>
+<p>En primer lugar, <strong>definimos su especialidad y un tema</strong>. En nuestro ejemplo, utilizaremos como asignatura base la teoría política, con un enfoque en el período entre siglo XVI y XIX. Lo haremos desde la ciencia política, puesto que la misma asignatura se podría impartir desde la historia, la filosofía o la sociología. La especialidad podemos definir tanto por medio de la <span class="pt_persona"><strong>persona</strong></span>, diciendo al modelo que actúe como un profesor de ciencia política, o a través del <span class="pt_contexto"><strong>contexto</strong></span> informándole que los estudiantes pertenecen al grado de ciencia política. La primera opción enfatiza la experiencia y formación del docente, mientras que la segunda se centra en el tipo de estudiante. Podéis aquí también elegir reforzar la especialidad estableciendo que ambas son del área o jugar con un filósofo que da clases a alumnos de ciencia política. ¿Cuál es la mejor opción? La respuesta dependerá de lo que deseas enseñar y del grado de experimentación que hagas con el modelo. Revisa y ajusta. No hay fórmula mágica universal que funcione para todos los casos.</p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="pt_persona span">profesor experto en teoría política, apasionado por conectar las ideas clásicas con las preguntas contemporáneas. Tienes gran habilidad para generar interés y facilitar la comprensión, especialmente con estudiantes que están comenzando su formación universitaria.<span class="tooltiptext">Persona</span></span>.</p>
+<p>Estás impartiendo un <span class="pt_contexto span">curso introductorio de teoría política a estudiantes de primer año del grado en ciencia política.<span class="tooltiptext">Contexto</span></span> Es su primer contacto académico con los grandes textos del pensamiento político moderno.</p>
+</div>
+<p><br></p>
+<p>Acto seguido, puedes definir la <span class="pt_tarea span">tarea</span> y añadir más información de <span class="pt_contexto span">contexto</span>. Aquí puedes especificar una cantidad bastante grande de detalles que no solo ayudarán con el contenido de la asignatura, sino también con las fechas, entregas, el proceso de evaluación, etc. En el ejemplo que veréis a continuación, defino los conceptos centrales que quiero que el modelo trabaje con los estudiantes, los principales autores y los temas relacionados con cada uno, así como la bibliografía obligatoria. Aprovecho también para suministarle información sobre horarios, tutorías, y la evaluación. De ese modo, el modelo podrá informar sobre las fechas de entrega y los temas. También podría haber incluído ahí el formato del ensayo y las instrucciones exactas de cómo se debe presentar.</p>
+<p>La posibilidad del profesor crear un “customGPT” (OpenAI) o un “Gem” (Google) -es decir, introducir el <em>prompt</em> del asistente en un modelo de IA y darle un nombre específico para luego compartirlo con los estudiantes- es aún una opción solo disponible para usuarios de pago avanzados (o en Ollama). No obstante, estoy seguro de que en breve será una realidad disponible de forma casi universal por todas las aplicaciones y, en especial, aquellas que se dediquen a la labor docente. De ese modo, los alumnos podrán acceder directamente al asistente sin tener que copiar y pegar el texto del <em>prompt</em> para configurar el ChatGPT o Gemini.</p>
+<div id="tutor-tfg" class="prompt">
+<p>Tu tarea es <span class="pt_tarea span">conversar con los estudiantes para ayudarles a entender los conceptos clave de los textos que forman parte de la bibliografía del curso. No estás aquí para explicar todo, sino para guiar el aprendizaje: haces preguntas, aclaras dudas, das pistas y estimulas la reflexión.<span class="tooltiptext">Tarea</span></span></p>
+<p><strong>Conceptos centrales a trabajar</strong></p>
+<p><span class="pt_contexto span">- Democracia<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Estado de derecho<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Libertades y derechos<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- División de poderes<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Representación<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Soberanía<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Revolución y lucha de clases<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Autores y temas</strong></p>
+<p><span class="pt_contexto span">- Maquiavelo: virtú y razón de Estado<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Hobbes: fundamentos del Estado y soberanía<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Locke: libertades civiles y derechos<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Rousseau: contrato social y voluntad general<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Montesquieu: división de poderes y Estado de derecho<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Stuart Mill: libertad y representación<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Burke: conservadurismo y revolución<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Tocqueville: democracia, tiranía de la mayoría, revolución<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Marx: lucha de clases y revolución<span class="pt_contexto span"></span></span></p>
+<p><strong>Bibliografía obligatoria</strong></p>
+<p><span class="pt_contexto span">Limítate únicamente a los siguientes textos:<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Maquiavelo: “El Príncipe” y “Comentarios sobre la primera década de Tito Livio”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Thomas Hobbes: “El Leviathan”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- John Locke: “Segundo tratado sobre el gobierno”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Rousseau: “El contrato social”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Montesquieu: “El espíritu de las leyes”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Stuart Mill: “Consideraciones sobre el gobierno representativo”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Burke: “Reflexiones sobre la Revolución en Francia”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Tocqueville: “Democracia en América” y “El Antiguo Régimen y la Revolución”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Marx: “El Dieciocho Brumario de Luis Bonaparte” y “Las luchas de clases en Francia de 1848 a 1850”<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Horarios, tutorías y contacto</strong></p>
+<p><span class="pt_contexto span">El responsable de la asignatura es el prof. Rodrigo Rodrigues-Silveira<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">Las clases tendrán lugar en el aula 003B de la Facultad de Derecho entre 9:10h y 12h, todos los miércoles. De 6 de febrero a 15 de mayo de 2025.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">Las tutorías se realizarán los viernes de 10h a 12h en el despacho del profesor.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">El despacho del profesor es el 117 en la planta 1ª de la Facultad de Derecho.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">El correo del profesor es rodrodr@usal.es<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Evaluación</strong></p>
+<p><span class="pt_contexto span">La evaluación será contínua y consistirá en la entrega de un total de 5 ejercicios:<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">1. un ensayo de 1500 páginas sobre el concepto de soberanía en Hobbes y Locke (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">2. un ensayo de 1500 páginas sobre el concepto de libertad en Rousseau y Mill (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">3. un ensayo de 1500 páginas sobre el concepto de revolución en Marx, Tocqueville y Burke (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">4. un ensayo de 1500 páginas sobre el concepto de democracia en Tocqueville y Rousseau (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">5. un ensayo de 1500 páginas sobre el concepto de poder en Maquiavelo y Hobbes (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+</div>
+<p><br></p>
+<p>El próximo paso consiste en definir el estilo de interacción del modelo, es decir el <span class="pt_tono span">tono de la conversación</span>. No es incomún que cuando preguntemos algo a un modelo de IA, nos responda con un texto enorme y denso, que resume una cantidad de información. Este es tipo de respuestas que justamente deberíamos evitar. El objetivo es <strong>hackear</strong> la mente de los estudiantes para que lean los textos obligatorios incluso cuando no los leen. La mejor manera de lograrlo es convertir un texto largo en una serie de interacciones cortas y amenas entre el modelo y el estudiante. También podemos aprovechar y suministrar al modelo un <span class="pt_ejemplo span">conjunto de ejemplos</span> de cómo iniciar una conversación o de cómo redireccionar el debate hacia un tema en concreto.</p>
+<p>Como se trata de un <em>chatBot</em>, es importante que el modelo se adapte a un estilo que se asemeje a una conversación. También que el modelo siempre esté en contacto y pidiendo retroalimentación por parte del estudiante. La interacción debe ser fluida y amena. Textos muy largos pueden llevar al abandono de la conversación por puro aburrimiento. También resulta útil que el modelo verifique a cada cuanto si el estudiante está entendiendo el contenido de la asignatura. Resulta, además, interesante que el modelo redireccione el estudiante al profesor si identifica que existe la necesidad de una explicación más profunda o de la interacción humana. Como he mencionado anteriormente, el objetivo es que el asistente no se convierta en un sistema cerrado, sino que actúe como un complemento a la enseñanza tradicional.</p>
+<div id="tutor-tfg" class="prompt">
+<p><strong>Estilo de interacción</strong></p>
+<p><span class="pt_tono span">Usa un tono cercano y conversacional.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Comienza con explicaciones simples y accesibles.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Aumenta la complejidad técnica conforme notes que los estudiantes avanzan.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Haz preguntas frecuentes para confirmar el entendimiento.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Usa respuestas cortas y fomenta el diálogo.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Si un estudiante se queda atascado, ofrécele pistas o ejemplos y sugiere que consulte al profesor o pida una tutoría personal.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Si un estudiante manifiesta algún tipo de frustración, estrés o sentimiento negativo hacia el contenido y el proceso de aprendizaje, sugiere que entre en contacto con el profesor y pida una tutoría personal.<span class="tooltiptext">Tono</span></span></p>
+<p><strong>Ejemplo de inicio</strong></p>
+<p><span class="pt_ejemplo span">“¿Qué te llamó más la atención de lo que dice Maquiavelo sobre la virtud? ¿Crees que tiene algo que ver con cómo entendemos la política hoy?”<span class="tooltiptext">Tono</span></span></p>
+</div>
+<p><br></p>
+<p>Finalmente, es importante definir el <span class="pt_restriccion span">conjunto de restricciones</span> que el modelo debe seguir. En este caso, las restricciones son bastante simples. El modelo no puede ofrecer información que no esté en los textos obligatorios. Esto es fundamental para evitar que el modelo se convierta en un sistema cerrado y que los estudiantes reciban información incierta o referencias inexistentes. Por último, el modelo debe admitir que no sabe algo. Como la IA está entrenada para generar texto, siempre da una respuesta a todo. De ese modo, debemos decirle claramente que, si no tiene una respuesta clara, que genere un mensaje “no sé”. Tabién decimos que indique fuentes de búsqueda confiables si los estudiantes piden bibliografía adicional. Esto es importante para que aprendan a buscar bibliografía por su cuenta.</p>
+<div id="tutor-tfg" class="prompt">
+<p><strong>Restricciones</strong></p>
+<p><span class="pt_restrict span">A. Cosas que puedes hacer:<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Referirte solo a los textos citados<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Sugerir que busquen en fuentes confiables si piden bibliografía adicional<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Admitir que no sabes algo si no está en los textos<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">B. Cosas que no puedes hacer de ninguna manera<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Introducir textos, autores o referencias externas<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Inventar información<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Hacer afirmaciones sin base textual<span class="tooltiptext">Restricciones</span></span></p>
+</div>
+<p><br></p>
+<p>Ahora tenemos el <em>prompt</em> completo. Contiene todas las instrucciones necesarias para poder actuar como un asistente de un profesor de teoría política. El modelo tiene claro el contexto, la tarea y las restricciones que debe seguir. Hemos definido el tono y el estilo de interacción que debe seguir. Además del contenido -temas, bibliografía y conceptos-, le hemos informado acerca de dónde será realizado el curso y el proceso de evaluación.</p>
+<p><strong>Copia y pega el siguiente texto para ejecutarlo en el modelo de IA que prefieras para ver cómo funciona:</strong></p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="pt_persona span">profesor experto en teoría política, apasionado por conectar las ideas clásicas con las preguntas contemporáneas. Tienes gran habilidad para generar interés y facilitar la comprensión, especialmente con estudiantes que están comenzando su formación universitaria.<span class="tooltiptext">Persona</span></span>.</p>
+<p>Estás impartiendo un <span class="pt_contexto span">curso introductorio de teoría política a estudiantes de primer año del grado en ciencia política.<span class="tooltiptext">Contexto</span></span> Es su primer contacto académico con los grandes textos del pensamiento político moderno.</p>
+<p>Tu tarea es <span class="pt_tarea span">conversar con los estudiantes para ayudarles a entender los conceptos clave de los textos que forman parte de la bibliografía del curso. No estás aquí para explicar todo, sino para guiar el aprendizaje: haces preguntas, aclaras dudas, das pistas y estimulas la reflexión.<span class="tooltiptext">Tarea</span></span></p>
+<p><strong>Conceptos centrales a trabajar</strong></p>
+<p><span class="pt_contexto span">- Democracia<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Estado de derecho<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Libertades y derechos<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- División de poderes<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Representación<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Soberanía<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Revolución y lucha de clases<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Autores y temas</strong></p>
+<p><span class="pt_contexto span">- Maquiavelo: virtú y razón de Estado<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Hobbes: fundamentos del Estado y soberanía<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Locke: libertades civiles y derechos<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Rousseau: contrato social y voluntad general<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Montesquieu: división de poderes y Estado de derecho<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Stuart Mill: libertad y representación<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Burke: conservadurismo y revolución<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Tocqueville: democracia, tiranía de la mayoría, revolución<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Marx: lucha de clases y revolución<span class="pt_contexto span"></span></span></p>
+<p><strong>Bibliografía obligatoria</strong></p>
+<p><span class="pt_contexto span">Limítate únicamente a los siguientes textos:<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Maquiavelo: “El Príncipe” y “Comentarios sobre la primera década de Tito Livio”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Thomas Hobbes: “El Leviathan”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- John Locke: “Segundo tratado sobre el gobierno”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Rousseau: “El contrato social”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Montesquieu: “El espíritu de las leyes”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Stuart Mill: “Consideraciones sobre el gobierno representativo”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Burke: “Reflexiones sobre la Revolución en Francia”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Tocqueville: “Democracia en América” y “El Antiguo Régimen y la Revolución”<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">- Marx: “El Dieciocho Brumario de Luis Bonaparte” y “Las luchas de clases en Francia de 1848 a 1850”<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Horarios, tutorías y contacto</strong></p>
+<p><span class="pt_contexto span">El responsable de la asignatura es el prof. Rodrigo Rodrigues-Silveira<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">Las clases tendrán lugar en el aula 003B de la Facultad de Derecho entre 9:10h y 12h, todos los miércoles. De 6 de febrero a 15 de mayo de 2025.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">Las tutorías se realizarán los viernes de 10h a 12h en el despacho del profesor.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">El despacho del profesor es el 117 en la planta 1ª de la Facultad de Derecho.<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">El correo del profesor es rodrodr@usal.es<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Evaluación</strong></p>
+<p><span class="pt_contexto span">La evaluación será contínua y consistirá en la entrega de un total de 5 ejercicios:<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">1. un ensayo de 1500 páginas sobre el concepto de soberanía en Hobbes y Locke (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">2. un ensayo de 1500 páginas sobre el concepto de libertad en Rousseau y Mill (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">3. un ensayo de 1500 páginas sobre el concepto de revolución en Marx, Tocqueville y Burke (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">4. un ensayo de 1500 páginas sobre el concepto de democracia en Tocqueville y Rousseau (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="pt_contexto span">5. un ensayo de 1500 páginas sobre el concepto de poder en Maquiavelo y Hobbes (20% de la nota final).<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Estilo de interacción</strong></p>
+<p><span class="pt_tono span">Usa un tono cercano y conversacional.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Comienza con explicaciones simples y accesibles.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Aumenta la complejidad técnica conforme notes que los estudiantes avanzan.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Haz preguntas frecuentes para confirmar el entendimiento.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Usa respuestas cortas y fomenta el diálogo.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Si un estudiante se queda atascado, ofrécele pistas o ejemplos y sugiere que consulte al profesor o pida una tutoría personal.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Si un estudiante manifiesta algún tipo de frustración, estrés o sentimiento negativo hacia el contenido y el proceso de aprendizaje, sugiere que entre en contacto con el profesor y pida una tutoría personal.<span class="tooltiptext">Tono</span></span></p>
+<p><strong>Ejemplo de inicio</strong></p>
+<p><span class="pt_ejemplo span">“¿Qué te llamó más la atención de lo que dice Maquiavelo sobre la virtud? ¿Crees que tiene algo que ver con cómo entendemos la política hoy?”<span class="tooltiptext">Tono</span></span></p>
+<p><strong>Restricciones</strong></p>
+<p><span class="pt_restrict span">A. Cosas que puedes hacer:<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Referirte solo a los textos citados<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Sugerir que busquen en fuentes confiables si piden bibliografía adicional<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Admitir que no sabes algo si no está en los textos<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">B. Cosas que no puedes hacer de ninguna manera<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Introducir textos, autores o referencias externas<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Inventar información<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Hacer afirmaciones sin base textual<span class="tooltiptext">Restricciones</span></span></p>
+</div>
+</section>
+<section id="tutor-de-tfg" class="level3">
+<h3 class="anchored" data-anchor-id="tutor-de-tfg">Tutor de TFG</h3>
+<p>Otra aplicación de los modelos de IA como asistentes virtuales se encuentra en la supervisión de Trabajos de Fin de Grado (TFG). Como podéis ver en el <em>prompt</em> abajo, la estructura resulta muy semejante al tutor virtual de una asignatura. No lo separaré en fragmentos, porque ya hemos visto los componentes principales en el ejemplo anterior. En esta nueva aplicación, solamente cambian las instrucciones del modelo, no la estructura general del <em>prompt</em>, que pasa a enfocarse en la escritura académica y la metodología de investigación. En este caso, el modelo se convierte en un tutor experto en metodología y escritura académica en el campo de la ciencia política, con amplia experiencia orientando a estudiantes de grado en sus trabajos finales. El modelo debe ser claro, paciente y capaz de ayudar a los estudiantes a estructurar, enfocar y mejorar sus ideas.</p>
+<p>Como tutores de TFG (de carne y hueso), podéis emplear y adaptar el <em>prompt</em> abajo para vuestros estudiantes. Sin embargo, es importante que tengáis en cuenta que el modelo no puede sustituir la figura del tutor humano. El asistente virtual puede ayudar a los estudiantes a estructurar sus ideas y mejorar su escritura, pero no puede reemplazar la orientación durante el proceso. La tentación de entregar un trabajo generado por la IA es muy grande y sólo el acompañamiento cercano puede evitar que los estudiantes caigan en esta trampa.</p>
+<p><strong>¿Cómo evitar que el ChatGPT se convierta en el primer autor?</strong> Primero, dividiendo el proceso de trabajo en entregas periódicas. Ya sé que no digo nada nuevo. Algunos estudiantes simplemente desaparecen o nunca entregan nada hasta el final. En ese caso, no se puede hacer mucho. Para los demás casos, podéis integrar el uso de la IA con entregas parciales como un pequeño proyecto, la revisión de la literatura, el análisis de datos y el primer borrador del trabajo final. Al fragmentar las entregas, resulta muchísimo más complicado emplear la IA como un reemplazo al trabajo intelectual del estudiante. El esfuerzo por mantener la coherencia de la investigación en todas las entregas aumenta exponencialmente la labor de comparación que tiene que realizar para integrar trozos generados por la IA.</p>
+<p>De ahí viene la segunda estrategia para evitar que ChatGPT asuma el volante. Se trata de enseñar al estudiante a usar el asistente. En lugar de simplemente decirle: “copia y pega esto en el ChatGPT”, resulta fundamental enseñar cómo esperamos que él lo use. Por ejemplo, hacer preguntas específicas sobre el tema de investigación, pedir consejo sobre escritura, o pedir para que revise el texto. En muchas ocasiones, los estudiantes no tienen ninguna referencia de cómo se espera que empleen esa nueva tecnología y terminan empleándola de la única manera que saben. Resultado: el desastre. Para evitarlo, habrá que incorporar en las tareas de tutoría la enseñanza de cómo emplear la IA como herramienta de apoyo. De nuevo, nada que el sentido común no diga.</p>
+<p><strong>Examinemos el <em>prompt</em> abajo:</strong></p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="pt_persona span">tutor experto en metodología y escritura académica en el campo de la ciencia política. Tienes amplia experiencia orientando a estudiantes de grado en sus trabajos finales. Eres claro, paciente y capaz de ayudar a los estudiantes a estructurar, enfocar y mejorar sus ideas.<span class="tooltiptext">Persona</span></span></p>
+<p><strong>Contexto</strong></p>
+<p><span class="pt_contexto span">Estás orientando a un estudiante que está escribiendo su Trabajo de Fin de Grado (TFG) en Ciencia Política. Puede estar en cualquiera de las fases del proceso: desde la elección del tema hasta la redacción final. Tu objetivo es guiarle paso a paso, con preguntas, sugerencias y explicaciones que le permitan avanzar de forma autónoma y segura.<span class="tooltiptext">Contexto</span></span></p>
+<p><strong>Tarea</strong></p>
+<p><span class="pt_tarea span">Tu función es acompañar al estudiante en el proceso de elaboración de su TFG, ayudándole a:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Definir y delimitar un tema o problema de investigación relevante.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Formular una pregunta de investigación clara.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Elegir un marco teórico apropiado.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Justificar su enfoque metodológico.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Estructurar su trabajo de forma coherente.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Redactar de forma clara, académica y argumentada.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- Revisar y mejorar su borrador.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="pt_tarea span">- No haces el trabajo por él o ella: orientas, das ejemplos, propones mejoras y planteas preguntas que le ayuden a pensar mejor su investigación.<span class="tooltiptext">Tarea</span></span></p>
+<p><strong>Estilo de interacción (tono)</strong></p>
+<p><span class="pt_tono span">Sé conversacional y cercano, como un buen tutor en una tutoría individual.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Usa respuestas breves, a menos que te pidan una explicación más extensa.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Ayuda a traducir ideas vagas en hipótesis o preguntas más claras.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Sugiere herramientas o recursos (como Google Scholar, Scopus, o Zotero) si es necesario, pero no proporciones textos o fuentes directamente.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="pt_tono span">Siempre que pida bibliografía sobre un tema responde indicando que busque en fuentes confiables como Google Scholar, ProQuest o JStor. Puedes incluso sugerirle términos de búsqueda para que encuentre la bibliografía deseada de forma más rápida y fácil.<span class="tooltiptext">Tono</span></span></p>
+<p><strong>Ejemplos</strong></p>
+<p><span class="pt_ejemplo span">Formula preguntas orientadoras como:<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿Qué aspecto concreto de ese tema te interesa más?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿Has pensado en qué autores podrían servirte para enmarcar ese problema?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">Mantén siempre un tono de acompañamiento. Inicia con preguntas como:<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿En qué parte del proceso de tu TFG estás ahora?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿Tienes ya un tema definido o estás explorando ideas?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿Qué problema o fenómeno político te interesa investigar?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿Tienes claro si tu enfoque será más teórico, empírico o comparado?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><span class="pt_ejemplo span">“¿Quiéres que te genere un conjunto de términos de búsqueda para que encuentres bibliografía de forma más fácil en Google Scholar o JStor, por ejemplo?”<span class="tooltiptext">Ejemplos</span></span></p>
+<p><strong>Restricciones</strong></p>
+<p><span class="pt_restrict span">A. Puedes:<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Acompañar el proceso de investigación, redacción y revisión<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Sugerir estrategias de búsqueda, lectura o escritura<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Proponer esquemas, estructuras o preguntas guías<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Ayudar a clarificar conceptos metodológicos o teóricos<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">B. No puedes:<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Escribir secciones completas del TFG por el estudiante<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Ofrecer citas, textos o referencias que no provengan de fuentes académicas verificables<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Suplantar el juicio crítico del estudiante<span class="tooltiptext">Restricciones</span></span></p>
+<p><span class="pt_restrict span">- Inventar información o bibliografía ficticia<span class="tooltiptext">Restricciones</span></span></p>
+</div>
+</section>
+<section id="evaluación-de-proyectos" class="level3">
+<h3 class="anchored" data-anchor-id="evaluación-de-proyectos">Evaluación de proyectos</h3>
+<p>La evaluación de proyectos suele ser un proceso complejo y dividido en diversas etapas. En España, suele pasar por un primer paso administrativo que averigua si una solicitud cumple con los requisitos básicos para participar. Una vez superada esta etapa, los proyectos siguen a una revisión académica, que suele organizarse en tres fases principales. En la primera, los proyectos se envían a expertos de la respectiva área de investigación, que emiten sus informes individuales. En la segunda, los mismos (u otros) se reúnen en un panel de expertos para debatir sobre las propuestas y decidir sobre las puntuaciones. En la tercera (que puede ser parte de la segunda), esos mismos expertos emiten un informe conjunto que se envía a la agencia de evaluación. En este informe, los expertos suelen incluir una serie de recomendaciones para mejorar las propuestas que no han sido seleccionadas.</p>
+<p>Aquí, trataremos de simular un proceso de evaluación típico del Ministerio de Ciencia e Innovación de España. No obstante, puedes adaptar el proceso a otros contextos, como la evaluación de proyectos de investigación en el ámbito privado o europeo. Para ello, tendrías que, en primer lugar, informarte bien sobre el proceso de evaluación de la agencia concreta a que deseas someter tu propuesta. He creado una versión simulada de una memoria a partir del formulario de solicitud de un proyecto de investigación del Ministerio de Ciencia e Innovación de España, se llama <a href="https://raw.githubusercontent.com/rodrodr/IA_Generativa_2025/refs/heads/main/DOC_02_memoria_trucha.txt" target="_blank"><strong>Rupturas Institucionales Iniciadas por el Poder Legislativo en América Latina</strong></a>. Le he pedido a ChatGPT que empleara el formulario y los criterios de evaluación para generar un proyecto de calidad medio-alta (un 8) sobre el tema. De ese modo, podremos tener espacio para mejoría y revisiones posteriores.</p>
+<p>Como la evaluación de la memoria de un proyecto consiste en un proceso complejo, emplearemos aquí un enfoque de <strong>encadenamiento de <em>prompts</em> (<em>CoP</em>)</strong>. Esta manera de generar una evaluación simulada trata de dividir el proceso en varias etapas o fases y, luego, ordenarlas de modo sequencial para facilitar el trabajo de la IA. Esto permite establecer criterios y objetivos claros para cada paso del proceso y emplear los resultados de cada fase como insumo de la fase siguiente. Tal estrategia nos ayuda a inspeccionar los textos producidos en cada parte y ajustar el <em>prompt</em> en función de los resultados obtenidos antes de pasar al momento siguiente.</p>
+<section id="fase-0.-información-preliminar" class="level4">
+<h4 class="anchored" data-anchor-id="fase-0.-información-preliminar">Fase 0. Información preliminar</h4>
+<p>Antes iniciar el proceso de simulación, resulta fundamental reunir la mayor cantidad de información sobre cómo se lleva a cabo la evaluación. En términos concretos, se trata de buscar documentación sobre la convocatoria, los evaluadores y el proceso mismo de revisión de las propuestas. Las convocatorias suelen incluir documentos como las <a href="https://www.aei.gob.es/sites/default/files/inline-files/ORDEN%20DE%20BASES%20REGULADORAS%20AYUDAS%20AEI%20BOE-A-2022-17714.pdf" target="_blank">bases de la convocatoria</a> con sus anexos<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, guías para la evaluación que distribuye entre los evaluadores<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, <a href="https://www.aei.gob.es/sites/default/files/convocatory_info/2024-12/PID2024-FAQ-v3.pdf" target="_blank">preguntas frecuentes</a> y ejemplos de informes de evaluación. En el caso de España, puedes consultar la página web del Ministerio de Ciencia e Innovación (Micinn) o de la Agencia Española de Investigación (AEI), donde encontrarás información sobre las convocatorias y los procesos de evaluación.</p>
+<p>En esta etapa preliminar, por lo tanto, localizamos la información relevante y preparamos uno o más documentos que puedan ser sometidos a los modelos de LLM como contexto para su posterior procesamiento. De un lado, se trata de crear un documento que contenga las instrucciones relevantes para los evaluadores. Debe contener, por ejemplo, los criterios de evaluación o el baremo de puntuación (cuando existente). De otro lado, es posible preparar otro documento, como un informe previo de evaluación final del panel de expertos, que incluya los comentarios y recomendaciones. Como vimos en la sección de <em>prompt engineering</em>, el uso de ejemplos reales puede ser muy útil para simular la evaluación de una propuesta concreta, ya que enseña al modelo cómo se espera que los evaluadores estructuren sus informes. Hago hincapié en la importancia de evitar a toda costa la inclusión de información innecesaria o irrelevante, ya que esto puede dificultar la comprensión del modelo y afectar la calidad de la evaluación. Por lo tanto, se trata de un proceso de limpieza y selección: más señal y menos ruido.</p>
+<p>Recordemos siempre que los modelos de IA son máquinas de procesamiento de información. Cuanto más ejemplos e información contextual dispongas para entrenar el modelo, mejores resultados obtendrás. Por lo tanto, si tienes acceso a informes de evaluación de años anteriores, guías de evaluadores o baremos puedes incluirlos como ejemplos para que el modelo aprenda a estructurar sus respuestas.</p>
+</section>
+<section id="fase-1.-simulación-de-evaluadores" class="level4">
+<h4 class="anchored" data-anchor-id="fase-1.-simulación-de-evaluadores">Fase 1. Simulación de evaluadores</h4>
+<p>La primera fase de la evaluación consiste en simular los informes de diferentes evaluadores que revisarán la propuesta. Para ello, es importante definir el perfil de los evaluadores que se espera que participen en el proceso. En este caso, puedes optar por un enfoque más general o específico, dependiendo de la información que tengas disponible. Como hemos visto en la sección anterior, cuanto más información dispongas, más ajustados serán los resultados a lo que esperamos que sea el proceso de evaluación real.</p>
+<p>Si no sabes bién quiénes te evaluarán, puedes explorar distintos escenarios de evaluación. Por ejemplo, puedes incluir revisores de diferentes campos de conocimiento dentro de las ciencias sociales (lo que suele ser habitual), distintos géneros, distintas nacionalidades, enfoques metodológicos, entre otros atributos. En ese escenario, tratas de observar como distintos arquétipos de evaluador pueden generar evaluaciones diferentes de tu propuesta.</p>
+<p>En otros casos, las agencias de evaluación <a href="https://www.aei.gob.es/areas-tematicas/colaboradores-as-cientificos/listado-colaboradores-as?search=&amp;thematic_area=139" target="_blank">publican los nombres de los evaluadores</a> o se puede inferir quiénes podrán ser a partir de listados de años anteriores. En este caso, puedes pedir al LLM que genere un perfil de cada uno de ellos. Por ejemplo, su formación académica, sus líneas de investigación y el tipo de metodología empleada, las publicaciones más destacadas y, principalmente, los potenciales sesgos o perspectivas que pueden influir en su evaluación de propuestas (énfasis en metodología cualitativa, privilegio de una perspectiva teórica interpretativa sobre una neopositivista).</p>
+<p><strong>Completa el siguiente <em>prompt</em> con la información que dispongas y, a continuación, copia y pega el texto en el LLM de tu preferencia (repite el procedimiento para cada revisor):</strong></p>
+<div id="tutor-tfg" class="prompt">
+<p>Actúa como un <span class="span pt_persona">experto de una agencia de evaluación científica internacional. Tu perfil es de un académico experto con el siguiente perfil: [PERFIL]. Tienes una mente muy organizada y lógica, por lo que evalúas las propuestas de forma estructurada, paso a paso, según su calidad científica y los criterios establecidos en la convocatoria.<span class="tooltiptext">Persona</span></span></p>
+<p>Las bases de la convocatoria y los criterios de evaluación que emplearás para determinar el mérito de la memoria de investigación son las siguientes:</p>
+<p><span class="span pt_contexto">“[AQUÍ LAS BASES DE LA CONVOCATORIA Y OTRA INFORMACIÓN RELEVANTE]”<span class="tooltiptext">Contexto</span></span></p>
+<p>Tu tarea consiste en, a partir de lo establecido en la convocatoria y en los criterios informados más arriba, <span class="span pt_tarea">evaluar una propuesta de investigación.<span class="tooltiptext">Tarea</span></span>Ten en cuenta especialmente los siguientes critérios:</p>
+<p><span class="span pt_tarea">1. La calidad técnico-científica general de la memoria.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">2. La calidad, coherencia y actualidad de la revisión de la literatura [realizar búsqueda online si necesario].<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">3. La viabilidad del proyecto y la adecuación de los objetivos al cronograma.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">4. La división de tareas entre los miembros del equipo.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">5. La adecuación del presupuesto a los objetivos.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">No considere todo a la vez, sino que piensa paso a paso, con pausas y reflexiones intermedias en cada etapa, según el siguiente orden:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Primero, evalúa detenidamente la propuesta.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Segundo, a partir de la evaluación inicial, examina detenidamente los puntos fuertes y los puntos débiles de la propuesta.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Tercero, identifica y describe detalladamente las posibles estrategias de mejoría.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Cuarto, califica la propuesta en un valor entre 0 (calidad claramente insuficiente) a 10 (excelente).<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">Quinto, revisa todo lo anterior y genera un informe detallado sobre la propuesta.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tono">Emplea un tono formal, académico y, al mismo tiempo, constructivo y alentador. Su tono debe ser positivo y ayudar al usuario a entender las principales deficiencias del trabajo y a encontrar caminos para superarlas.<span class="tooltiptext">Tono</span></span></p>
+<p><span class="span pt_salida">El resultado debe estar en un formato de un informe de evaluación detallado sobre la calidad de la propuesta con una extensión mínima de 5000 palabras. Debe incluir una introducción, una sección para cada aspecto evaluado, una sección muy detallada, con instrucciones paso a paso para la mejoría de la propuesta y, finalmente, una calificación final.<span class="tooltiptext">Formato</span></span></p>
+<p>El texto de la memoria a ser evaluada es el siguiente:</p>
+<p><span class="span pt_contexto">“[AQUÍ EL TEXTO DE LA MEMORIA]”<span class="tooltiptext">Contexto</span></span></p>
+</div>
+</section>
+<section id="fase-2.-el-debate-entre-los-revisores" class="level4">
+<h4 class="anchored" data-anchor-id="fase-2.-el-debate-entre-los-revisores">Fase 2. El debate entre los revisores</h4>
+<p>En la segunda fase del proceso, el LLM actuará como mediador entre los revisores. El objetivo aquí es simular un debate entre ellos (común en los procesos reales de evaluación) para identificar puntos de acuerdo y disonancias, así como para generar un posible consenso. Por lo tanto, en esta etapa, el modelo tratará de sintetizar las diversas posiciones simuladas de los revisores, así como de generar un debate entre ellos. El producto final será un pseudo-debate sobre la propuesta que servirá de insumo para la generación del informe final.</p>
+<p><strong>Completa el siguiente <em>prompt</em> con los informes de los revisores y, a continuación, copia y pega el texto en el LLM de tu preferencia:</strong></p>
+<div id="panel_eval" class="prompt">
+<p>Actúa como el <span class="span pt_persona">moderador de un panel de evaluación de propuestas científicas.<span class="tooltiptext">Persona</span></span></p>
+<p>A continuación tienes las evaluaciones del proyecto por los expertos de área:</p>
+<p><span class="span pt_contexto">[AQUÍ TEXTOS DE LOS REVISORES]<span class="tooltiptext">Contexto</span></span></p>
+<p>Ahora, <span class="span pt_tarea">modera un debate con base en los informes sometidos por los revisores. Fases del debate:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">1. Defensa inicial - cada panelista resumirá y defenderá sus puntos clave.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">2. Réplica - cada uno podrá hacer comentarios breves en respuesta a otro panelista, definiendo acuerdos o matizando discrepancias.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">3. Contra-réplicas - el revisor inicial y otros revisores pueden contestar a una réplica hasta 5 interacciones más para aclarar conceptos.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">4. Búsqueda de consenso - proponer áreas de acuerdo total o parcial y justificar por qué deberían unificarse criterios.<span class="tooltiptext">Tarea</span></span></p>
+<p>Finalmente, <span class="span pt_salida">el texto debe contener el resultado detallado de la discusión entre los panelistas en cada fase del debate. Genere todo el debate. No pare en la intervención de cada uno. Sigue hasta que el debate esté terminado.<span class="tooltiptext">Formato</span></span></p>
+</div>
+</section>
+<section id="fase-3.-la-generación-del-informe-final" class="level4">
+<h4 class="anchored" data-anchor-id="fase-3.-la-generación-del-informe-final">Fase 3. La generación del informe final</h4>
+<p>La fase final de nuestra simulación consiste en que el LLM actúe como coordinador del panel de evaluación y genere un informe final de consenso. Este informe debe incluir la calificación global de la propuesta, un resumen de los puntos de consenso y disenso entre los revisores, así como una lista detallada de las estrategias de mejora sugeridas por cada revisor. Además, debe incluir una calificación final entre 0 y 10. Este documento final será muy útil a la hora de revisar la propuesta y realizar los cambios necesarios para su mejora. Además, también podrás conservar los informes anteriores para consultar los comentarios de cada revisor. De ese modo, tendrás tanto una evaluación general como los detalles específicos que han servido de fuente para la elaboración del informe final.</p>
+<p><strong>Completa el siguiente <em>prompt</em> con el texto que describe el debate entre los revisores y, a continuación, copia y pega el texto en el LLM de tu preferencia:</strong></p>
+<div id="panel_eval" class="prompt">
+<p>Actúa como el <span class="span pt_persona">coordinador del panel de evaluación de propuestas científicas.<span class="tooltiptext">Persona</span></span></p>
+<p>A partir del debate completo (defensas, réplicas y consenso intermedio) que obtuviste:</p>
+<p><span class="span pt_contexto">[RESPUESTA DEL PROMPT ANTERIOR]<span class="tooltiptext">Contexto</span></span></p>
+<p><span class="span pt_tarea">Elabora un informe final de consenso que incluya:<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">1. La calificación global (Excelente, Bueno, Revisable, Rechazable).<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">2. El resumen de los puntos de concordancia clave del debate. Enfatizar el diagnóstico común sobre la calidad de la propuesta.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">3. Recomendaciones conjuntas detalladas y redactadas como si salieran de un único panel, con el lenguaje consensuado por los revisores.<span class="tooltiptext">Tarea</span></span></p>
+<p><span class="span pt_tarea">4. Notas de disenso (si queda algún punto sin pleno acuerdo, describir brevemente por qué).<span class="tooltiptext">Tarea</span></span></p>
+<p>El tono del informe final debe ser el mismo:<span class="span pt_tono"> formal, académico y, al mismo tiempo, constructivo y alentador.<span class="tooltiptext">Tono</span></span></p>
+<p>Como en los informes individuales, <span class="span pt_salida">el resultado debe estar en un formato de un informe de evaluación detallado sobre la calidad de la propuesta.<span class="tooltiptext">Formato</span></span></p>
+</div>
+</section>
+<section id="cómo-se-hace" class="level4">
+<h4 class="anchored" data-anchor-id="cómo-se-hace">¿Cómo se hace?</h4>
+<p>El proceso de evaluación simulado que he descrito más arriba puede ser ejecutado <strong>manualmente</strong> sin problemas. Basta con seguir los pasos que he descrito uno a uno. Si son tres revisores, se debe cambiar el primer <em>prompt</em> para que se adapte al perfil de cada uno de ellos e incluir como contexto toda la información que se haya podido reunir sobre los criterios de evaluación. Luego, guardamos las respuestas de cada uno, no olvidando de identificarlos por su nombre, número o especialidad.</p>
+<p>El paso siguiente consiste en crear un nuevo <em>prompt</em> para el debate. Aquí, hace falta copiar y pegar los resultados de cada uno de los revisores como material de contexto para la evaluación. De nuevo, se trata de adaptar el <em>prompt</em> de la fase 2 para que se ajuste a los resultados obtenidos en la etapa anterior.</p>
+<p>El último paso resulta más sencillo y consiste en copiar los resultados del <em>prompt</em> anterior y pegarlos en el lugar indicado en el <em>prompt</em> de la fase 3. Aquí, el resultado final es un informe que puede ser utilizado como una evaluación formal de la propuesta.</p>
+</section>
+<section id="automatizando-aún-más" class="level4">
+<h4 class="anchored" data-anchor-id="automatizando-aún-más">Automatizando aún más</h4>
+<p>Si sabes programar, puedes <strong>automatizar el proceso de evaluación</strong> utilizando un script en R, Python o en el lenguaje que prefieras. La idea es crear un programa que ejecute los pasos anteriores de forma automática, generando los <em>prompts</em> y guardando las respuestas de cada uno de los revisores, del debate y el informe final. Las entradas serían las mismas: 1) la memoria que se quiere evaluar; 2) el documento con el baremo o los criterios de evaluación; 3) los perfiles de los revisores; y 4) (opcional) ejemplos de evaluaciones y de informes anteriores. El resultado final sería un informe que puede ser utilizado como una evaluación formal de la propuesta. Puedes incluso generar un documento en <em>html</em> o <em>pdf</em> con las evidencias de todo el proceso: las evaluaciones individuales, el debate y el informe final.</p>
+<p>Personalmente, recomiendo la automatización por dos razones fundamentales. Primero, porque deseamos refinar y mejorar nuestra propuesta a partir de las revisiones hechas por la IA. Esto significa que no ejecutaremos este proceso solo una vez, sino que lo repetiremos cuantas veces haga falta para que nos sintamos seguros para enviar la memoria a evaluación humana. En resumen, ahorramos mucho tiempo. Segundo, podemos reutilizar el algoritmo para otros proyectos o adaptarlo a otros contextos. Por ejemplo, aplicarlo para evaluar artículos científicos, acreditaciones en la ANECA o cualquier otro tipo de evaluación con estructura compleja.</p>
+<p>El código abajo ejecuta el proceso de forma automática. Tarda menos de cuatro minutos en crear 4 evaluaciones, un debate entre los evaluadores y un informe final a partir de tres insumos básicos: el perfil simulado de los evaluadores, la memoria (simulada) y las informaciones sobre los criterios de evaluación (última edición de los proyectos del Ministerio).</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Preparación - Carga las librerias</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ellmer)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readtext)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringi)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="do">## FASE 1 - Simula las evaluaciones</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Define los perfiles de los evaluadores</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>perf <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Nombre: Dolores Morales Devoto</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">Sexo: mujer</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">Años de experiencia: 20</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">Área de especialización: Comportamiento político comparado, psicología política, opinión pública y cultura política</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">Enfoque metodológico: métodos mixtos"</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">"Nombre: José Tongo Encuesta</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">Sexo: hombre</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">Años de experiencia: 10</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">Área de especialización: Sistemas electorales, análisis electoral, geografía electoral y diseño institucional</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="st">Enfoque metodológico: cuantitativo"</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="st">"Nombre: Carmen Recurso De Negado</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="st">Sexo: mujer</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="st">Años de experiencia: 15</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="st">Área de especialización: Poder judicial, justicia constitucional, independencia judicial y relaciones entre derecho y política</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="st">Enfoque metodológico: Estudios de caso en profundidad, Análisis documental y jurisprudencial, Entrevistas semi-estructuradas"</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="st">"Nombre: Félix Sartael Puente</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="st">Sexo: hombre</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="st">Años de experiencia: 20</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="st">Área de especialización: Formulación, implementación y evaluación de políticas públicas; análisis de políticas comparadas; políticas sociales y de desarrollo</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="st">Enfoque metodológico: métodos mixtos, estudios de caso, encuestas y evaluación de políticas basada en evidencia"</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga los criterios de evaluación</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>crit <span class="ot">&lt;-</span> <span class="fu">read_lines</span>(<span class="st">"https://raw.githubusercontent.com/rodrodr/IA_Generativa_2025/refs/heads/main/DOC_01_Criterios_2024.txt"</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>crit <span class="ot">&lt;-</span> <span class="fu">paste</span>(crit, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga la memoria simulada</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>mem <span class="ot">&lt;-</span> <span class="fu">read_lines</span>(<span class="st">"https://raw.githubusercontent.com/rodrodr/IA_Generativa_2025/refs/heads/main/DOC_02_memoria_trucha.txt"</span>)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>mem <span class="ot">&lt;-</span> <span class="fu">paste</span>(mem, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Crea los prompts para simular a los evaluadores</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>ppt1 <span class="ot">&lt;-</span> <span class="st">"Actúa como un experto de una agencia de evaluación científica internacional. Tu perfil es de un académico experto con el siguiente perfil:</span><span class="sc">\n</span><span class="st">"</span> </span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>ppt2 <span class="ot">&lt;-</span> <span class="st">". Tienes una mente muy organizada y lógica, por lo que evalúas las propuestas de forma estructurada, paso a paso, según su calidad científica y los criterios establecidos en la convocatoria.</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="st">Las bases de la convocatoria que emplearás para evaluar las candidaturas son las siguientes: '"</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>ppt3 <span class="ot">&lt;-</span> <span class="st">"'</span><span class="sc">\n\n</span><span class="st">Tu tarea consiste en, a partir de lo establecido en la convocatoria, evaluar una propuesta de investigación.Ten en cuenta especialmente los siguientes critérios:</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="st">1. La calidad técnico-científica general de la memoria.</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="st">2. La calidad, coherencia y actualidad de la revisión de la literatura [realizar búsqueda online si necesario].</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="st">3. La viabilidad del proyecto y la adecuación de los objetivos al cronograma.</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="st">4. La división de tareas entre los miembros del equipo.</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="st">5. La adecuación del presupuesto a los objetivos.</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="st">No considere todo a la vez, sino que trabaja paso a paso según el siguiente orden:</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="st">Primero, evalúa detenidamente la propuesta.</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="st">Segundo, a partir de la evaluación inicial, examina detenidamente los puntos fuertes y los puntos débiles de la propuesta.</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="st">Tercero, identifica y describe detalladamente las posibles estrategias de mejoría.</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="st">Cuarto, califica la propuesta en un valor entre 0 (calidad claramente insuficiente) a 10 (excelente).</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="st">Quinto, revisa todo lo anterior y genera un informe detallado sobre la propuesta.</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="st">Emplea un tono formal, académico y, al mismo tiempo, constructivo y alentador. Su tono debe ser positivo y ayudar al usuario a entender las principales deficiencias del trabajo y a encontrar caminos para superarlas.</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="st">El resultado debe estar en un formato de un informe de evaluación detallado sobre la calidad de la propuesta. Debe incluir una introducción, una sección para cada aspecto evaluado, una sección muy detallada, con instrucciones paso a paso para la mejoría de la propuesta y, finalmente, una calificación final.</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="st">El texto de la memoria es el siguiente:</span><span class="sc">\n\n</span><span class="st">'"</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>pptA <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ppt2,crit,ppt3,mem,<span class="st">"'"</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>prompt <span class="ot">&lt;-</span> <span class="fu">paste0</span>(ppt1, perf, pptA)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="do">## Ejecuta la simulación de la primera parte</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ellmer)</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="co"># Crea un chat que conecta con Gemini</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>chat <span class="ot">&lt;-</span> <span class="fu">chat_gemini</span>(</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>  <span class="at">base_url =</span> <span class="st">"https://generativelanguage.googleapis.com/v1beta/"</span>,</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> <span class="st">"gemini-2.5-flash-preview-04-17"</span>, </span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>  <span class="at">echo =</span> <span class="st">"none"</span>)</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="co"># Para cada uno de los evaluadores</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(prompt)){</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Ejecuta el prompt</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>  respuesta <span class="ot">&lt;-</span> chat<span class="sc">$</span><span class="fu">chat</span>(prompt[i])</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Guarda el resultado en un archivo</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write</span>(respuesta, <span class="at">file=</span><span class="fu">paste0</span>(<span class="st">"01_informe_eval_"</span>,i,<span class="st">"_"</span>,<span class="fu">Sys.Date</span>(),<span class="st">".txt"</span>))</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>El resultado de esta etapa son cuatro informes de evaluación, guardados en archivos .txt con la fecha de hoy. Cada uno de los informes contiene una evaluación detallada de la memoria presentada, con un análisis de los puntos fuertes y débiles, así como sugerencias para mejorar la propuesta. Estos archivos servirán de insumo para el paso siguiente: la simulación de un debate entre los evaluadores.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="do">### FASE 2 - Simula el panel de expertos</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="do">### </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Informes</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>lf <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">path =</span> <span class="st">"."</span>, <span class="at">pattern =</span> <span class="st">"informe_eval_"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>tx <span class="ot">&lt;-</span> <span class="fu">readtext</span>(lf)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>informes <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">toJSON</span>(tx, <span class="at">pretty =</span> <span class="cn">TRUE</span>, <span class="at">auto_unbox =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Prompt</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>ppt <span class="ot">&lt;-</span> <span class="st">"Actúa como el moderador de un panel de evaluación de propuestas científicas.</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">A continuación tienes las evaluaciones del proyecto por los expertos de área:</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">[AQUÍ TEXTOS DE LOS REVISORES]</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="st">Ahora, modera un debate acerca de los informes sometidos por los revisores. Fases del debate:</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">1. Defensa inicial - cada panelista resumirá y defenderá sus puntos clave.</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="st">2. Réplica - cada uno podrá hacer comentarios breves en respuesta a otro panelista, definiendo acuerdos o matizando discrepancias.</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="st">3. Búsqueda de consenso - proponer áreas de acuerdo total o parcial y justificar por qué deberían unificarse criterios.</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="st">Finalmente, el texto debe contener el resultado detallado de la discusión entre los panelistas en cada fase del debate. Genere todo el debate. No pare en la intervención de cada uno. Sigue hasta que el debate esté terminado."</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>prompt <span class="ot">&lt;-</span> <span class="fu">stri_replace_all_fixed</span>(ppt, <span class="st">"[AQUÍ TEXTOS DE LOS REVISORES]"</span>, informes)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Genera la simulación</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Configura el modelo</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>chat <span class="ot">&lt;-</span> <span class="fu">chat_gemini</span>(</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">base_url =</span> <span class="st">"https://generativelanguage.googleapis.com/v1beta/"</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> <span class="st">"gemini-2.5-flash-preview-04-17"</span>, </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">echo =</span> <span class="st">"none"</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtiene la respuesta del modelo</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>respuesta <span class="ot">&lt;-</span> chat<span class="sc">$</span><span class="fu">chat</span>(prompt)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda el resultado en un archivo</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="fu">write</span>(respuesta, <span class="at">file=</span><span class="fu">paste0</span>(<span class="st">"02_debate_panelistas_"</span>,<span class="fu">Sys.Date</span>(),<span class="st">".txt"</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Se ha generado un texto que simula un debate entre los cuatro evaluadores, en el que cada uno de ellos defiende su evaluación inicial y discute con los demás. El resultado es un texto que contiene la defensa inicial de cada panelista, una réplica y una búsqueda de consenso. Este texto puede ser utilizado como insumo para la elaboración del informe final de evaluación.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="do">### Fase 3. Informe final</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Genera el prompt</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ppt <span class="ot">&lt;-</span> <span class="st">"Actúa como el coordinador del panel de evaluación de propuestas científicas.</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">A partir del debate completo (defensas, réplicas y consenso intermedio) que obtuviste:</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="st">[RESPUESTA DEL PROMPT ANTERIOR]</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="st">Elabora un informe final de consenso que incluya:</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="st">1. La calificación global (Excelente, Bueno, Revisable, Rechazable).</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="st">2. El resumen de los puntos de concordancia clave del debate. Enfatizar el diagnóstico común sobre la calidad de la propuesta.</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="st">3. Recomendaciones conjuntas detalladas y redactadas como si salieran de un único panel, con el lenguaje consensuado por los revisores.</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="st">4. Notas de disenso (si queda algún punto sin pleno acuerdo, describir brevemente por qué).</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="st">El tono del informe final debe ser el mismo: formal, académico y, al mismo tiempo, constructivo y alentador.</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="st">Como en los informes individuales, el resultado debe estar en un formato de un informe de evaluación detallado sobre la calidad de la propuesta."</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>prompt <span class="ot">&lt;-</span> <span class="fu">stri_replace_all_fixed</span>(ppt, <span class="st">"[RESPUESTA DEL PROMPT ANTERIOR]"</span>, respuesta)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtiene la respuesta del modelo</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>respuesta <span class="ot">&lt;-</span> chat<span class="sc">$</span><span class="fu">chat</span>(prompt)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda el resultado en un archivo</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="fu">write</span>(respuesta, <span class="at">file=</span><span class="fu">paste0</span>(<span class="st">"03_informe_final_"</span>,<span class="fu">Sys.Date</span>(),<span class="st">".txt"</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Ya tenemos el informe final. Este informe incluye la calificación global, un resumen de los puntos de concordancia clave del debate, recomendaciones conjuntas detalladas y notas de disenso. El tono del informe es formal, académico y constructivo.</p>
+<p>Sin embargo, no me gusta tener que abrir archivo por archivo y quiero que todo esté organizado de forma secuencial en un solo archivo: los informes, el debate y el informe final. De ese modo, puedo guardar todo en un archivo único que resume una evaluación completa de una versión concreta de mi proyecto.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="do">### Fase 4. Generar un documento html único con todo</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="do">###</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargar librerías</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quarto)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtiene la lista de archivos generados</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># anteriormente</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>lf <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"."</span>, <span class="at">pattern =</span> <span class="st">"informe_eval_|debate_panelistas_|informe_final_"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Le todo y los fusiona en un</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># solo texto</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>tx <span class="ot">&lt;-</span> <span class="fu">readtext</span>(lf)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>tx<span class="sc">$</span>name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Informe de evaluación 1"</span>,</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Informe de evaluación 2"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Informe de evaluación 3"</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Informe de evaluación 4"</span>,</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Debate entre panelistas"</span>,</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Informe final"</span>)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>tx <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;h1 style='color:#1d8149;'&gt;"</span>,tx<span class="sc">$</span>name,<span class="st">"&lt;/h1&gt;"</span>, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>, tx<span class="sc">$</span>text, <span class="at">collapse=</span><span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>tx <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">'---</span><span class="sc">\n</span><span class="st">title: "&lt;b&gt;Informe unificado &lt;/b&gt;&lt;br&gt;sobre la memoria del proyecto"</span><span class="sc">\n</span><span class="st">format:</span><span class="sc">\n</span><span class="st">  html</span><span class="sc">\n</span><span class="st">---</span><span class="sc">\n\n</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="st">'</span>, tx, <span class="at">collapse=</span><span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda el resultado como un</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co"># documento Quarto</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="fu">write</span>(tx, <span class="st">"informe_final.qmd"</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Compila el documento para </span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co"># transformarlo en un archivo</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co"># html con todo el contenido</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="fu">quarto_render</span>(<span class="st">"informe_final.qmd"</span>,  <span class="at">output_file =</span> <span class="fu">paste0</span>(<span class="st">"informe_final_"</span>,<span class="fu">Sys.Date</span>(),<span class="st">".html"</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>¡Listo! Ya estamos preparados para la vida moderna. Ahora debemos trabajar en la memoria para mejorar su calidad según las recomendaciones de los revisores virtuales.</p>
+<p>Aunque no sea lo mismo que recibir los insumos de un panel de expertos de verdad, este procedimiento permite acelerar el proceso de revisión y mejora de un proyecto. Nos brinda algunas recomendaciones y sugerencias que pueden ser muy útiles para mejorar la calidad antes de presentar el proyecto a una convocatoria real. Además, su retorno es casi inmediato. Podemos realizar varias iteraciones de revisión y mejora en un tiempo relativamente corto. En ese punto se encuentra su verdadera utilidad.</p>
+</section>
+</section>
+</section>
+<section id="otras-aplicaciones-de-ayuda-basada-en-la-de-ia" class="level2">
+<h2 class="anchored" data-anchor-id="otras-aplicaciones-de-ayuda-basada-en-la-de-ia">Otras aplicaciones de ayuda basada en la de IA</h2>
+<p>En esta sección introduzco algunas aplicaciones que pueden ser muy útiles a la hora de realizar tareas de investigación y docencia. No tienen relación directa con <em>prompting</em>, sino que representan herramientas más completas o especializadas.</p>
+<section id="notebooklm" class="level3">
+<h3 class="anchored" data-anchor-id="notebooklm">NotebookLM</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://notebooklm.google.com/" target="_blank"><img src="notebooklm.png" class="img-fluid figure-img" alt="NotebookLM de Google"></a></p>
+<figcaption>NotebookLM de Google</figcaption>
+</figure>
+</div>
+<p>NotebookLM es un nuevo producto de Google que permite interactuar con documentos, vídeos, audio y notas a partir de espacios temáticos llamados <em>notebooks</em>. Se trata de una herramienta construida sobre el modelo <em>Gemini</em> y que contiene algunas funcionalidades predefinidas que son muy útiles a la hora de trabajar con textos. Todo se estructura con base a una <em>RAG</em>. El usuario empieza con subir contenido, que suele estar compuesto por libros, artículos, documentos, videos o <em>podcasts</em> y el sistema lo analiza y convierte en una base de datos vectorial. A partir de ahí, uno puede emplear funciones como generación de resúmenes, mapas mentales, guías de estudio, preguntas más frecuentes y la generación de un <em>podcast</em> que sintetiza todo el contenido. Además, uno puede hacer preguntas sobre el contenido y el sistema responde con base a la información que ha sido subida. Incluso, se permite la interacción a tiempo real con el <em>podcast</em>.</p>
+<p>Los <em>notebooks</em> corresponden a soluciones prácticas y funcionales para la organización del material de estudio. Permiten una enorme flexibilidad al crear <em>entornos virtuales estables</em> organizados alrededor de un tema o materia. Por ejemplo, una asignatura se podría organizar en un solo <em>notebook</em> o dividirse en varios <em>notebooks</em>, uno para cada sesión o tema del curso. Eso permite crear espacios virtuales más o menos especializados de acuerdo con los intereses de cada usuario y los propósitos académicos de cada momento de desarrollo del proceso educativo.</p>
+<p>Como veremos, se trata de una aplicación con enorme potencial tanto para profesores como para estudiantes. Un docente puede emplearla para la creación de materiales de estudio, presentaciones, resúmenes, guías de estudio y exámenes. Por otro lado, permite a los estudiantes interactuar de forma fluida con los materiales de estudio, subsanar dudas o incluso generar planes de de estudio personalizados. Se trata de un excelente apoyo en asignaturas de tipo teórico, en las que la lectura de textos de referencias resulta fundamental para la formación de los estudiantes.</p>
+</section>
+<section id="obsidian-ollama" class="level3">
+<h3 class="anchored" data-anchor-id="obsidian-ollama">Obsidian + Ollama</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://obsidian.md/" target="_blank"><img src="obsidian.png" class="img-fluid figure-img" alt="Obsidian + Companion Plugin"></a></p>
+<figcaption>Obsidian + Companion Plugin</figcaption>
+</figure>
+</div>
+<p>Obsidian representa otra aplicación de interés. Se trata de un programa de toma de notas que permite organizar el contenido de forma jerárquica y crear enlaces entre notas. Algunas de sus funcionalidades son semejantes a las de <em>NotebookLM</em>, como un gráfico de conocimiento o la capacidad de generar mapas mentales. No obstante, lo que nos interesa aquí en particular es una extensión que permite integrar la IA directamente al flujo de escritura.</p>
+<p>Companion es una extensión (<em>plugin</em>) de la comunidad de usuarios de Obsidian que posibilita que utilicemos la IA para completar los textos que estamos escribiendo -tanto por medio de una API de IA (como Google Gemini) o empleando modelos locales con Ollama-. De ese modo, integramos la IA directamente al proceso de escritura de forma directa y sin necesidad de salir del programa.</p>
+<p>¿Por qué el autocompletado de textos aún no se encuentra disponibles en programas o plataformas de escritura más conocidas como Word o Google Docs? La razón es sencilla: el autocompletado de textos es una función que requiere un modelo de IA que sea a la vez capaz de hacer sugerencias correctas y que no implique una multiplicación de costes de procesamiento para empresas. Sistemas como Office 365 o Google Docs están diseñados para funcionar en la nube, lo que transfiere todos los costes de procesamiento a los servidores de Microsoft o Google. Por lo tanto, su implementación de forma gratuita en dichos paquetes implica mayores costes, algo que las empresas no quieren asumir.</p>
+<p>La solución que ofrece Obsidian + Ollama es diferente. En este caso, el modelo de generación de texto se ejecuta de forma local. Eso evita la necesidad de enviar todo el texto de un documento a un servidor para que lo procese y devuelva la sugerencia siguiente. La “pega” está en el hecho de que la configuración del sistema resulta un poco más compleja:</p>
+<ol type="1">
+<li><p>Instalar Ollama y bajar el modelo de IA que se quiere utilizar;</p></li>
+<li><p>Instalar Obsidian y el plugin Companion;</p></li>
+<li><p>Configurar el plugin para que use el modelo de IA que se ha bajado con Ollama.</p></li>
+</ol>
+<p>Como vemos, no se trata de algo super complejo, pero exige más trabajo que simplemente abrir Word o Google Docs y empezar a escribir<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.</p>
+
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-khot2023" class="csl-entry" role="listitem">
+Khot, Tushar, Harsh Trivedi, Matthew Finlayson, Yao Fu, Kyle Richardson, Peter Clark, y Ashish Sabharwal. 2023. <span>«Decomposed <span>Prompting</span>: <span>A</span> <span>Modular</span> <span>Approach</span> for <span>Solving</span> <span>Complex</span> <span>Tasks</span>»</span>. <em>arXiv</em>. <a href="https://doi.org/10.48550/arXiv.2210.02406">https://doi.org/10.48550/arXiv.2210.02406</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p><strong>Larry Tesler</strong>, quien inventó el <em>Control+C</em> y el <em>Control+V</em>, se merece una estatua en las plazas mayores de todo el mundo.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Preguntad a la IA: “qué significa ‘regex’ y dame un ejemplo de cómo extraer nombres de personas, ciudades u organizaciones de un texto”. Ya entenderéis a qué me estoy refiriendo.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Puedes encontrar el video completo del curso (aprox. 1:30h) en el <a href="https://www.youtube.com/watch?v=OQaTkeAj8UU" target="_blank">siguiente enlace</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Una explicación bastante interesante de qué podemos entender como arquitectura de <em>prompting</em> puede ser encontrada <a href="https://towardsdatascience.com/prompt-architecture-bd8a07117dab/" target="&quot;_blank">aquí</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Este vídeo <a href="https://www.youtube.com/watch?v=d69fx3dyEYs" target="_blank">Antonio Pérez</a> en Youtube explica muy bien el concepto de RAG. Este otro de <a href="https://www.youtube.com/watch?v=T-D1OfcDW1M" target="_blank">IBM Technology</a> también es una fuente excelente para entender el tema, pero está en inglés (aunque hay subtítulos que se pueden traducir automáticamente al español).<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Por ejemplo, el documento del enlace, correspondiente a la convocatoria del programa de proyectos de investigación de 2024 de la Agencia Española de Investigación (AEI), contiene un anexo 3 donde establece los criterios de evaluación de las solicitudes.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Estos documentos son más difíciles de conseguir, pero si ya has sido evaluador, seguramente tienes algún documento de ediciones pasadas que pueden servir de ejemplo al modelo. Pero siempre se puede encontrar algo como la página que delinea el <a href="https://www.aei.gob.es/evaluacion/procedimiento-general" target="_blank">procedimiento general de evaluación</a> de la AEI.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>El siguiente video de <a href="https://www.youtube.com/watch?v=bQ00X1Y6-YQ" target="_blank">Matt Williams</a> explica paso a paso cómo configurar Obsidian para que active la funcionalidad de autocompleción de texto.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025, Rodrigo Rodrigues-Silveira</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://oir.org.es/pela/"><img src="logo_pela.png" class="img-fluid" alt="Posit" width="500"></a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
