@@ -34,9 +34,12 @@ format:
     theme: pulse
     css: styles.css
     toc: true
+    toc-depth: 4
     code-fold: show
     code-overflow: wrap
+    from: markdown+emoji
   
+bibliography: references.bib
 
 editor: source
 lang: es
