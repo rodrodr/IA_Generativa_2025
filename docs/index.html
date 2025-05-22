@@ -163,6 +163,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">2 - Asistentes virtuales</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./investigacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 - IA en investigación</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -214,6 +220,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     display: inline-block; 
     float: left;
 }
+
+
 </style>
 <section id="el-curso" class="level2">
 <h2 class="anchored" data-anchor-id="el-curso">El curso</h2>
@@ -316,6 +324,7 @@ Profesor de ciencia política de la USAL. Director del proyecto “Comportamient
 <p>Para los interesados en emplear modelos locales y acompañar las aplicaciones en R, se recomienda la instalación de los siguientes programas informáticos:</p>
 <p><a href="https://lmstudio.ai/">LM Studio</a> - Para el uso de modelos de IA en tu ordenador (modelos locales).</p>
 <p><a href="https://ollama.com/">Ollama</a> - Servidor local de modelos de IA.</p>
+<p><a href="https://obsidian.md/">Obsidian</a> - Aplicación para tomar notas. Y dentro de la aplicación, instalar el complemento de la comunidad (<em>community plugin</em>) llamado “Companion”.</p>
 <p><a href="https://cran.r-project.org/">R</a> y el <a href="https://posit.co/downloads/">RStudio Desktop</a>.</p>
 <p>También se recomienda ejecutar el siguiente código en R que instala los paquetes necesarios para reproducir los ejemplos.</p>
 <div class="cell">
@@ -323,11 +332,15 @@ Profesor de ciencia política de la USAL. Director del proyecto “Comportamient
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crea un vector con los paquetes a instalar</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pc <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"rollama"</span>,<span class="st">"ellmer"</span>,<span class="st">"stringi"</span>,<span class="st">"rvest"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"stringi"</span>,<span class="st">"readr"</span>,<span class="st">"ggplot2"</span>,<span class="st">"reactable"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"tidyverse"</span>,<span class="st">"devtools"</span>,<span class="st">"dplyr"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala los paquetes</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pc)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"readr"</span>,<span class="st">"ggplot2"</span>,<span class="st">"reactable"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"tidyverse"</span>,<span class="st">"devtools"</span>,<span class="st">"dplyr"</span>, </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"quanteda"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala los paquetes</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pc)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala el paquete tenet</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"rodrodr/tenet"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>

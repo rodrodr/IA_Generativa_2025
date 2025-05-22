@@ -138,10 +138,14 @@ También se recomienda ejecutar el siguiente código en R que instala los paquet
 # Crea un vector con los paquetes a instalar
 pc <- c("rollama","ellmer","stringi","rvest",
         "readr","ggplot2","reactable",
-        "tidyverse","devtools","dplyr")
+        "tidyverse","devtools","dplyr", 
+        "quanteda")
 
 # Instala los paquetes
 install.packages(pc)
+
+# Instala el paquete tenet
+devtools::install_github("rodrodr/tenet")
 
 ```
 

@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Informe unificado sobre la memoria del proyecto – IA Generativa</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5c604b029020b30881820a2e5e44c04a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      IA Generativa
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IA Generativa</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción al curso</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ia_generativa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 - IA Generativa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./geopolitics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 - Geopolítica y la IA</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./asistentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 - Asistentes virtuales</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><b>Informe unificado </b><br>sobre la memoria del proyecto</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<h1 style="color:#1d8149;">
+Informe de evaluación 1
+</h1>
+<p>Estimados/as colegas,</p>
+<p>Es un placer dirigirme a ustedes en mi rol como evaluadora experta de la Agencia de Evaluación Científica Internacional, con la tarea de analizar la propuesta de investigación titulada “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)”. Mi nombre es Dolores Morales Devoto, y mi experiencia de 20 años en Comportamiento Político Comparado, Psicología Política, Opinión Pública y Cultura Política, con un enfoque metodológico en métodos mixtos, me permite abordar esta evaluación desde una perspectiva rigurosa y estructurada, atendiendo a los criterios establecidos en la convocatoria.</p>
+<p>He examinado detenidamente la Memoria Científico-Técnica presentada, aplicando la lógica y organización que caracterizan mi aproximación a la evaluación de propuestas, y he considerado la calidad científica, la viabilidad y el impacto potencial del proyecto.</p>
+<p>A continuación, presento mi informe detallado sobre la propuesta, estructurado según los pasos solicitados, con el fin de ofrecer una evaluación justa y, sobre todo, constructiva que ayude a potenciar la calidad y el impacto de esta interesante línea de investigación.</p>
+<p><strong>Informe de Evaluación Detallado de la Propuesta RUPLEGLA</strong></p>
+<p><strong>1. Evaluación Detenida de la Propuesta</strong></p>
+<p>He procedido a la evaluación en profundidad de cada sección de la Memoria Científico-Técnica, contrastándola con los criterios de evaluación de la convocatoria (Anexo I) y las instrucciones para la elaboración de la memoria (Anexo VII).</p>
+<ul>
+<li><p><strong>Calidad y Viabilidad de la Propuesta (Criterio 1):</strong></p>
+<ul>
+<li><strong>Adecuación a la Modalidad (2.1):</strong> La propuesta justifica de forma convincente su alineación con la modalidad de investigación orientada. La identificación de un problema de relevancia pública (crisis institucionales) y el compromiso con la generación de recomendaciones aplicadas y la colaboración con actores externos (gobierno, ONG) son aspectos muy positivos que satisfacen claramente este requisito.</li>
+<li><strong>Justificación y Novedad (2.2):</strong> La propuesta identifica un vacío significativo en la literatura comparada al centrarse en el poder legislativo como <em>iniciador</em> de rupturas institucionales, un fenómeno menos explorado que los golpes ejecutivos o militares, pero altamente relevante en el contexto actual de erosión democrática sutil. La hipótesis de partida es clara y plausible, bien sustentada por ejemplos recientes. La contribución esperada a la generación de conocimiento es sustancial y aborda una problemática de vanguardia en el estudio de la democracia.</li>
+<li><strong>Contribución a Solucionar Problemas (2.3):</strong> Se describen resultados concretos y aplicables, como recomendaciones de política, fortalecimiento del debate público e instrumentos de monitoreo. La conexión con la prioridad temática de “fortalecimiento de la democracia” es explícita y bien argumentada.</li>
+<li><strong>Objetivos (3.1):</strong> Los objetivos (general y específicos) están bien formulados: son claros, realistas en su alcance para un proyecto de 3 años y abordan de manera lógica los distintos aspectos del problema planteado (caracterización, comparación, impacto, marco teórico, recomendaciones). Son coherentes con la justificación y la hipótesis.</li>
+<li><strong>Metodología (3.2):</strong> La propuesta de métodos mixtos es muy pertinente para abordar la complejidad del fenómeno. La combinación de análisis documental, estudios de caso comparados con trabajo de campo (entrevistas) y análisis cuantitativo (base de datos propia e índices externos) demuestra rigor y capacidad para profundizar en los mecanismos y generalizar hallazgos. La descripción de los pasos metodológicos es detallada y se mencionan mecanismos para asegurar la validez. La triangulación es un punto fuerte.</li>
+<li><strong>Plan de Trabajo y Cronograma (3.3):</strong> El cronograma de 36 meses presenta una secuencia lógica de actividades (preparación, recolección, análisis, síntesis, diseminación). Sin embargo, la descripción general no especifica con suficiente detalle la distribución de <em>responsabilidades</em> por tareas o hitos concretos entre los miembros del equipo (IPs, postdocs, becarios), a pesar de que las instrucciones de la memoria solicitan esta precisión. Tampoco se detallan los “miembros clave para la ejecución de cada una de las tareas” ni su especialización temática asociada a esas tareas. Esto afecta ligeramente la percepción de la viabilidad operativa en términos de gestión del equipo.</li>
+<li><strong>Puntos Críticos y Plan de Contingencia (3.4):</strong> La identificación de posibles dificultades (disponibilidad de datos, acceso a informantes, cambios políticos, recursos humanos, logística) es realista y demuestra previsión. Los planes de contingencia propuestos son sensatos y plausibles, mitigando los riesgos para la viabilidad del proyecto.</li>
+<li><strong>Resultados Previos del Equipo (3.5):</strong> Los antecedentes presentados (informe, artículo, proyecto previo, seminarios/congresos) son muy relevantes para la temática de la propuesta y demuestran la sólida experiencia y capacidad del equipo, incluyendo la colaboración previa entre los IPs. Esto avala de forma contundente la viabilidad del proyecto.</li>
+<li><strong>Recursos Disponibles (3.6):</strong> La descripción de los recursos humanos (composición del equipo con dedicaciones), materiales e infraestructuras disponibles (biblioteca, bases de datos, laboratorios, software) es adecuada y justificada. Los recursos solicitados se complementan bien con los existentes.</li>
+</ul></li>
+<li><p><strong>Calidad y Trayectoria de los Componentes (Criterio 2):</strong> Aunque la memoria no incluye los CVs individuales, la información proporcionada en 3.5 (Resultados Previos), 3.6 (Composición del equipo) y 6 (Capacidad Formativa) permite inferir una alta calidad y relevancia de la trayectoria del equipo en la temática. La experiencia en proyectos previos, publicaciones, organización de eventos, capacidad formativa (tesis dirigidas, desarrollo de egresados) e indicios de internacionalización (congresos, estancias, consejo asesor) sugieren un equipo muy competente y bien posicionado para llevar a cabo la propuesta. La complementariedad entre los IPs (aunque no explícitamente detallada en la división de tareas) se infiere de la colaboración previa mencionada.</p></li>
+<li><p><strong>Impacto Esperado (Criterio 3):</strong></p>
+<ul>
+<li><strong>Impacto Científico (4.1):</strong> El impacto científico esperado es significativo, buscando contribuir a la teoría política comparada y generar nuevos datos y modelos explicativos. La identificación de la “ruptura institucional legislativa” como concepto clave tiene potencial de generar un nuevo nicho de investigación.</li>
+<li><strong>Impacto Social y Económico (4.2):</strong> Se articulan claramente los beneficios sociales (confianza, transparencia, vigilancia, reducción polarización) y económicos (estabilidad, seguridad jurídica, inversión) derivados del proyecto. La conexión entre instituciones sólidas y desarrollo es bien establecida.</li>
+<li><strong>Plan de Comunicación Científica e Internacionalización (4.3):</strong> El plan es ambicioso y adecuado, incluyendo publicaciones en revistas relevantes (con énfasis en acceso abierto), presentaciones en congresos internacionales clave, intercambio académico y depósito de datos en repositorios públicos.</li>
+<li><strong>Plan de Divulgación (4.4):</strong> Se proponen acciones de divulgación muy pertinentes y dirigidas a públicos relevantes (políticos, CSOs, medios, público general), utilizando formatos diversos (talleres, policy briefs, artículos, infografías, redes sociales).</li>
+<li><strong>Plan de Transferencia y Valorización (4.5):</strong> Se describen mecanismos concretos de transferencia (asesoramiento, manual, prototipo de alerta) y se exploran vías de valorización futura (proyectos, alianzas). Es un plan sólido que va más allá de la mera difusión académica.</li>
+<li><strong>Plan de Gestión de Datos (4.6):</strong> El resumen del plan es detallado y completo, cubriendo tipos de datos, metadatos, almacenamiento, acceso (FAIR), preservación y aspectos éticos/personales. Cumple con los requisitos de la convocatoria y demuestra un enfoque responsable hacia los datos de investigación.</li>
+<li><strong>Inclusión de Género (4.7):</strong> La propuesta aborda la dimensión de género de manera transversal: en la composición del equipo, en el análisis de la investigación (si pertinente), en las actividades formativas/divulgativas y en el lenguaje/datos. Esto es un punto muy positivo y demuestra una consideración consciente de este aspecto.</li>
+</ul></li>
+<li><p><strong>Adecuación del Presupuesto (Criterio 4):</strong> El presupuesto solicitado (120.000 € para 3 años) parece razonable para un proyecto de ciencias sociales con trabajo de campo internacional y personal contratado. La justificación cualitativa por partidas es clara (RRHH como prioridad, viajes esenciales, equipamiento específico). La distribución general se alinea con las necesidades típicas de este tipo de investigación.</p></li>
+<li><p><strong>Capacidad Formativa (Criterio 6):</strong> La propuesta detalla un plan formativo robusto que integra a estudiantes de doctorado, ofrece formación metodológica y contextual, fomenta la movilidad internacional y el entorno interdisciplinar. El historial de tesis dirigidas y el seguimiento del desarrollo profesional de los egresados son muy positivos y demuestran una sólida capacidad formativa del equipo.</p></li>
+<li><p><strong>Condiciones Específicas (Criterio 7):</strong> La propuesta identifica correctamente que no hay condiciones extraordinarias más allá de los estándares éticos para investigación social, que se compromete a cumplir.</p></li>
+</ul>
+<p><strong>2. Análisis de Puntos Fuertes y Débiles</strong></p>
+<p>Basándome en la evaluación detallada, identifico los siguientes puntos clave:</p>
+<p><strong>Puntos Fuertes:</strong></p>
+<ul>
+<li><strong>Relevancia y Novedad:</strong> La propuesta aborda un tema de gran actualidad y relevancia para la democracia en América Latina, identificando un vacío específico en la literatura (el rol del legislativo como iniciador de rupturas) que la hace altamente novedosa y significativa.</li>
+<li><strong>Solidez Teórica e Hipótesis:</strong> La justificación teórica es clara, la hipótesis es bien definida y plausible, enraizada en la evidencia empírica reciente.</li>
+<li><strong>Diseño Metodológico Robusto:</strong> La combinación de métodos cualitativos y cuantitativos es idónea para la complejidad del objeto de estudio y está descrita con detalle, garantizando el rigor científico.</li>
+<li><strong>Experiencia y Calidad del Equipo:</strong> El equipo demuestra una trayectoria muy sólida y relevante en la temática, avalada por proyectos previos y publicaciones. Su capacidad formativa es un valor añadido.</li>
+<li><strong>Impacto Esperado y Transferencia:</strong> La propuesta articula de forma muy convincente el potencial impacto científico, social y económico, y presenta planes detallados y ambiciosos para la comunicación, divulgación y transferencia de resultados a públicos clave.</li>
+<li><strong>Viabilidad General:</strong> Los recursos humanos, materiales y las infraestructuras disponibles, sumados a la identificación y gestión de puntos críticos, dotan al proyecto de una alta viabilidad general.</li>
+<li><strong>Enfoques Transversales:</strong> La inclusión explícita y bien desarrollada de la gestión de datos (principios FAIR) y la perspectiva de género son muy positivas y alineadas con las mejores prácticas y criterios de evaluación.</li>
+<li><strong>Adecuación Presupuestaria:</strong> El presupuesto está bien justificado y parece ajustado a las actividades propuestas.</li>
+</ul>
+<p><strong>Puntos Débiles:</strong></p>
+<ul>
+<li><strong>Especificación de Tareas y Responsabilidades:</strong> La principal debilidad identificada es la falta de explicitación en la Memoria (secciones 3.1 y 3.3) de la asignación concreta de objetivos específicos y tareas/hitos del cronograma a los miembros individuales del equipo (IPs, postdocs, becarios), así como la conexión explícita de su especialización temática con dichas tareas. Esto, si bien no pone en duda la capacidad del equipo, dificulta la evaluación precisa de la distribución de actividades y la viabilidad operativa a nivel de gestión del equipo según las instrucciones de la convocatoria.</li>
+</ul>
+<p><strong>3. Estrategias de Mejoría</strong></p>
+<p>Para abordar los puntos débiles identificados y fortalecer aún más una propuesta que ya es muy sólida, sugiero las siguientes estrategias de mejoría:</p>
+<ol type="1">
+<li><strong>Clarificar la Asignación de Objetivos a los IPs (Sección 3.1):</strong>
+<ul>
+<li>Revise la lista de objetivos específicos.</li>
+<li>Para cada objetivo específico (enumerado), añada entre paréntesis o en una frase breve quién de los dos Investigadores Principales (IP1 o IP2) asumirá la responsabilidad principal de ese objetivo. Ejemplo:
+<ul>
+<li><em>Caracterizar y clasificar los mecanismos legislativos… (Responsable principal: IP1).</em></li>
+<li><em>Realizar un análisis comparado de casos ejemplares… (Responsable principal: IP2).</em></li>
+<li><em>Elaborar un marco teórico explicativo… (Responsables: IP1 y IP2, con énfasis en…).</em></li>
+</ul></li>
+<li>Esto cumple directamente con lo solicitado en las instrucciones de la memoria para proyectos con dos IPs.</li>
+</ul></li>
+<li><strong>Detallar la Distribución de Tareas en el Plan de Trabajo (Sección 3.3):</strong>
+<ul>
+<li>Esta es la mejora más importante para la claridad operativa. La mejor manera de hacerlo es <em>revisar o complementar</em> la descripción del cronograma.</li>
+<li>Considere crear una tabla o listado más estructurado dentro de la sección 3.3 que, para cada fase o grupo de tareas/hitos clave descritos en el cronograma, indique:
+<ul>
+<li>La tarea o hito específico.</li>
+<li>El/los miembro/s del equipo responsable/s principal/es (ej. IP1, Postdoc A, Becario 1).</li>
+<li>La participación o rol de otros miembros en esa tarea.</li>
+<li>Cómo la especialización temática de los miembros responsables se alinea con las tareas asignadas.</li>
+</ul></li>
+<li>Aunque el formato actual es de prosa, se puede mantener añadiendo frases que expliciten la responsabilidad. Ejemplo: “Durante los Meses 1-6, la revisión bibliográfica exhaustiva estará liderada por el IP1, con el apoyo del Postdoc A y el Becario 1 en la sistematización de fuentes. El IP2, dada su especialización en análisis legal comparado, será responsable de la definición inicial de los criterios de codificación para la base de datos, en colaboración con el Técnico de investigación.”</li>
+<li>Identifique explícitamente a los “miembros claves” para las etapas críticas.</li>
+<li>Esta explicitación refuerza enormemente la sección de Viabilidad (1.2), mostrando cómo la complementariedad y capacidad del equipo se traducen en una ejecución planificada y eficiente.</li>
+</ul></li>
+<li><strong>Refinar Justificación Metodológica (Menor Mejora, Sección 3.2):</strong>
+<ul>
+<li>Mientras que la metodología mixta está bien descrita y es adecuada, se podría añadir una frase breve al inicio o al final de la descripción metodológica que enfatice <em>por qué</em> esta combinación específica de métodos (análisis documental, estudios de caso <em>con trabajo de campo</em>, análisis cuantitativo <em>con base de datos propia y externa</em>, triangulación) es particularmente <em>novedosa</em> o <em>necesaria</em> para abordar la <em>especificidad</em> de las rupturas <em>legislativas</em> (no solo ejecutivas) y su naturaleza sutil/progresiva, resaltando cómo cada método compensa las limitaciones del otro en este contexto particular.</li>
+</ul></li>
+</ol>
+<p>Implementando estas mejoras, especialmente la explicitación de responsabilidades en el plan de trabajo, la propuesta ganaría en claridad operativa y cumpliría más plenamente con las instrucciones de la convocatoria, fortaleciendo la evaluación del criterio de Viabilidad.</p>
+<p><strong>4. Calificación Final</strong></p>
+<p>Evaluando la propuesta RUPLEGLA en su conjunto, y considerando la solidez de su planteamiento científico, la experiencia del equipo, la relevancia del tema y el potencial impacto, considero que es una propuesta de <em>muy alta calidad</em>. Presenta una clara novedad, un diseño metodológico robusto, un equipo altamente cualificado y planes detallados para la gestión, comunicación y transferencia de resultados. El principal aspecto a mejorar se encuentra en la explicitación de la distribución de tareas y responsabilidades dentro del plan de trabajo, lo cual es subsanable sin modificar el núcleo científico del proyecto.</p>
+<p>Basándome en la escala de 0 a 10, donde 10 es excelente, 9 muy bueno, 8 bueno, etc., mi calificación para esta propuesta es:</p>
+<p><strong>Calificación: 9/10</strong></p>
+<p>Esta puntuación refleja que la propuesta supera ampliamente los umbrales establecidos para cada criterio principal y demuestra una calidad científica y potencial de impacto sobresalientes, con una única área de mejora identificada en la presentación de la viabilidad operativa detallada.</p>
+<p><strong>5. Conclusión</strong></p>
+<p>La propuesta “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)” es un proyecto de investigación de gran interés y relevancia. Aborda una problemática crucial para el fortalecimiento de la democracia en la región desde una perspectiva novedosa y con un enfoque metodológico riguroso. El equipo proponente demuestra una experiencia y capacidad excepcionales para llevar a cabo esta investigación. Los planes de impacto, comunicación, transferencia y formación son detallados y ambiciosos, augurando una contribución significativa tanto al conocimiento académico como a la sociedad.</p>
+<p>La identificación clara de cómo se distribuirán las tareas y responsabilidades entre los miembros del equipo en el plan de trabajo (secciones 3.1 y 3.3) sería una mejora valiosa para optimizar la evaluación de la viabilidad operativa y cumplir a cabalidad con las instrucciones. No obstante, esta observación no menoscaba la alta calidad científica y el gran potencial del proyecto.</p>
+<p>Felicito a los Investigadores Principales y a su equipo por la solidez y el rigor de su propuesta. Confío en que, con la posible incorporación de las sugerencias de mejora, el proyecto RUPLEGLA se consolidará como una contribución fundamental para comprender y mitigar los riesgos institucionales en América Latina.</p>
+<p>Quedo a su disposición para cualquier aclaración o consulta adicional.</p>
+<p>Atentamente,</p>
+<p>Dolores Morales Devoto Experta Evaluadora Agencia de Evaluación Científica Internacional</p>
+<h1 style="color:#1d8149;">
+Informe de evaluación 2
+</h1>
+<p>Estimados/as colegas,</p>
+<p>Reciban un cordial saludo de mi parte, José Tongo Encuesta, especialista en Sistemas Electorales y Análisis Cuantitativo, con una década de experiencia en evaluación científica internacional. Mi aproximación a las propuestas se caracteriza por una mente organizada y lógica, evaluando de forma estructurada la calidad científica y la viabilidad en estricto apego a los criterios de la convocatoria.</p>
+<p>He tenido el honor de revisar la memoria científico-técnica del proyecto “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)”. A continuación, presento mi informe de evaluación detallado, siguiendo el proceso establecido para ofrecer una valoración rigurosa y, al mismo tiempo, constructiva para los proponentes.</p>
+<p><strong>Informe de Evaluación Detallado de la Propuesta RUPLEGLA</strong></p>
+<p><strong>1. Evaluación Detenida de la Propuesta</strong></p>
+<p>He procedido a la evaluación exhaustiva de la propuesta RUPLEGLA, analizando su alineación con los criterios de evaluación del Anexo I y las instrucciones para la memoria del Anexo VII.</p>
+<ul>
+<li><p><strong>Criterio 1. Calidad y viabilidad de la propuesta:</strong></p>
+<ul>
+<li><strong>Subcriterio 1.1. Calidad de la propuesta:</strong> La propuesta se ajusta de manera excelente a la modalidad de investigación orientada. Identifica un problema de gran relevancia política y social en América Latina, como son las rupturas institucionales iniciadas desde el ámbito legislativo, un aspecto crucial y, como bien señalan, menos estudiado que los golpes ejecutivos o militares. La justificación del problema es clara y la hipótesis central (“en contextos de alta polarización política y debilidad de contrapesos institucionales, un legislativo fuerte o aliado puede iniciar procesos de quiebre democrático”) es plausible y pertinente. La novedad de la contribución radica en el enfoque en el <em>iniciador</em> legislativo de la ruptura y en la construcción de un marco analítico propio. Los objetivos están bien definidos, son claros, realistas y se derivan lógicamente de la justificación y la hipótesis, prometiendo una contribución sustancial a la generación de conocimiento en el campo de la institucionalidad democrática comparada.</li>
+<li><strong>Subcriterio 1.2. Viabilidad de la propuesta:</strong> La metodología mixta propuesta es apropiada y rigurosa para abordar la complejidad del fenómeno, combinando análisis documental, estudios de caso con trabajo de campo (entrevistas) y un fuerte componente cuantitativo (base de datos propia, uso de indicadores externos). La descripción metodológica es detallada y muestra un conocimiento profundo de las herramientas de investigación en ciencias sociales. La intención de construir una base de datos propia de eventos legislativos críticos es particularmente valiosa desde mi perspectiva cuantitativa. La identificación de puntos críticos (disponibilidad de datos, acceso a informantes, cambios políticos) es realista y los planes de contingencia propuestos son sensatos. Los resultados previos del equipo son muy sólidos y directamente relevantes para la temática, demostrando la capacidad para llevar a cabo el proyecto. Los recursos humanos (equipo investigador y de apoyo con dedicaciones claras) y materiales/equipamiento (infraestructura existente, software especializado, equipamiento solicitado) parecen adecuados y bien justificados para la ejecución de las tareas. Sin embargo, la descripción del Plan de Trabajo y Cronograma (3.3), si bien presenta una secuencia lógica de fases, carece de la especificación detallada de la <em>responsabilidad</em> y <em>participación</em> de <em>cada miembro</em> del equipo en las tareas/hitos, así como la conexión explícita de su especialización con las mismas, tal como solicitan las instrucciones. Esto dificulta una evaluación precisa de la distribución de actividades y la gestión del equipo a nivel operativo. Tampoco se indica expresamente qué IP es responsable de cada objetivo específico (3.1), lo cual también es una instrucción de la memoria.</li>
+</ul></li>
+<li><p><strong>Criterio 2. Calidad y trayectoria de los componentes del proyecto:</strong> La información proporcionada (en 3.5, 3.6, 6) sugiere un equipo de altísima calidad y trayectoria en el campo. Los antecedentes (informes financiados, publicaciones, participación en congresos clave, organización de eventos) avalan sobradamente su experiencia y relevancia. La complementariedad entre los IPs se infiere de su colaboración previa documentada. La capacidad formativa (tesis dirigidas, programas de doctorado, desarrollo de egresados) es notable y un activo importante para el proyecto. La internacionalización está presente a través de la participación en congresos internacionales, colaboración previa y la mención de un consejo asesor internacional. La idoneidad de la especialización del equipo para las actividades propuestas parece adecuada.</p></li>
+<li><p><strong>Criterio 3. Impacto científico, económico y social esperado de los resultados:</strong></p>
+<ul>
+<li><strong>Impacto científico:</strong> Se espera un impacto significativo en la teoría política comparada, especialmente al poner el foco en el poder legislativo y la naturaleza “sutil” de las rupturas. La creación de la base de datos propia y los análisis resultantes tienen un gran potencial para impulsar avances en el conocimiento.</li>
+<li><strong>Impacto social y económico:</strong> Los vínculos entre los resultados esperados y los beneficios sociales (transparencia, confianza, reducción de polarización) y económicos (estabilidad, seguridad jurídica, inversión) están bien argumentados. La orientación a generar recomendaciones de política y herramientas prácticas refuerza este impacto.</li>
+<li><strong>Planes de comunicación, divulgación y transferencia:</strong> Los planes son ambiciosos y bien diseñados, cubriendo adecuadamente la difusión científica (publicaciones en acceso abierto, congresos), la divulgación a colectivos clave y la sociedad (talleres, policy briefs, medios) y la transferencia/valorización (asesoramiento, manuales, prototipos). El plan de gestión de datos, al alinearse con los principios FAIR y detallar aspectos de recolección, almacenamiento, acceso y preservación, es particularmente robusto y contribuye significativamente al impacto potencial de los datos generados.</li>
+<li><strong>Inclusión de género:</strong> La propuesta aborda la dimensión de género de forma integral: en la composición del equipo, en la consideración analítica (si pertinente), en las actividades formativas/divulgativas y en el uso de lenguaje inclusivo. Esto es un punto muy positivo que enriquece la calidad y el alcance del proyecto.</li>
+</ul></li>
+<li><p><strong>Criterio 4. Adecuación del presupuesto solicitado:</strong> El presupuesto de 120.000 € para 3 años parece justificado y coherente con las actividades propuestas, especialmente considerando la contratación de personal investigador y el trabajo de campo en América Latina. La distribución por partidas es clara y se priorizan los recursos humanos, lo cual es lógico en un proyecto de ciencias sociales. Los fondos para viajes, equipamiento especializado (software, hardware) y difusión también están adecuadamente justificados.</p></li>
+</ul>
+<p><strong>2. Análisis de Puntos Fuertes y Débiles</strong></p>
+<p><strong>Puntos Fuertes:</strong></p>
+<ul>
+<li><strong>Alta Calidad Científica:</strong> La propuesta aborda un tema altamente relevante y novedoso desde una perspectiva teórica y empírica sólida. La hipótesis es clara y la justificación del vacío de conocimiento es convincente.</li>
+<li><strong>Diseño Metodológico Robusto y Adecuado:</strong> La combinación de métodos mixtos es muy apropiada. El componente cuantitativo, que incluye la construcción de una base de datos primaria y el uso de indicadores externos, es particularmente bien diseñado y de gran valor potencial.</li>
+<li><strong>Equipo de Investigación de Excelencia:</strong> Los antecedentes y la experiencia del equipo, incluyendo la colaboración previa y su capacidad formativa, son excepcionales y avalan plenamente la viabilidad y el potencial de éxito del proyecto.</li>
+<li><strong>Impacto y Transferencia Concretos:</strong> Los planes detallados para la comunicación, divulgación y, especialmente, la transferencia de resultados a actores relevantes, demuestran una clara orientación a la aplicación práctica y a maximizar el valor social y político del conocimiento generado.</li>
+<li><strong>Excelente Plan de Gestión de Datos:</strong> El compromiso con los principios FAIR y la descripción detallada de la gestión de datos es un aspecto sobresaliente que garantiza la transparencia y reutilización de la información.</li>
+<li><strong>Enfoque Transversal de Género:</strong> La inclusión explícita de la perspectiva de género en varios niveles del proyecto es muy positiva.</li>
+</ul>
+<p><strong>Punto Débil:</strong></p>
+<ul>
+<li><strong>Especificación Detallada de Tareas y Responsabilidades:</strong> La principal área de mejora identificada es la falta de detalle en la asignación explícita de los objetivos específicos a los Investigadores Principales y la distribución pormenorizada de las tareas y responsabilidades entre todos los miembros del equipo (incluyendo personal posdoctoral y becarios) dentro del plan de trabajo. Si bien el cronograma general es lógico, la ausencia de esta granularidad, solicitada por las instrucciones de la memoria, dificulta la evaluación completa de la viabilidad operativa y la eficiencia en la gestión del equipo.</li>
+</ul>
+<p><strong>3. Estrategias de Mejoría</strong></p>
+<p>Para subsanar el punto débil identificado y reforzar la ya de por sí excelente propuesta, sugiero las siguientes estrategias de mejoría, centrándome en la claridad operativa:</p>
+<ol type="1">
+<li><strong>Asignación de Responsabilidad por Objetivo Específico (Sección 3.1):</strong>
+<ul>
+<li>Vuelva a revisar la lista de objetivos específicos (enumerados).</li>
+<li>Junto a cada objetivo específico, indique de forma clara cuál de los dos Investigadores Principales (IP1 o IP2) es el <em>principal responsable</em> de la consecución de ese objetivo. Si un objetivo es compartido, especifique la responsabilidad principal y la secundaria, o la naturaleza de la colaboración.</li>
+<li><em>Ejemplo:</em> “Objetivo específico 1: Caracterizar y clasificar los mecanismos legislativos… (Responsable: IP1).” “Objetivo específico 2: Realizar un análisis comparado de casos… (Responsable: IP2).”</li>
+</ul></li>
+<li><strong>Detallar la Distribución de Tareas y Responsabilidades en el Plan de Trabajo (Sección 3.3):</strong>
+<ul>
+<li>Este es el punto más crucial para la mejora. Modifique la descripción del cronograma para integrar la información sobre quién hace qué.</li>
+<li>Una forma efectiva es subdividir las fases generales del cronograma en tareas o hitos más pequeños. Para cada tarea o hito, especifique:
+<ul>
+<li><strong>Tarea/Hito:</strong> (Ej: “Codificación inicial de eventos legislativos en País X”).</li>
+<li><strong>Periodo:</strong> (Ej: Meses 8-10).</li>
+<li><strong>Responsable(s) Principal(es):</strong> (Ej: Becario 1).</li>
+<li><strong>Participación/Apoyo:</strong> (Ej: Supervisión del Postdoc A; validación por IP1).</li>
+<li><strong>Especialización relevante del responsable:</strong> (Ej: “Becario 1: Experiencia en procesamiento de datos históricos y codificación política”).</li>
+<li><strong>Miembro clave para esta tarea:</strong> (Ej: “Becario 1 es clave para la codificación sistemática de la base de datos”).</li>
+</ul></li>
+<li>Puede presentar esta información en una tabla o mediante una narración más estructurada que explicite estas asignaciones dentro de cada fase. Esto demostrará claramente cómo se distribuyen las cargas de trabajo, se aprovechan las especializaciones de cada miembro y quién es esencial para cada etapa crítica (más allá de los puntos críticos generales ya identificados).</li>
+</ul></li>
+</ol>
+<p>Implementar estas sugerencias, especialmente la detallada asignación de tareas en el cronograma, fortalecerá significativamente la sección de viabilidad de la propuesta, demostrando una planificación operativa meticulosa y una gestión eficiente del equipo, lo cual es muy valorado en el proceso de evaluación.</p>
+<p><strong>4. Calificación Final</strong></p>
+<p>Tras una evaluación cuidadosa de todos los aspectos de la propuesta RUPLEGLA, considero que se trata de un proyecto de una calidad científica y un potencial de impacto excepcionales. Cumple sobradamente con los umbrales establecidos para la mayoría de los criterios y aborda una línea de investigación de gran relevancia. El equipo es de primer nivel y la metodología, especialmente el componente cuantitativo, es muy sólida. El único aspecto que requiere mayor detalle es la explicitación de la distribución de tareas y responsabilidades en el plan de trabajo, lo cual es una cuestión de formato y presentación de la viabilidad operativa, no de un fallo conceptual o de capacidad.</p>
+<p>Basado en la escala de 0 a 10, donde 10 representa la excelencia, otorgo la siguiente calificación:</p>
+<p><strong>Calificación: 9/10</strong></p>
+<p>Esta puntuación refleja la altísima calidad general de la propuesta y su gran potencial, con un área específica identificada para una mejora en la presentación de la viabilidad a nivel de gestión del equipo.</p>
+<p><strong>5. Conclusión</strong></p>
+<p>La propuesta “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)” es un proyecto científicamente riguroso, altamente relevante y con un importante potencial de impacto. La originalidad del enfoque en el rol del poder legislativo en las crisis institucionales contemporáneas es muy oportuna. El diseño metodológico mixto, con un sólido componente cuantitativo centrado en la construcción de datos primarios y el uso de indicadores comparados, es una fortaleza clave. El equipo de investigación demuestra una experiencia y trayectoria muy destacadas, lo que garantiza la capacidad para llevar a buen término los ambiciosos objetivos planteados. Los planes de comunicación, divulgación y transferencia están bien articulados y prometen maximizar el alcance de los resultados.</p>
+<p>Si bien la propuesta es excelente en su conjunto, una mayor explicitación de la asignación de objetivos a los IPs y, sobre todo, de la distribución detallada de tareas y responsabilidades entre todos los miembros del equipo en el plan de trabajo, aportaría una mayor claridad operativa y fortalecería aún más la evaluación de la viabilidad del proyecto. Estas mejoras son fácilmente implementables y no alteran el núcleo científico de la propuesta.</p>
+<p>Felicito sinceramente a los proponentes por la calidad de su trabajo. Confío en que este proyecto, con su rigor metodológico y su enfoque en un tema tan crucial, realizará contribuciones muy significativas a la comprensión de la dinámica institucional en América Latina y ofrecerá herramientas valiosas para fortalecer sus democracias.</p>
+<p>Quedo a su entera disposición para cualquier aclaración que consideren necesaria.</p>
+<p>Atentamente,</p>
+<p>José Tongo Encuesta Experto Evaluador Agencia de Evaluación Científica Internacional</p>
+<h1 style="color:#1d8149;">
+Informe de evaluación 3
+</h1>
+<p>Estimados/as colegas,</p>
+<p>Es un placer dirigirme a ustedes en mi calidad de experta evaluadora de la Agencia de Evaluación Científica Internacional. Mi nombre es Carmen Recurso De Negado, y mi trayectoria de 15 años en el estudio del Poder Judicial, la Justicia Constitucional, la Independencia Judicial y las relaciones entre Derecho y Política, empleando metodologías cualitativas como estudios de caso, análisis documental y entrevistas en profundidad, me permite abordar la evaluación de propuestas con una perspectiva centrada en el rigor analítico y la viabilidad metodológica. Poseo una mente organizada y lógica, lo que me impulsa a evaluar las propuestas de forma estructurada y detallada, siempre en concordancia con los criterios de calidad científica y las directrices establecidas en la convocatoria.</p>
+<p>He procedido a examinar minuciosamente la propuesta de investigación titulada “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)”. Mi evaluación se ha realizado paso a paso, conforme a los criterios de la convocatoria (Anexo I) y las instrucciones para la memoria (Anexo VII). A continuación, presento mi informe detallado.</p>
+<p><strong>Informe de Evaluación Detallado de la Propuesta RUPLEGLA</strong></p>
+<p><strong>1. Evaluación Detenida de la Propuesta</strong></p>
+<p>He realizado una evaluación pormenorizada de cada apartado de la Memoria Científico-Técnica, cotejándola con las bases de la convocatoria y mis propios estándares de calidad científica.</p>
+<ul>
+<li><p><strong>Criterio 1. Calidad y viabilidad de la propuesta:</strong></p>
+<ul>
+<li><strong>Subcriterio 1.1. Calidad de la propuesta:</strong> La propuesta se ajusta de manera sobresaliente a la modalidad de investigación orientada. Identifica un fenómeno de alta pertinencia social y política en América Latina: el papel del poder legislativo en la generación de crisis institucionales. Este enfoque en el legislativo como <em>iniciador</em> de rupturas es particularmente novedoso y relevante en el contexto actual de erosión democrática que, a menudo, se manifiesta a través de mecanismos aparentemente legales o incrementales. La hipótesis de partida es clara, plausible y está bien fundamentada en la literatura reciente sobre “rupturas sutiles”. Los objetivos, tanto el general como los específicos, son coherentes, claros y realistas para el plazo propuesto, y prometen una contribución significativa al conocimiento en el campo de las instituciones políticas comparadas y el derecho constitucional.</li>
+<li><strong>Subcriterio 1.2. Viabilidad de la propuesta:</strong> La metodología mixta es muy adecuada para abordar la complejidad de este fenómeno, permitiendo un análisis en profundidad de los mecanismos (cualitativo) y una visión comparativa de los patrones y correlaciones (cuantitativo). La combinación de análisis documental (incluyendo actas parlamentarias y expedientes judiciales, áreas relevantes para mi expertise), estudios de caso en profundidad con trabajo de campo (entrevistas a actores clave, visitas a archivos) y el análisis cuantitativo basado en una base de datos propia y fuentes externas (V-Dem, WJP) demuestra rigor y un diseño metodológico sólido. La identificación de puntos críticos y los planes de contingencia son realistas y bien pensados, mitigando los riesgos potenciales. Los resultados previos del equipo son muy relevantes y demuestran una experiencia consolidada en la temática, lo que avala firmemente la viabilidad científica y técnica. Los recursos humanos, materiales y de equipamiento descritos (equipo con dedicaciones claras, infraestructura universitaria, software y hardware solicitado) son adecuados y suficientes. No obstante, la descripción del Plan de Trabajo y Cronograma (3.3) no detalla explícitamente la <em>distribución de actividades y responsabilidades</em> entre <em>cada miembro</em> del equipo (IPs, postdocs, becarios) para las diferentes tareas e hitos, ni indica los miembros clave para cada una, como se solicita en las instrucciones. Esto dificulta una evaluación precisa de la organización interna y la viabilidad operativa a ese nivel de detalle, al igual que la falta de asignación de responsabilidad por objetivo específico a cada IP (3.1).</li>
+</ul></li>
+<li><p><strong>Criterio 2. Calidad y trayectoria de los componentes del proyecto:</strong> La información suministrada en la memoria, aunque no incluya CVs completos, evidencia una trayectoria de alta calidad y relevancia del equipo en la temática. Los resultados previos (informes, artículos, proyectos, eventos organizados) demuestran una sólida producción científica y una conexión con actores relevantes. La complementariedad del equipo, aunque no se especifique detalladamente en la división de tareas, se infiere de sus áreas de trabajo y colaboración previa. La capacidad formativa (tesis dirigidas y en curso, desarrollo de egresados) es notable y garantiza la formación de nuevas generaciones de investigadores en el campo. La internacionalización se refleja en la participación en congresos y la colaboración previa, aunque podría ser más explícita en términos de redes o estancias.</p></li>
+<li><p><strong>Criterio 3. Impacto científico, económico y social esperado de los resultados:</strong> El impacto esperado es muy significativo. A nivel científico (4.1), la propuesta tiene el potencial de redefinir la conceptualización de rupturas institucionales y generar conocimiento teórico y empírico de alto valor. A nivel social y económico (4.2), los argumentos sobre la contribución a la estabilidad, transparencia, seguridad jurídica y confianza ciudadana son convincentes. Los planes de comunicación (4.3), divulgación (4.4) y transferencia (4.5) son muy sólidos, bien dirigidos a diferentes públicos (academia, actores políticos, sociedad civil) y utilizan formatos variados y efectivos, incluyendo el acceso abierto y la creación de herramientas prácticas (manual, prototipo de alerta). El Plan de Gestión de Datos (4.6) es excelente, detallado y cumple con los principios FAIR, lo cual es fundamental para la transparencia y reutilización de la investigación. La inclusión de la perspectiva de género (4.7) es un punto muy positivo y se aborda de manera integral, tanto en el equipo como en el análisis y las actividades.</p></li>
+<li><p><strong>Criterio 4. Adecuación del presupuesto solicitado:</strong> El presupuesto de 120.000 € para 3 años es razonable y parece estar bien ajustado al alcance y las actividades del proyecto, especialmente considerando la necesidad de trabajo de campo internacional y la contratación de personal. La justificación por partidas (RRHH, viajes, equipamiento, publicaciones) es clara y lógica, priorizando los recursos humanos.</p></li>
+<li><p><strong>Criterio 6. Capacidad Formativa:</strong> Esta sección está bien desarrollada y muestra una sólida capacidad formativa del equipo, respaldada por un historial probado de dirección de tesis y el éxito profesional de los egresados. El plan de formación propuesto para los nuevos investigadores se alinea con las actividades del proyecto y busca fortalecer sus habilidades metodológicas y su internacionalización.</p></li>
+<li><p><strong>Criterio 7. Condiciones Específicas:</strong> La propuesta identifica correctamente que no existen condiciones específicas más allá de las éticas para la investigación con personas, y se compromete a cumplir la normativa institucional, lo cual es adecuado.</p></li>
+</ul>
+<p><strong>2. Análisis de Puntos Fuertes y Débiles</strong></p>
+<p><strong>Puntos Fuertes:</strong></p>
+<ul>
+<li><strong>Relevancia y Novedad del Tema:</strong> El proyecto aborda un problema de gran urgencia y actualidad en América Latina, ofreciendo un enfoque novedoso al centrarse en el poder legislativo como agente de ruptura institucional.</li>
+<li><strong>Excelencia Científica y Solidez Teórica:</strong> La justificación teórica es impecable, la hipótesis clara y la propuesta promete una contribución teórica y empírica significativa al campo.</li>
+<li><strong>Diseño Metodológico Riguroso y Pertinente:</strong> La combinación de métodos cualitativos y cuantitativos es ideal para la complejidad del objeto de estudio. La inclusión de estudios de caso en profundidad con trabajo de campo y la construcción de una base de datos propia son aspectos metodológicos muy robustos.</li>
+<li><strong>Equipo de Investigación de Alto Nivel:</strong> La trayectoria y experiencia del equipo, evidenciadas en los resultados previos y la capacidad formativa, son un aval fundamental para la ejecución exitosa del proyecto.</li>
+<li><strong>Impacto y Transferencia Bien Definidos:</strong> Los planes de impacto, comunicación, divulgación y transferencia son detallados, ambiciosos y bien orientados a generar valor más allá del ámbito académico.</li>
+<li><strong>Excelente Plan de Gestión de Datos:</strong> La descripción del plan de datos, alineada con los principios FAIR, es ejemplar.</li>
+<li><strong>Abordaje Integral de la Dimensión de Género:</strong> La inclusión de la perspectiva de género a varios niveles es un aspecto muy positivo.</li>
+</ul>
+<p><strong>Punto Débil:</strong></p>
+<ul>
+<li><strong>Falta de Especificación en la Distribución de Tareas y Responsabilidades:</strong> La descripción del Plan de Trabajo (Sección 3.3) y la sección de Objetivos (Sección 3.1) no detallan la asignación específica de tareas, hitos u objetivos a cada miembro individual del equipo (IPs, postdocs, becarios), ni la conexión de su especialización con estas tareas, según lo solicitado por las instrucciones de la memoria. Esto resta cierta claridad a la viabilidad operativa y a la gestión interna del proyecto.</li>
+</ul>
+<p><strong>3. Estrategias de Mejoría</strong></p>
+<p>Para optimizar la presentación de esta propuesta, que ya es de una calidad muy alta, sugiero enfocar las mejoras en clarificar la distribución de responsabilidades en el plan de trabajo y la asignación de objetivos. Estos son pasos concretos que pueden fortalecer la sección de viabilidad:</p>
+<ol type="1">
+<li><strong>Asignación de Objetivos Específicos a los IPs (Sección 3.1):</strong>
+<ul>
+<li>Revisite el listado de objetivos específicos.</li>
+<li>Para cada objetivo específico, indique cuál de los Investigadores Principales (IP1 o IP2) es el principal responsable de su consecución. Si hay responsabilidad compartida, especifíquelo. Por ejemplo:
+<ul>
+<li><em>Objetivo específico 1: Caracterizar y clasificar los mecanismos legislativos… (Responsable: IP1).</em></li>
+<li><em>Objetivo específico 2: Realizar un análisis comparado de casos ejemplares… (Responsable: IP2).</em></li>
+<li><em>Objetivo específico 4: Elaborar un marco teórico explicativo y desarrollar una base de datos… (Responsables: IP2 - base de datos; IP1 - marco teórico).</em></li>
+</ul></li>
+<li>Esto cumple directamente con una instrucción clave de la memoria.</li>
+</ul></li>
+<li><strong>Detallar la Distribución de Tareas en el Plan de Trabajo (Sección 3.3):</strong>
+<ul>
+<li>Este es el aspecto que más puede beneficiarse de la mejora para demostrar la viabilidad operativa. Amplíe la descripción del cronograma para incluir información sobre quién realizará cada tarea o hito.</li>
+<li>Puede hacerlo de forma narrativa, insertando frases que indiquen los responsables dentro de la descripción de cada fase del cronograma. Ejemplo: “Durante los Meses 1-6, la revisión bibliográfica estará liderada por el IP1 y el Postdoc A. La definición de indicadores y criterios de codificación para la base de datos será responsabilidad del IP2 y el Becario 1, aprovechando su especialización en análisis cuantitativo y procesamiento de datos.”</li>
+<li>Alternativamente, puede crear una tabla sencilla dentro de esta sección que liste los principales hitos o tareas por periodo, y junto a cada uno, indique el/los responsable/s y su rol (ej. “Responsable Principal”, “Colaborador”).</li>
+<li>Asegúrese de mencionar la participación de todos los miembros del equipo investigador (IPs, postdocs, becarios) y, si es relevante, del personal de apoyo para tareas específicas (ej. técnico de investigación para manejo de base de datos, auxiliar administrativa para logística).</li>
+<li>Identifique explícitamente a los “miembros claves” para las tareas críticas mencionadas en 3.4.</li>
+<li>Esta explicitación demostrará al evaluador que la planificación del trabajo tiene en cuenta las capacidades y especializaciones de cada miembro del equipo y cómo se coordinarán para cumplir los objetivos en el plazo previsto.</li>
+</ul></li>
+</ol>
+<p>La implementación de estas sugerencias, centradas en la claridad de la distribución de responsabilidades, elevará la percepción de la viabilidad operativa del proyecto y asegurará que se cumplen todos los requisitos formales de la memoria.</p>
+<p><strong>4. Calificación Final</strong></p>
+<p>Considerando la alta calidad científico-técnica de la propuesta RUPLEGLA, la relevancia y novedad del tema, el rigor metodológico, la excelencia del equipo de investigación, el ambicioso y bien diseñado plan de impacto, y la solidez del presupuesto y la capacidad formativa, la propuesta obtiene una valoración muy favorable. Si bien existe un margen de mejora en la explicitación de la distribución de tareas en el plan de trabajo, este es un aspecto de presentación de la viabilidad operativa y no fundamentalmente un déficit en el diseño científico o la capacidad del equipo.</p>
+<p>Basándome en la escala de 0 a 10, mi calificación para esta propuesta es:</p>
+<p><strong>Calificación: 9/10</strong></p>
+<p>Esta puntuación refleja una propuesta de excelencia, que supera ampliamente los umbrales establecidos por la convocatoria y destaca en la mayoría de los criterios, con una única área específica identificada para una mejora en la documentación de la viabilidad.</p>
+<p><strong>5. Conclusión</strong></p>
+<p>La propuesta RUPLEGLA es un proyecto de investigación de excepcional calidad, pertinente y oportuno, que aborda una dimensión crucial de la estabilidad democrática en América Latina desde una perspectiva innovadora. El rigor del diseño metodológico, la profundidad del análisis propuesto y la calidad del equipo investigador son garantías de éxito. Los planes de difusión, transferencia y gestión de datos son muy sólidos y demuestran una clara visión del impacto que se desea alcanzar.</p>
+<p>Las sugerencias de mejora se centran en detallar la asignación de objetivos y tareas entre los miembros del equipo en la memoria. Realizar estos ajustes permitiría una evaluación aún más completa de la viabilidad operativa y garantizaría el pleno cumplimiento de todas las instrucciones de la convocatoria.</p>
+<p>Felicito cordialmente a los Investigadores Principales, Dra. Soto Martín y Dr.&nbsp;Rojas Fernández, y a su equipo, por la solidez y el potencial de su propuesta. Estoy convencida de que, con la posible atención a las sugerencias de mejora, el proyecto RUPLEGLA realizará contribuciones muy significativas al conocimiento sobre las instituciones políticas y ofrecerá herramientas valiosas para fortalecer la democracia en la región.</p>
+<p>Quedo a su disposición para cualquier aclaración adicional.</p>
+<p>Atentamente,</p>
+<p>Carmen Recurso De Negado Experta Evaluadora Agencia de Evaluación Científica Internacional</p>
+<h1 style="color:#1d8149;">
+Informe de evaluación 4
+</h1>
+<p>Estimados/as colegas,</p>
+<p>Es un honor dirigirme a ustedes en mi calidad de experto evaluador para la Agencia de Evaluación Científica Internacional. Mi nombre es Félix Sartael Puente, y mi experiencia de 20 años en la formulación, implementación y evaluación de políticas públicas, así como en el análisis de políticas comparadas con un enfoque en métodos mixtos y evaluación basada en evidencia, me permite abordar la evaluación de propuestas de investigación con una perspectiva estructurada y lógica, siempre en estricto cumplimiento de los criterios establecidos en la convocatoria.</p>
+<p>He revisado la Memoria Científico-Técnica del proyecto “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)”. Procedo a presentar mi informe detallado, diseñado para ofrecer una evaluación rigurosa y, al mismo tiempo, un feedback constructivo que oriente a los proponentes hacia la optimización de su propuesta.</p>
+<p><strong>Informe de Evaluación Detallado de la Propuesta RUPLEGLA</strong></p>
+<p><strong>1. Evaluación Detenida de la Propuesta</strong></p>
+<p>He examinado cada sección de la Memoria Científico-Técnica a la luz de los criterios de evaluación del Anexo I y las instrucciones detalladas en el Anexo VII de la convocatoria.</p>
+<ul>
+<li><p><strong>Criterio 1. Calidad y viabilidad de la propuesta:</strong></p>
+<ul>
+<li><strong>Subcriterio 1.1. Calidad de la propuesta:</strong> La propuesta se alinea de forma excelente con la modalidad de investigación orientada. El tema de las rupturas institucionales iniciadas por el poder legislativo es de crucial relevancia para la gobernanza democrática y el diseño institucional en América Latina, campos que resuenan directamente con mi área de especialización en políticas públicas. La identificación de un vacío en la literatura comparada sobre este iniciador específico es pertinente y fundamenta sólidamente la novedad de la propuesta. La hipótesis central está claramente formulada y se sustenta en ejemplos recientes y en la literatura sobre erosión democrática sutil. Los objetivos son claros, realistas y prometen una contribución significativa al conocimiento, particularmente desde una perspectiva que puede informar el diseño de políticas para fortalecer los contrapesos institucionales. La propuesta demuestra un carácter multidisciplinar al abordar aspectos políticos, legales e institucionales.</li>
+<li><strong>Subcriterio 1.2. Viabilidad de la propuesta:</strong> La metodología mixta (análisis documental, estudios de caso con trabajo de campo, análisis cuantitativo) es muy adecuada y robusta para abordar la complejidad del fenómeno y lograr los objetivos. La combinación permite tanto la comprensión en profundidad de los mecanismos (cualitativo) como la identificación de patrones y tendencias (cuantitativo), algo esencial para una evaluación basada en evidencia. El plan de trabajo presenta una secuencia lógica de actividades a lo largo de los 36 meses. Los resultados previos del equipo (proyectos, publicaciones, eventos) son muy relevantes y demuestran la capacidad y experiencia necesarias para llevar a cabo el proyecto. La identificación de puntos críticos y los planes de contingencia son adecuados y demuestran previsión. Los recursos humanos, materiales y de equipamiento disponibles y solicitados parecen suficientes y bien justificados. Sin embargo, la sección 3.1 (Objetivos) no especifica qué IP es responsable de cada objetivo específico, como se solicita en las instrucciones. Asimismo, la descripción del Plan de Trabajo y Cronograma (3.3) es algo general y no detalla explícitamente la distribución de tareas y responsabilidades entre <em>cada</em> miembro del equipo (IPs, postdocs, becarios, personal de apoyo) ni identifica los miembros clave para la ejecución de tareas específicas. Esta falta de granularidad, si bien no invalida la viabilidad, dificulta la evaluación precisa de la organización interna y la gestión operativa del proyecto.</li>
+</ul></li>
+<li><p><strong>Criterio 2. Calidad y trayectoria de los componentes del proyecto:</strong> La información proporcionada, aunque concisa, apunta a un equipo de investigación de alta calidad y con una trayectoria muy relevante en la temática. Los resultados previos documentados (proyectos financiados, publicaciones, participación en foros internacionales) demuestran su liderazgo y experiencia en el campo. La mención de la colaboración previa entre los IPs sugiere una complementariedad bien establecida. La capacidad formativa, evidenciada por el historial de tesis dirigidas y el desarrollo profesional de los doctores egresados, es un aspecto muy positivo y relevante para la formación de futuras generaciones de expertos en la región, algo clave para el impacto a largo plazo. La internacionalización está presente a través de la participación en congresos y la mención de un consejo asesor internacional, lo que es importante para la proyección y el rigor.</p></li>
+<li><p><strong>Criterio 3. Impacto científico, económico y social esperado de los resultados:</strong></p>
+<ul>
+<li><strong>Impacto científico:</strong> El impacto esperado es significativo, ya que el proyecto busca contribuir a la teoría institucional comparada y generar nuevo conocimiento empírico al poner el foco en el legislativo. Esto es valioso para comprender las dinámicas contemporáneas de la democracia.</li>
+<li><strong>Impacto social y económico:</strong> La propuesta articula muy bien los beneficios sociales y económicos, haciendo hincapié en la relevancia de la estabilidad institucional para la gobernanza efectiva y el desarrollo. La conexión explícita con la mejora de la transparencia, la confianza ciudadana, la seguridad jurídica y la inversión resuena fuertemente con la evaluación de políticas públicas. Las preguntas guía en la descripción de este subcriterio (contribución al bienestar, competitividad, transferencia, seguridad, medio ambiente, ODS, empleo, formación) son bien abordadas por la propuesta.</li>
+<li><strong>Planes de comunicación, divulgación y transferencia:</strong> Estos planes son excepcionalmente sólidos y bien orientados. La intención de publicar en acceso abierto, presentar en foros internacionales clave y depositar datos en repositorios FAIR demuestra un compromiso con la ciencia abierta y la visibilidad. El plan de divulgación, dirigido a públicos clave como legisladores y CSOs, y el plan de transferencia/valorización, que incluye asesoramiento directo, manuales y prototipos de alerta, son muy pertinentes y prometen traducir eficazmente los hallazgos de investigación en insumos concretos para la política pública y la práctica institucional. Esto se alinea perfectamente con mi enfoque en la investigación orientada a la evidencia para la toma de decisiones.</li>
+<li><strong>Plan de Gestión de Datos:</strong> El resumen del plan es detallado, completo y cumple con los estándares (tipologías, formatos, acceso, almacenamiento, FAIR, preservación, ética). Es un componente fuerte de la propuesta.</li>
+<li><strong>Inclusión de Género:</strong> La propuesta aborda la dimensión de género de manera integral: en la composición del equipo, en la consideración analítica del contenido de la investigación (si relevante), en las actividades formativas/divulgativas y en el uso de lenguaje inclusivo/datos desagregados. Es un punto positivo que demuestra sensibilidad y rigor.</li>
+</ul></li>
+<li><p><strong>Criterio 4. Adecuación del presupuesto solicitado:</strong> El presupuesto solicitado de 120.000 € para 3 años parece justificado y adecuado para el alcance del proyecto, especialmente al considerar el trabajo de campo internacional y la necesidad de contratar personal de investigación. La distribución por partidas (RRHH, viajes, equipamiento, publicaciones) es razonable y se alinea con las necesidades típicas de un proyecto de ciencias sociales de esta magnitud.</p></li>
+<li><p><strong>Criterio 6. Capacidad Formativa:</strong> La capacidad formativa del equipo está bien demostrada y es un punto fuerte. El plan de formación para personal predoctoral es coherente con los objetivos del proyecto y se basa en una trayectoria probada de dirección de tesis y en el éxito de los egresados.</p></li>
+<li><p><strong>Criterio 7. Condiciones Específicas:</strong> La propuesta aborda adecuadamente este punto, indicando que no hay condiciones especiales más allá de las éticas estándar para la investigación social, que se comprometen a cumplir.</p></li>
+</ul>
+<p><strong>2. Análisis de Puntos Fuertes y Débiles</strong></p>
+<p><strong>Puntos Fuertes:</strong></p>
+<ul>
+<li><strong>Relevancia y Oportunidad:</strong> Tema de gran importancia para la democracia y la gobernanza en América Latina, abordado de manera novedosa al centrarse en el papel del poder legislativo.</li>
+<li><strong>Calidad Científica y Rigor:</strong> Justificación sólida, hipótesis clara, objetivos bien definidos y una metodología mixta robusta y pertinente para el objeto de estudio.</li>
+<li><strong>Vínculo Fuerte con la Política Pública:</strong> El proyecto no solo genera conocimiento, sino que tiene una clara orientación a la aplicación práctica, con planes detallados para la generación de recomendaciones, herramientas de monitoreo y actividades de transferencia/valorización dirigidas a actores clave. Esto es una fortaleza desde mi perspectiva de evaluador de políticas.</li>
+<li><strong>Equipo de Alta Calidad:</strong> La trayectoria y experiencia previa del equipo en la temática son un aval fundamental para la viabilidad y el éxito del proyecto.</li>
+<li><strong>Planes de Difusión y Transferencia Ambiciosos:</strong> Los planes de comunicación científica, divulgación y transferencia están muy bien diseñados y orientados a maximizar el impacto del proyecto.</li>
+<li><strong>Plan de Gestión de Datos Exemplar:</strong> El compromiso con los principios FAIR y la descripción detallada de la gestión de datos son muy positivos.</li>
+<li><strong>Consideración Integral de la Dimensión de Género:</strong> Aspecto bien abordado a lo largo de la propuesta.</li>
+</ul>
+<p><strong>Punto Débil:</strong></p>
+<ul>
+<li><strong>Presentación Incompleta del Plan de Trabajo Operativo:</strong> La descripción del Plan de Trabajo y Cronograma (Sección 3.3) y la asignación de objetivos (Sección 3.1) no cumplen completamente con las instrucciones de la memoria al no detallar la distribución específica de tareas y responsabilidades entre <em>cada</em> miembro del equipo. Esto debilita, ligeramente, la demostración formal de la viabilidad operativa a nivel de gestión del equipo.</li>
+</ul>
+<p><strong>3. Estrategias de Mejoría</strong></p>
+<p>Para optimizar esta propuesta de alta calidad y asegurar que la presentación de la viabilidad operativa sea tan sólida como el resto del diseño científico, sugiero las siguientes acciones:</p>
+<ol type="1">
+<li><strong>Asignar Objetivos Específicos a los IPs (Sección 3.1):</strong>
+<ul>
+<li>Vuelva al listado de objetivos específicos que ha proporcionado.</li>
+<li>Para cada objetivo enumerado, añada explícitamente cuál de los dos Investigadores Principales (IP1 o IP2) es el responsable principal de su consecución. Esto se puede hacer de forma concisa.</li>
+<li><em>Ejemplo:</em> “Objetivo específico 1: Caracterizar y clasificar los mecanismos legislativos… (Responsable: IP1).”</li>
+<li><em>Ejemplo:</em> “Objetivo específico 2: Realizar un análisis comparado de casos ejemplares… (Responsable: IP2).”</li>
+</ul></li>
+<li><strong>Detallar la Distribución de Tareas en el Plan de Trabajo (Sección 3.3):</strong>
+<ul>
+<li>Este es el punto clave para mejorar la sección de viabilidad. Amplíe la descripción de las fases del cronograma para indicar claramente la participación y responsabilidad de cada miembro del equipo en las tareas principales o hitos.</li>
+<li>Puede hacerlo integrando esta información en la narrativa del cronograma. Por ejemplo: “Meses 1-6: Revisión bibliográfica y documental exhaustiva. <em>Tareas a cargo del IP1 y el Postdoc A.</em> Definición de indicadores y criterios de codificación. <em>Responsabilidad del IP2 y el Becario 1, con supervisión del IP1 y el Técnico de investigación (miembro clave para la gestión de datos).</em> Selección de casos de estudio. <em>Decisión conjunta de los IPs, con análisis preliminar por el Postdoc B.</em>”</li>
+<li>Alternativamente, y a menudo más claro, es presentar un resumen en forma de tabla dentro de la sección 3.3. La tabla podría tener columnas como: “Fase/Periodo”, “Tareas/Hitos Principales”, “Miembro(s) Responsable(s)”, “Participación de otros miembros”, “Especialización relevante”.</li>
+<li>Asegúrese de incluir a todos los miembros del equipo investigador y, si aplica, al personal de apoyo para tareas específicas.</li>
+<li>Indique explícitamente quiénes son los “miembros claves” para ciertas tareas (ej. el técnico de investigación para la base de datos, un postdoc para el análisis de casos específicos).</li>
+</ul></li>
+</ol>
+<p>Realizando estos ajustes, la propuesta demostrará de manera más completa cómo se gestionará el equipo y se llevarán a cabo las actividades planificadas, fortaleciendo la evaluación de la viabilidad operativa del proyecto.</p>
+<p><strong>4. Calificación Final</strong></p>
+<p>Considerando la excelente calidad científico-técnica, la relevancia, la solidez metodológica, la capacidad del equipo, el potencial de impacto y la adecuación del presupuesto, la propuesta RUPLEGLA es de muy alta calidad. Cumple con los umbrales de evaluación en todos los criterios principales. La única área para una mejora sustantiva se encuentra en la presentación detallada de la distribución de tareas en el plan de trabajo, un aspecto relacionado con la formalización de la viabilidad operativa.</p>
+<p>Basándome en la escala de 0 (insuficiente) a 10 (excelente), mi calificación para esta propuesta es:</p>
+<p><strong>Calificación: 9/10</strong></p>
+<p>Esta puntuación reconoce la excelencia del diseño científico y el gran potencial del proyecto, señalando un área específica donde la presentación de la viabilidad operativa podría ser más detallada según las instrucciones de la convocatoria.</p>
+<p><strong>5. Conclusión</strong></p>
+<p>La propuesta “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)” es un proyecto sumamente relevante, oportuno y bien diseñado, con un claro potencial para generar conocimiento de frontera e incidir positivamente en el ámbito de la política pública y la institucionalidad democrática en la región. Su enfoque novedoso, la metodología robusta y la calidad del equipo investigador son sus principales fortalezas. Los planes detallados para la comunicación, divulgación y transferencia, especialmente la generación de herramientas aplicadas como recomendaciones de política y prototipos de monitoreo, son particularmente destacables desde mi perspectiva.</p>
+<p>Si bien la propuesta es excelente en su estado actual y cumple con los requisitos sustantivos, la incorporación de mayor detalle en la asignación de objetivos a los IPs y, sobre todo, en la distribución de tareas y responsabilidades entre los miembros del equipo en el cronograma, permitiría una evaluación aún más favorable de la viabilidad operativa y aseguraría el pleno cumplimiento de las instrucciones de la convocatoria.</p>
+<p>Felicito a los Investigadores Principales y a todo su equipo por la calidad de la propuesta presentada. Estoy convencido de que este proyecto realizará contribuciones valiosas para la investigación y para el fortalecimiento institucional en América Latina.</p>
+<p>Quedo a su entera disposición para cualquier aclaración.</p>
+<p>Atentamente,</p>
+<p>Félix Sartael Puente Experto Evaluador Agencia de Evaluación Científica Internacional</p>
+<h1 style="color:#1d8149;">
+Debate entre panelistas
+</h1>
+<p>Muy bien. Estimados colegas evaluadores, gracias por sus detallados y rigurosos informes sobre la propuesta de investigación RUPLEGLA. Como moderador de este panel, mi función es facilitar la discusión de sus evaluaciones para llegar a una conclusión consensuada y formular una recomendación unificada a los proponentes.</p>
+<p>Hemos recibido cuatro informes de evaluación, todos ellos muy completos y que abordan los criterios de la convocatoria. He observado una notable consistencia en sus valoraciones generales, lo cual es un excelente punto de partida para nuestra discusión.</p>
+<p>Procederemos en tres fases, como se acordó: 1. <strong>Defensa Inicial:</strong> Cada uno de ustedes tendrá unos minutos para resumir los puntos clave de su evaluación, destacando las fortalezas y debilidades principales identificadas y defendiendo su calificación asignada. 2. <strong>Réplica:</strong> Se abrirá un breve espacio para que puedan comentar las evaluaciones de los demás, señalar puntos de acuerdo, matizar discrepancias (si las hubiera) o añadir alguna precisión. 3. <strong>Búsqueda de Consenso:</strong> Finalmente, identificaremos las áreas de acuerdo total o parcial y trabajaremos para consolidar una recomendación unificada para la propuesta, incluyendo una calificación final consensuada si es posible, y las sugerencias de mejora compartidas.</p>
+<p>Empecemos con la primera fase. Dra. Morales Devoto, ¿podría comenzar por presentar los aspectos más relevantes de su evaluación?</p>
+<p><strong>Fase 1: Defensa Inicial</strong></p>
+<p><strong>Dra. Dolores Morales Devoto (Evaluadora 1):</strong> Gracias, Sr.&nbsp;Moderador. Ha sido un placer evaluar la propuesta RUPLEGLA. Desde mi perspectiva en Comportamiento Político Comparado y Métodos Mixtos, encontré que es una propuesta de <strong>muy alta calidad</strong>, y por eso le asigné una calificación de <strong>9 sobre 10</strong>.</p>
+<p>Sus principales fortalezas residen en la <strong>gran relevancia y novedad del tema</strong>. Abordar el papel del legislativo como <em>iniciador</em> de rupturas institucionales es crucial y poco explorado, muy pertinente para la América Latina actual. La <strong>solidez teórica</strong> y la <strong>claridad de la hipótesis</strong> son notables. El <strong>diseño metodológico mixto</strong> me pareció sumamente robusto y adecuado para captar la complejidad del fenómeno, combinando rigor cualitativo y cuantitativo. El <strong>equipo</strong> demuestra una <strong>trayectoria excepcional</strong> y una experiencia muy pertinente. Los <strong>planes de impacto, comunicación, divulgación y transferencia</strong> son ambiciosos y bien articulados, mostrando una clara orientación a la aplicación. La <strong>gestión de datos</strong> y la <strong>perspectiva de género</strong> están muy bien integradas.</p>
+<p>El único punto débil significativo que identifiqué, y que afecta ligeramente la percepción de la viabilidad operativa, es la <strong>falta de explicitación detallada en el plan de trabajo</strong> sobre quién (qué miembro del equipo específico: IP, postdoc, becario) es responsable de cada tarea o hito concreto, y tampoco se asigna formalmente la responsabilidad principal de cada objetivo específico a uno de los IPs. Esto, aunque subsanable, va en contra de las instrucciones de la memoria y reduce un poco la claridad de la gestión del equipo.</p>
+<p>En resumen, una propuesta excelente con una única área de mejora en la presentación formal de la viabilidad operativa detallada.</p>
+<p><strong>Moderador:</strong> Gracias, Dra. Morales Devoto, por esa clara síntesis. Dr.&nbsp;Tongo Encuesta, ¿cuáles fueron sus principales hallazgos y conclusiones?</p>
+<p><strong>Dr.&nbsp;José Tongo Encuesta (Evaluador 2):</strong> Gracias, Sr.&nbsp;Moderador. Desde mi especialización en Sistemas Electorales y Análisis Cuantitativo, he evaluado esta propuesta como de <strong>calidad excepcional</strong>, coincidiendo con la Dra. Morales Devoto en una calificación de <strong>9 sobre 10</strong>.</p>
+<p>Estoy completamente de acuerdo en la <strong>alta relevancia y novedad</strong> del tema. El foco en el legislativo como iniciador es un vacío importante que merece ser llenado, y la propuesta lo hace de manera muy pertinente. Destaco especialmente la <strong>robustez de la metodología mixta</strong>, y en particular, el <strong>sólido componente cuantitativo</strong>, incluyendo la intención de construir una base de datos primaria sobre eventos legislativos críticos. Esto es de enorme valor potencial para análisis comparados futuros. La <strong>calidad del equipo</strong> es indudable, su trayectoria avala plenamente la ejecución del proyecto. Los <strong>planes de impacto y transferencia</strong> son muy ambiciosos y bien pensados, y quiero resaltar el <strong>excelente plan de gestión de datos</strong>, alineado con los principios FAIR, que es fundamental para la reproducibilidad y el impacto a largo plazo.</p>
+<p>Mi principal observación, que también considero el único punto débil de relieve, es exactamente el mismo que mencionó la Dra. Morales Devoto: la <strong>falta de detalle en el plan de trabajo y los objetivos</strong> respecto a la asignación <em>explícita</em> de tareas, hitos y responsabilidad de objetivos específicos a los miembros <em>individuales</em> del equipo. Esto es un requisito de las instrucciones de la memoria y, aunque no cuestiona la capacidad del equipo, sí debilita la presentación formal de la viabilidad operativa y la gestión interna.</p>
+<p>Por lo demás, es una propuesta formidable con un gran potencial científico y social.</p>
+<p><strong>Moderador:</strong> Muy claro, Dr.&nbsp;Tongo Encuesta. Parece haber una fuerte convergencia inicial. Dra. Recurso De Negado, por favor, comparta su perspectiva desde su área de expertise.</p>
+<p><strong>Dra. Carmen Recurso De Negado (Evaluadora 3):</strong> Gracias, Sr.&nbsp;Moderador. Mi evaluación, desde el campo del Poder Judicial y las metodologías cualitativas, también concluye que la propuesta RUPLEGLA es de una <strong>calidad excepcional</strong>, y le asigno igualmente un <strong>9 sobre 10</strong>.</p>
+<p>La <strong>relevancia y novedad</strong> del tema son innegables. El enfoque en las rupturas institucionales desde el legislativo, especialmente aquellas de naturaleza <em>sutil</em> o incremental que a menudo implican el uso de mecanismos legales o constitucionales, es de crucial importancia en el contexto actual de América Latina y se conecta directamente con los estudios sobre erosión democrática. La <strong>solidez teórica</strong> y la <strong>claridad de los objetivos e hipótesis</strong> son puntos muy fuertes. Me pareció particularmente acertada la <strong>metodología mixta</strong>, que permite el análisis detallado de los <em>mecanismos</em> a través de estudios de caso, análisis documental (que incluye fuentes legales y parlamentarias, muy relevantes para mí) y entrevistas en profundidad, complementado por el análisis cuantitativo para identificar patrones. La <strong>experiencia del equipo</strong> es destacadísima y garantiza la capacidad para realizar este trabajo complejo. Los <strong>planes de impacto y transferencia</strong> son muy sólidos, dirigidos a actores clave como parlamentarios y organizaciones de la sociedad civil, lo que maximiza el potencial de la investigación. Coincido plenamente con mis colegas en elogiar el <strong>plan de gestión de datos</strong> y la <strong>inclusión integral de la perspectiva de género</strong>.</p>
+<p>Al igual que los otros evaluadores, mi principal, si no única, crítica se refiere a la <strong>presentación del plan de trabajo y la asignación de objetivos</strong>. La memoria no detalla <em>quién específicamente</em> dentro del equipo es responsable de <em>cada tarea</em> o hito, ni asigna formalmente los objetivos específicos a los IPs. Esto, si bien no es un problema de diseño científico, es una debilidad en la demostración formal de la viabilidad operativa y organizativa del proyecto, tal como lo requieren las instrucciones.</p>
+<p>En mi opinión, es una propuesta sobresaliente que solo necesita ajustar esta presentación para cumplir plenamente con los requisitos formales de viabilidad.</p>
+<p><strong>Moderador:</strong> Gracias, Dra. Recurso De Negado. La convergencia en los puntos fuertes y débiles es impresionante. Finalmente, Dr.&nbsp;Sartael Puente, ¿cuál es su valoración?</p>
+<p><strong>Dr.&nbsp;Félix Sartael Puente (Evaluador 4):</strong> Gracias, Sr.&nbsp;Moderador. Mi evaluación, desde la perspectiva de políticas públicas y evaluación basada en evidencia, también es extremadamente positiva. Considero que la propuesta RUPLEGLA es de <strong>excelente calidad</strong>, y mi calificación es <strong>9 sobre 10</strong>.</p>
+<p>La <strong>relevancia y oportunidad</strong> del tema son máximas. Abordar el rol del legislativo en las crisis institucionales es vital para la gobernanza y el diseño de políticas que busquen fortalecer la democracia y la estabilidad. La propuesta lo hace con una <strong>novedad conceptual</strong> muy pertinente. La <strong>calidad científica</strong> (justificación, hipótesis, objetivos) es impecable. La <strong>metodología mixta</strong> es ideal para generar conocimiento robusto y aplicable, algo que valoro mucho en la evaluación de políticas. La <strong>experiencia del equipo</strong> es sobresaliente y les confiere una gran capacidad para ejecutar este proyecto complejo. Quiero destacar especialmente los <strong>planes de transferencia y valorización</strong>. La clara orientación a generar insumos concretos para actores políticos y sociales (recomendaciones, manuales, prototipos de alerta) es un punto fuerte enorme desde mi área y demuestra el potencial de impacto real de la investigación. El <strong>plan de gestión de datos FAIR</strong> y la <strong>consideración de género</strong> son también muy positivos.</p>
+<p>Coincido completamente con mis colegas en que la única debilidad a destacar se encuentra en la <strong>presentación de la viabilidad operativa en el plan de trabajo y objetivos</strong>. La falta de explicitación sobre la asignación <em>individual</em> de tareas y responsabilidades a los miembros del equipo, y la asignación de objetivos a los IPs, es el único aspecto que no cumple plenamente con las instrucciones de la memoria y que podría mejorarse para demostrar aún más la organización interna del proyecto.</p>
+<p>En suma, una propuesta de altísimo nivel científico y con un potencial de impacto excepcional, con un punto específico de mejora en la documentación de la gestión operativa.</p>
+<p><strong>Moderador:</strong> Muchísimas gracias a los cuatro por sus presentaciones. Queda patente una altísima valoración general de la propuesta y una identificación unánime de los puntos fuertes y la principal área de mejora.</p>
+<p><strong>Fase 2: Réplica</strong></p>
+<p><strong>Moderador:</strong> Ahora, abrimos un breve espacio para la réplica. ¿Alguien desea comentar algún aspecto específico de las evaluaciones de sus colegas, resaltar algún punto de acuerdo o matizar alguna diferencia? Dada la gran coincidencia, entiendo que será principalmente para reforzar el consenso.</p>
+<p><strong>Dra. Dolores Morales Devoto:</strong> Solo quisiera reafirmar mi acuerdo total con mis colegas. Es muy interesante ver cómo, desde diferentes enfoques (cuantitativo, cualitativo, políticas públicas), todos hemos convergido en la valoración de la calidad intrínseca de la propuesta, la relevancia del tema y la capacidad del equipo. La metodología mixta es, creo, una de las grandes fortalezas que todos hemos percibido desde nuestras respectivas especializaciones, viendo cómo complementa las diferentes aproximaciones. Y sí, la debilidad en la presentación del plan de trabajo parece ser universalmente notada, no como un fallo del proyecto en sí, sino de su <em>descripción</em> formal según las guías.</p>
+<p><strong>Dr.&nbsp;José Tongo Encuesta:</strong> Efectivamente, es notable la coincidencia. Quisiera solo añadir que la intención de construir una base de datos primaria sobre eventos legislativos, como mencioné, es un esfuerzo metodológico considerable que refleja la ambición y el rigor del equipo. Me alegra ver que mis colegas también valoran la solidez de la metodología en su conjunto. La mejora solicitada es realmente para que la memoria refleje tan detalladamente la organización interna como el proyecto parece concebido.</p>
+<p><strong>Dra. Carmen Recurso De Negado:</strong> Estoy completamente de acuerdo. La convergencia es sorprendente y muy positiva. Desde mi área, valoro enormemente que se incluyan estudios de caso en profundidad con trabajo de campo y análisis documental riguroso. Esto es esencial para comprender los <em>mecanismos</em> subyacentes a estas rupturas sutiles, algo que una aproximación puramente cuantitativa podría pasar por alto. Que mis colegas con expertises diferentes también vean la complementariedad de los métodos mixtos valida el diseño. Y sí, la especificación de quién hace qué es vital para la gestión de un proyecto complejo con trabajo de campo.</p>
+<p><strong>Dr.&nbsp;Félix Sartael Puente:</strong> Solo para sumarme al coro del consenso. La calidad del equipo, la pertinencia del tema y, sobre todo, ese hilo conductor hacia el impacto y la transferencia son lo que realmente eleva esta propuesta. El hecho de que todos hayamos identificado la misma área de mejora en la formalización de la viabilidad operativa es un mensaje claro para los proponentes. No se trata de un problema con <em>si</em> pueden hacer el trabajo, sino con <em>cómo demuestran en la memoria</em> que lo tienen organizado al nivel de detalle que la convocatoria exige para una evaluación completa de la viabilidad.</p>
+<p><strong>Moderador:</strong> Excelente. Parece que la fase de réplica confirma el altísimo grado de acuerdo entre ustedes. No hay discrepancias fundamentales sobre el mérito científico, la calidad del equipo o el potencial del proyecto. La única observación unánime se centra en la formalización de la viabilidad operativa en la memoria.</p>
+<p><strong>Fase 3: Búsqueda de Consenso</strong></p>
+<p><strong>Moderador:</strong> Dadas sus intervenciones, podemos identificar fácilmente las áreas de consenso total. * <strong>Consenso Total 1:</strong> Alta relevancia y novedad del tema (legislativo como iniciador de rupturas, rupturas sutiles) para América Latina. * <strong>Consenso Total 2:</strong> Excelente calidad científica del planteamiento (justificación, hipótesis, objetivos). * <strong>Consenso Total 3:</strong> Diseño metodológico mixto robusto, pertinente y bien descrito. * <strong>Consenso Total 4:</strong> Calidad y trayectoria excepcional del equipo de investigación. * <strong>Consenso Total 5:</strong> Alto potencial de impacto científico, social y económico, con planes de comunicación, divulgación y transferencia ambiciosos y bien orientados (incluyendo el fuerte vínculo con la política pública). * <strong>Consenso Total 6:</strong> Excelente plan de gestión de datos, alineado con principios FAIR. * <strong>Consenso Total 7:</strong> Abordaje integral y positivo de la dimensión de género. * <strong>Consenso Total 8:</strong> Adecuación y justificación del presupuesto solicitado.</p>
+<p>Hay una única área de mejora identificada por los cuatro, que podríamos llamar <strong>Área de Mejora Consensuada:</strong> La presentación del plan de trabajo y objetivos no detalla explícitamente la asignación de tareas/hitos y responsabilidad de objetivos específicos a <em>cada miembro individual del equipo</em> (IPs, postdocs, becarios), tal como lo requieren las instrucciones de la memoria para demostrar la viabilidad operativa detallada.</p>
+<p>Considerando este amplio consenso en los puntos fuertes y la identificación unánime de una única área de mejora que no afecta al núcleo científico del proyecto, creo que podemos acordar tanto la calificación final como una recomendación unificada.</p>
+<p>Propongo que la calificación final consensuada para la propuesta RUPLEGLA sea <strong>9 sobre 10</strong>, reflejando la opinión unánime de que es una propuesta de altísima calidad que supera ampliamente los umbrales de la convocatoria.</p>
+<p>Y como recomendación unificada a los proponentes, propongo que se les solicite explícitamente <strong>revisar las secciones 3.1 (Objetivos) y 3.3 (Plan de Trabajo y Cronograma) de la Memoria Científico-Técnica</strong> para: a) Asignar claramente la responsabilidad principal de cada objetivo específico a uno o ambos Investigadores Principales. b) Detallar la distribución de tareas y responsabilidades entre todos los miembros del equipo investigador (IPs, postdocs, becarios) para las distintas fases o hitos clave del cronograma. Esto podría hacerse añadiendo frases explicativas en la narrativa o, quizás de forma más clara, utilizando una tabla resumen dentro de la sección 3.3 que liste las tareas/hitos principales, el período, los responsables principales y la participación de otros miembros, y cómo esto se alinea con sus especializaciones.</p>
+<p>¿Están de acuerdo con esta calificación consensuada de 9/10 y esta recomendación unificada para los proponentes?</p>
+<p><strong>Dra. Dolores Morales Devoto:</strong> Completamente de acuerdo. La calificación de 9/10 refleja muy bien la excelencia de la propuesta con esa única salvedad subsanable. La recomendación unificada es precisa y aborda directamente el punto débil identificado por todos.</p>
+<p><strong>Dr.&nbsp;José Tongo Encuesta:</strong> Sí, estoy totalmente de acuerdo. 9/10 es la calificación justa. La recomendación sobre la explicitación de tareas y objetivos en el plan de trabajo es exactamente lo que se necesita para perfeccionar la presentación de la viabilidad.</p>
+<p><strong>Dra. Carmen Recurso De Negado:</strong> Absolutamente de acuerdo. 9/10 es la calificación que merece esta excelente propuesta. La recomendación unificada es clara y les ayudará a los proponentes a fortalecer la sección de viabilidad operativa, que es donde detectamos la necesidad de mayor detalle formal.</p>
+<p><strong>Dr.&nbsp;Félix Sartael Puente:</strong> Totalmente de acuerdo. El 9/10 es la calificación apropiada. La recomendación unificada encapsula perfectamente la única área donde la propuesta, ya excelente, podría presentar la información de manera más alineada con las instrucciones detalladas de la convocatoria.</p>
+<p><strong>Moderador:</strong> Maravilloso. Tenemos un consenso total. La calificación final consensuada es 9/10. La recomendación unificada para los proponentes es la explicitación de la asignación de responsabilidades por objetivo y la distribución detallada de tareas/hitos por miembro del equipo en el plan de trabajo.</p>
+<p><strong>Resultado Detallado de la Discusión:</strong></p>
+<p>La discusión del panel de evaluación sobre la propuesta RUPLEGLA ha concluido con un alto grado de consenso entre los cuatro expertos evaluadores.</p>
+<p><strong>Fase 1: Defensa Inicial</strong> * Los cuatro evaluadores (Dra. Morales Devoto, Dr.&nbsp;Tongo Encuesta, Dra. Recurso De Negado, Dr.&nbsp;Sartael Puente) presentaron sus informes, todos asignando una calificación de 9/10. * Todos destacaron como principales fortalezas la alta relevancia y novedad del tema (el papel del legislativo en las rupturas institucionales en América Latina), la solidez científica de la propuesta (justificación, hipótesis, objetivos), la robustez y pertinencia de la metodología mixta, la calidad y trayectoria excepcional del equipo, el alto potencial de impacto (científico, social, económico, político) y los ambiciosos planes de comunicación, divulgación y transferencia, el excelente plan de gestión de datos (FAIR) y la inclusión integral de la perspectiva de género. * Todos identificaron como principal debilidad la falta de detalle en la asignación explícita de tareas/hitos y responsabilidad de objetivos específicos a los miembros individuales del equipo en las secciones 3.1 y 3.3 de la memoria científico-técnica, lo cual afecta la presentación formal de la viabilidad operativa según las instrucciones de la convocatoria.</p>
+<p><strong>Fase 2: Réplica</strong> * En esta fase, los evaluadores reafirmaron su acuerdo total en los puntos fuertes y la única debilidad identificada. * Subrayaron la convergencia de sus perspectivas, a pesar de provenir de diferentes especializaciones dentro de las ciencias sociales, lo que valida la solidez transversal de la propuesta. * Se reforzaron aspectos específicos valorados desde cada experticia (ej. componente cuantitativo y base de datos por el Dr.&nbsp;Tongo Encuesta; estudios de caso, entrevistas y análisis documental por la Dra. Recurso De Negado; vínculo con políticas públicas y transferencia por el Dr.&nbsp;Sartael Puente; la lógica del diseño mixto por la Dra. Morales Devoto). * Confirmaron que la debilidad identificada no es un fallo conceptual o de capacidad del proyecto, sino una cuestión de presentación formal y detalle en la documentación de la viabilidad operativa y la gestión del equipo.</p>
+<p><strong>Fase 3: Búsqueda de Consenso</strong> * El moderador resumió los amplios puntos de acuerdo en la alta calidad de la propuesta en todos los criterios principales. * Se explicitó la única Área de Mejora Consensuada: la falta de detalle en la asignación de responsabilidades individuales en el plan de trabajo y objetivos según las instrucciones de la convocatoria. * Se propuso una Calificación Final Consensuada de <strong>9/10</strong>. * Se formuló una Recomendación Unificada para los proponentes, centrada en solicitar la revisión de las secciones 3.1 y 3.3 para incluir la asignación explícita de responsabilidad de objetivos a los IPs y la distribución detallada de tareas/hitos por miembro del equipo. * Los cuatro evaluadores confirmaron explícitamente su acuerdo con la calificación consensuada y la recomendación unificada.</p>
+<p><strong>Conclusión del Panel:</strong></p>
+<p>El panel de evaluación acuerda por unanimidad que la propuesta RUPLEGLA es un proyecto de investigación de <strong>excelente calidad (Calificación: 9/10)</strong>. Destaca por la relevancia y novedad del tema, la solidez científica y metodológica, la calidad del equipo, el alto potencial de impacto y los sólidos planes de gestión, difusión y transferencia. La única área identificada para la mejora, que no menoscaba el mérito científico intrínseco, es la necesidad de detallar explícitamente la asignación de objetivos específicos a los Investigadores Principales y la distribución de tareas y responsabilidades entre todos los miembros del equipo investigador en el plan de trabajo, conforme a las instrucciones de la memoria científico-técnica.</p>
+<p>Se recomienda a los proponentes revisar las secciones 3.1 y 3.3 para incluir esta información de forma clara (posiblemente utilizando tablas o una narración más estructurada que asigne responsables a tareas/hitos clave).</p>
+<p>Este panel concluye que la propuesta RUPLEGLA tiene un potencial muy significativo para avanzar en el conocimiento y contribuir al fortalecimiento institucional en América Latina.</p>
+<p><strong>Moderador:</strong> Con esto, damos por concluida la sesión de evaluación de la propuesta RUPLEGLA. Agradezco enormemente a la Dra. Morales Devoto, al Dr.&nbsp;Tongo Encuesta, a la Dra. Recurso De Negado y al Dr.&nbsp;Sartael Puente por su experticia, rigor y la excelente disposición a la discusión y el consenso. Los resultados de esta deliberación serán comunicados a los proponentes y al comité de selección.</p>
+<p>Gracias a todos.</p>
+<h1 style="color:#1d8149;">
+Informe final
+</h1>
+<p><strong>Informe Final de Consenso del Panel de Evaluación de la Propuesta Científica RUPLEGLA</strong></p>
+<p><strong>Título de la Propuesta:</strong> Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)</p>
+<p><strong>Fecha del Panel de Evaluación:</strong> 14 de mayo de 2025</p>
+<p><strong>Evaluadores Participantes:</strong> * Dra. Dolores Morales Devoto * Dr.&nbsp;José Tongo Encuesta * Dra. Carmen Recurso De Negado * Dr.&nbsp;Félix Sartael Puente</p>
+<p><strong>Coordinador del Panel:</strong> [Nombre del Coordinador - actúas como tal]</p>
+<p><strong>Introducción:</strong></p>
+<p>El presente informe consolida las evaluaciones individuales y sintetiza la discusión del panel de expertos designado para valorar la propuesta de investigación “Rupturas institucionales iniciadas por el poder legislativo en América Latina (RUPLEGLA)”. El panel, compuesto por especialistas con trayectorias complementarias y relevantes para la temática y metodología del proyecto, procedió a examinar la Memoria Científico-Técnica en estricto cumplimiento con los criterios de la convocatoria y las instrucciones para su elaboración. La discusión se estructuró en fases de defensa inicial, réplica y búsqueda de consenso, lo que permitió identificar puntos de acuerdo y formular recomendaciones conjuntas para los proponentes.</p>
+<p><strong>1. Calificación Global de la Propuesta</strong></p>
+<p>Tras una deliberación detallada y la consideración de todos los criterios de evaluación, el panel acuerda por unanimidad que la propuesta RUPLEGLA es de <strong>excelente calidad</strong>.</p>
+<ul>
+<li><strong>Calificación Numérica Consensuada:</strong> 9/10 (Nueve sobre Diez)</li>
+<li><strong>Calificación Global Descriptiva:</strong> Excelente</li>
+</ul>
+<p>Esta calificación refleja que la propuesta supera ampliamente los umbrales de calidad y viabilidad establecidos en la convocatoria y posee un potencial de impacto sobresaliente.</p>
+<p><strong>2. Resumen de los Puntos de Concordancia Clave del Debate</strong></p>
+<p>El debate del panel reveló un alto grado de consenso entre los evaluadores respecto a la calidad y el potencial de la propuesta RUPLEGLA. Los puntos de concordancia clave son los siguientes:</p>
+<ul>
+<li><strong>Alta Relevancia y Novedad:</strong> Todos los evaluadores destacaron unánimemente la crucial relevancia del tema propuesto para la comprensión de la dinámica democrática actual en América Latina. Se valoró especialmente la novedad del enfoque al centrarse en el poder legislativo como <em>iniciador</em> de rupturas institucionales, un fenómeno menos explorado que los golpes ejecutivos o militares, pero altamente pertinente en el contexto de la erosión democrática sutil.</li>
+<li><strong>Calidad Científica y Solidez Teórica:</strong> Existe pleno acuerdo en la excelencia del planteamiento científico. La justificación de la propuesta es sólida, la hipótesis de partida es clara, plausible y bien fundamentada, y los objetivos son coherentes, realistas y prometen una contribución significativa al conocimiento teórico y empírico.</li>
+<li><strong>Diseño Metodológico Robusto y Pertinente:</strong> El panel converge en la opinión de que la metodología mixta propuesta (análisis documental, estudios de caso con trabajo de campo y análisis cuantitativo) es sumamente adecuada y robusta para abordar la complejidad del objeto de estudio. Se valoró cómo esta combinación permite comprender tanto los mecanismos profundos como los patrones comparados. El componente cuantitativo, incluyendo la construcción de una base de datos primaria, fue particularmente destacado.</li>
+<li><strong>Calidad y Trayectoria Excepcional del Equipo:</strong> La trayectoria, experiencia y complementariedad de los miembros del equipo fueron reconocidas por todos los evaluadores como una fortaleza fundamental que avala plenamente la viabilidad científica y técnica del proyecto. Su historial de publicaciones, proyectos previos y capacidad formativa son indicadores claros de su excelencia.</li>
+<li><strong>Alto Potencial de Impacto y Sólidos Planes de Transferencia:</strong> El panel coincidió en el significativo potencial de impacto del proyecto, tanto a nivel científico como social y económico. Se valoraron muy positivamente los planes detallados y ambiciosos para la comunicación, divulgación y transferencia de resultados a públicos clave (academia, actores políticos, sociedad civil). La clara orientación a generar insumos concretos para la política pública (recomendaciones, herramientas de monitoreo) fue un punto fuertemente respaldado. El Plan de Gestión de Datos, alineado con los principios FAIR, fue considerado ejemplar y contribuye al impacto a largo plazo.</li>
+<li><strong>Abordaje Integral de la Dimensión de Género:</strong> La consideración explícita y transversal de la perspectiva de género en la composición del equipo, el análisis, la formación y la divulgación fue reconocida como un aspecto muy positivo.</li>
+<li><strong>Adecuación Presupuestaria:</strong> El presupuesto solicitado fue considerado razonable y bien justificado en relación con las actividades propuestas y el alcance del proyecto.</li>
+</ul>
+<p><strong>Diagnóstico Común sobre la Calidad de la Propuesta:</strong></p>
+<p>El diagnóstico común del panel es que la propuesta RUPLEGLA es un proyecto de investigación de <strong>altísima calidad científica</strong>, que aborda un tema de máxima relevancia y actualidad con gran originalidad y rigor metodológico. El equipo posee la capacidad excepcional para llevarlo a cabo y los planes para maximizar su impacto son ambiciosos y bien articulados. La propuesta cumple y supera los estándares de excelencia exigidos por la convocatoria.</p>
+<p><strong>3. Recomendaciones Conjuntas Detalladas</strong></p>
+<p>Si bien la propuesta es de excelente calidad en su diseño científico y potencial, el panel identificó una única área específica donde la presentación de la viabilidad operativa en la memoria podría detallarse para alinearse plenamente con todas las instrucciones de la convocatoria (Anexo VII).</p>
+<p>Por lo tanto, el panel de evaluadores recomienda a los proponentes revisar y enriquecer los siguientes apartados de la Memoria Científico-Técnica:</p>
+<ul>
+<li><strong>Sección 3.1. Objetivos:</strong> Se recomienda asignar explícitamente la responsabilidad principal de cada objetivo específico a uno de los Investigadores Principales (IPs), o indicar claramente la naturaleza de la responsabilidad compartida si aplica. Esto puede hacerse añadiendo una breve indicación junto a cada objetivo específico enumerado.</li>
+<li><strong>Sección 3.3. Plan de Trabajo y Cronograma:</strong> Se recomienda detallar con mayor precisión la distribución de las tareas y responsabilidades clave entre los miembros del equipo investigador (Investigadores Principales, personal posdoctoral, becarios) para las distintas fases o hitos del cronograma propuesto (36 meses). Esto permitirá una evaluación más clara de la organización interna y la gestión operativa del proyecto. La explicitación puede integrarse en la narrativa de la descripción de cada fase del cronograma, indicando quién lidera o participa en qué tarea, y cómo su especialización se alinea con dicha responsabilidad. Alternativamente, podría ser útil complementar la descripción textual con una tabla resumen que liste las tareas/hitos principales, el período, los responsables principales y la participación de otros miembros del equipo en cada uno. Identificar explícitamente a los “miembros clave” para tareas críticas (como la gestión de la base de datos o análisis específicos) fortalecería esta sección.</li>
+</ul>
+<p>La implementación de estas sugerencias fortalecerá la presentación formal de la viabilidad operativa del proyecto, demostrando de manera más detallada cómo la capacidad del equipo se traduce en una planificación concreta de la ejecución de las actividades.</p>
+<p><strong>4. Notas de Disenso</strong></p>
+<p>No se registraron puntos de disenso significativo durante la deliberación del panel. Los evaluadores alcanzaron un consenso total en la calificación global de la propuesta, en la identificación de sus puntos fuertes, en la única área de mejora destacada y en las recomendaciones conjuntas para los proponentes.</p>
+<p><strong>Conclusión:</strong></p>
+<p>En resumen, la propuesta RUPLEGLA es un proyecto de investigación excepcional que aborda una problemática crítica con rigor, originalidad y un claro potencial de impacto. El panel de evaluación la considera de <strong>Excelente Calidad (9/10)</strong> y la valora muy favorablemente para su financiación. Las recomendaciones propuestas buscan optimizar la presentación de la viabilidad operativa, pero no alteran la sustancia científica ni el alto mérito del proyecto.</p>
+<p>El panel felicita a los proponentes por la calidad de su propuesta y confía en que este proyecto realizará contribuciones muy significativas al conocimiento sobre las instituciones políticas en América Latina y ofrecerá herramientas valiosas para fortalecer la democracia en la región.</p>
+<p>Atentamente,</p>
+<p>[Firma del Coordinador del Panel] Coordinador del Panel de Evaluación Agencia de Evaluación Científica Internacional</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025, Rodrigo Rodrigues-Silveira</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://oir.org.es/pela/"><img src="logo_pela.png" class="img-fluid" alt="Posit" width="500"></a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
