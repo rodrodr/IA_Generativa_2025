@@ -16,8 +16,8 @@ website:
         text: 1.2 - Geopolítica y la IA
       - href: asistentes.qmd
         text: 2 - Asistentes virtuales
-#       - href: investigacion.html
-#         text: IA en investigación        
+      - href: investigacion.qmd
+        text: 3 - IA en investigación        
   page-footer:
     left: "&copy; Copyright 2025, Rodrigo Rodrigues-Silveira"
     right: |

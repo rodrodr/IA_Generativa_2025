@@ -614,15 +614,19 @@ names(w) <- c("Country", "Democracy_Level", "Democracy_Score", "Ethnic_Fractiona
 
 # Transforma en una tabla de texto
 wt <- knitr::kable(w)
+wt <- paste0(wt, collapse="\n")
 
 # Genera las correlaciones
 co <- round(cor(w[,c("Democracy_Score", "Ethnic_Fractionalization","Population_65_and_Older")], use = "pairwise.complete.obs", method = "pearson"),3)
 
 # Transforma en una tabla de texto
 co <- knitr::kable(co)
+co <- paste0(co, collapse="\n")
+
 
 # Ejecuta el test t de Student
 tt <- t.test(w$Democracy_Score~w$Muslim_Majority, conf.level=0.99)
+tt <- paste0(tt, collapse="\n")
 
 # Crea el prompt
 prompt <- paste0("Actúa como un analista de datos de las ciencias sociales. Tu tarea consiste en analizar dos tablas con datos. La primera tabla contiene información nivel de democracia, el índice de democracia, la diversidad étnica, si la mayoría de la población es musulmana y el porcentaje de la población con 65 años o más en diversos países. Los datos de la tabla son los siguientes: \n\n",wt, "\n\n y la tabla de correlaciones entre el índice de democracia, la fracionalización étnica y el porcentaje de personas con 65 años o más es la siguiente: \n\n", co, ".\n\nLos resultados del teste t de diferencia entre medias entre el índice de democracia y si el país posee una mayoría musulmana es el siguiente: \n\n", tt,"\n\n. Con base en esos datos: \n\n1) realiza un análisis descriptivo de las variables; 2) realiza un análisis entre nivel de democracia y diversidad étnica; 3) realiza un análisis entre el índice de democracia y la mayoría musulmana; y, finalmente, 4) realiza un análisis entre el mayoría musulmana y la diversidad étnica.\n\nUna vez realizo el análisis, escribe una síntesis de unas 2000 palabras sobre el tema.")
